@@ -17,15 +17,15 @@ function reveal() {
   function sticky() {
     var sticks = document.querySelectorAll(".sticky");
   
-    for (var i = 0; i < reveals.length; i++) {
+    for (var i = 0; i < sticks.length; i++) {
       var windowHeight = window.innerHeight;
-      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementTop = sticks[i].getBoundingClientRect().top;
       var elementVisible = 150;
   
       if (elementTop < windowHeight - elementVisible) {
-        reveals[i].classList.add("active");
+        sticks[i].classList.add("active");
       } else {
-        reveals[i].classList.remove("active");
+        sticks[i].classList.remove("active");
       }
     }
   }
