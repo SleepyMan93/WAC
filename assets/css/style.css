@@ -8,7 +8,7 @@
 }
 
   body{
-    background: #42455a;
+    background: #000000;
 }
 
   section{
@@ -22,6 +22,12 @@
     padding-right: var(--bs-gutter-x, 0rem);
     padding-left: var(--bs-gutter-x, 0rem);
 }
+
+  .black {
+    color: #000000;
+}
+
+/* Sections */
 
   section:nth-child(1){
     color: #e0ffff;
@@ -37,8 +43,15 @@
 } 
 
   #greenBanner {
-    background-color: #42455a;
+    background-color: #00f78a;
     width: -webkit-fill-available;
+    min-height: 100px;
+  }
+
+  .hidden-text {
+    position: absolute;
+    min-width: 100%;
+    color: #e0ffff;
   }
 
   section:nth-child(3){
@@ -97,9 +110,15 @@
     transform: translateY(150px);
     opacity: 0;
     transition: 1.5s all ease;
-  }
+}
   
   .reveal.active{
     transform: translateY(0);
     opacity: 1;
-  }
+}
+
+  .sticky.active {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
