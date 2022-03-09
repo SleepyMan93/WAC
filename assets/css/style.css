@@ -104,6 +104,15 @@
     font-size: 3vw;
   }
 
+  .image {
+    width: 100%;
+}
+
+  .image-cover {
+    object-fit: cover;
+    object-position: right top;
+}
+
 /* Work Section */
 
   section:nth-child(4){
