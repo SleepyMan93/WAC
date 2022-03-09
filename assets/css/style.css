@@ -58,7 +58,12 @@
 
   .landing {
     height: fit-content;
-    min-height: 0vh;
+    min-height: 90vh;
+  }
+
+/* Video */
+  .ratio {
+    max-height: 90vh;
   }
 
 /* Home Section */
