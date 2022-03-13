@@ -82,13 +82,14 @@
     color: #42455a;
     background: #e0ffff;
     padding-bottom: 160px;
-    padding-top: 160px;
 } 
 
   #greenBanner {
     background-color: #00f78a;
     width: inherit;
     min-height: 150px;
+    display: flex;
+    align-content: center;
   }
 
   .hidden-text {
@@ -98,6 +99,10 @@
     min-width: 100%;
     color: #e0ffff;
     height: 50vh;
+  }
+
+  .icon {
+    padding-left: 0;
   }
 
   .placeholder-text {
@@ -121,7 +126,6 @@
 
   section:nth-child(3){
     color: #42455a;
-    background: #e0ffff;
     margin-top: 80px;
 }
 
@@ -192,7 +196,7 @@
 }
 
 .slideshow .slider .item img {
-  min-width: 101%;
+  height: 70vh;
   min-height: 101%;
   position: absolute;
   top: 50%;
@@ -277,6 +281,28 @@
   letter-spacing: 20px;
   line-height: 0.8;
 }
+
+/* logos */
+
+.logo-holder {
+  display: flex;
+  align-items: center;
+}
+
+.logo-row {
+  align-items: center;
+}
+
+.col-2 {
+  display: flex;
+  justify-content: center;
+}
+
+.logos {
+  max-width: 70%;
+}
+
+
 
 @media (max-width: 767px) {
   .slideshow-text {
