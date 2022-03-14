@@ -30,30 +30,30 @@
                     </a>
                 </div>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Active</a>
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link" href="#">Work</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link" href="#">About</a>
                 </li>
             </ul>
         </div>
         <div class="container-fluid video">
             <div class="ratio ratio-16x9">
-                <video src="assets/video/Homepage_TextMotion.mp4" autoplay muted></video>
+                <video src="assets/video/Homepage_TextMotion.mp4" autoplay muted disablePictureInPicture></video>
             </div>
         </div>
     </section>
 
-    <section class="container-fluid green sticky">
-        <div id="greenBanner" class="row sticky reveal"></div>
+    <section class="container-fluid green reveal">
+        <div id="greenBanner" class="row reveal sticky"></div>
         <div class="row hidden-text">
-            <div class="col-4 icon">
-                <img class="image image-cover" id="wacIcon" src="assets/images/wac_circle_icon_green_2.png" alt="">
+            <div class="col-5 icon">
+                <img class="img-fluid image-cover" id="wacIcon" src="assets/images/wac_circle_icon_green.png" alt="">
             </div>
-            <div class="col-8">
+            <div class="col-7">
                 <h2>Caption</h2>
             </div>
         </div>
@@ -109,8 +109,27 @@
           </div>
     </section>
 
-
+    <!--
+    <script>
+        $(function() {
+    var rotation = 0, 
+        scrollLoc = $(document).scrollTop();
+    $(window).scroll(function() {
+        var newLoc = $(document).scrollTop();
+        var diff = scrollLoc - newLoc;
+        rotation += diff, scrollLoc = newLoc;
+        var rotationStr = "rotate(" + rotation / 5000 + "deg)";
+        $(".image-cover").css({
+            "-webkit-transform": rotationStr,
+            "-moz-transform": rotationStr,
+            "transform": rotationStr
+        });
+    });
+})
+    </script>
+    -->
     <script src="assets/js/index.js"></script>
+    <script src="assets/js/sticky.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>

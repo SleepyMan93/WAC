@@ -1,13 +1,10 @@
 /* Global Styling */
 
-* {
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Asap", sans-serif;
-}
-
-  body{
     background: #000000;
 }
 
@@ -76,20 +73,22 @@
 
   section:nth-child(2){
     min-height: 100vh;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     color: #42455a;
     background: #e0ffff;
-    padding-bottom: 160px;
 } 
 
   #greenBanner {
     background-color: #00f78a;
     width: inherit;
-    min-height: 150px;
+    min-height: 217px;
     display: flex;
     align-content: center;
+    margin-top: 40px;
+    margin-bottom: 150px;
   }
 
   .hidden-text {
@@ -98,10 +97,14 @@
     position: absolute;
     min-width: 100%;
     color: #e0ffff;
-    height: 50vh;
+    height: 100vh;
+    margin: 0;
   }
 
   .icon {
+    height: 100%;
+    padding-right: 20rem;
+    display: flex;
     padding-left: 0;
   }
 
@@ -109,12 +112,11 @@
     font-size: 3vw;
   }
 
-  .image {
-    width: 100%;
-}
-
   .image-cover {
+    /* height: 50vh; */
+    width: 40vw;
     object-fit: cover;
+    /* padding-right: 277px; */
     object-position: right top;
 }
 
@@ -332,10 +334,16 @@
     opacity: 1;
 }
 
+.sticky {
+  position: -webkit-relative;
+  position: relative;
+  top: 200px;
+}
+
   .sticky.active {
     position: -webkit-sticky;
     position: sticky;
-    top: 100px;
+    top: 200px;
 }
 
 .right_pulley

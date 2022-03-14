@@ -12,7 +12,7 @@ function reveal() {
         reveals[i].classList.remove("active");
       }
     }
-  }
+};
 
   function sticky() {
     var sticks = document.querySelectorAll(".sticky");
@@ -28,6 +28,22 @@ function reveal() {
         sticks[i].classList.remove("active");
       }
     }
-  }
+};
+
+  function rotate() {
+    var rotates = document.querySelectorAll(".rotate");
+
+    for (var i = 0; i < rotates.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = rotates[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+
+      if (elementTop < windowHeight - elementVisible) {
+        rotates[i].classList.add("active");
+      } else {
+        rotates[i].classList.remove("active");
+      }
+    }
+};
   
-  window.addEventListener("scroll", reveal, sticky);
+window.addEventListener("scroll", reveal, sticky);
