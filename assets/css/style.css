@@ -6,6 +6,8 @@ body {
     box-sizing: border-box;
     font-family: "Asap", sans-serif;
     background: #000000;
+    overflow: auto;
+    overflow-x: hidden;
 }
 
   section{
@@ -304,6 +306,38 @@ body {
   max-width: 70%;
 }
 
+/* About */
+
+section:nth-child(5){
+  min-height: 100vh;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: #ffffff;
+  background: #000000;
+} 
+
+.josh {
+  height: 60vh;
+  width: auto;
+  overflow: hidden;
+}
+
+.owners-panel {
+  align-items: center;
+}
+
+.owners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.owners-text {
+  color: white;
+}
 
 
 @media (max-width: 767px) {
