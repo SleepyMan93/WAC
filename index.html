@@ -42,7 +42,7 @@
         </div>
         <div class="container-fluid video">
             <div class="ratio ratio-16x9">
-                <video src="assets/video/Homepage_TextMotion.mp4" autoplay muted disablePictureInPicture></video>
+                <video src="assets/video/Homepage_TextMotion.mp4" muted disablePictureInPicture></video>
             </div>
         </div>
     </section>
@@ -116,10 +116,10 @@
                     <h2>Josh</h2>
                 </div>
                 <div class="col-6 owners">
-                    <video class="josh" src="assets/video/WebJosh.mp4" autoplay muted disablePictureInPicture loop></video>
+                    <video class="josh" src="assets/video/WebJosh.mp4" muted disablePictureInPicture></video>
                 </div>
                 <div class="col-6 owners">
-                    <video class="josh" src="assets/video/WebAlex.mp4" autoplay muted disablePictureInPicture loop></video>
+                    <video class="josh" src="assets/video/WebAlex.mp4" muted disablePictureInPicture></video>
                 </div>
                 <div class="col-6 owners-text">
                     <h2>Josh</h2>
@@ -147,6 +147,34 @@
 })
     </script>
     -->
+
+    <script>
+                $(document).ready(function() {
+            // Get media - with autoplay disabled (audio or video)
+            var media = $('video').not("[autoplay='autoplay']");
+            var tolerancePixel = 40;
+
+            function checkMedia(){
+                // Get current browser top and bottom
+                var scrollTop = $(window).scrollTop() + tolerancePixel;
+                var scrollBottom = $(window).scrollTop() + $(window).height() - tolerancePixel;
+
+                media.each(function(index, el) {
+                    var yTopMedia = $(this).offset().top;
+                    var yBottomMedia = $(this).height() + yTopMedia;
+
+                    if(scrollTop < yBottomMedia && scrollBottom > yTopMedia){ //view explaination in `In brief` section above
+                        $(this).get(0).play();
+                    } else {
+                        $(this).get(0).pause();
+                    }
+                });
+
+                //}
+            }
+            $(document).on('scroll', checkMedia);
+        });
+    </script>
     <script src="assets/js/index.js"></script>
     <script src="assets/js/sticky.js"></script>
     <script src="assets/js/script.js"></script>
