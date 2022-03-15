@@ -59,6 +59,8 @@
         </div>
     </section>
 
+    <div class="container-fluid spacer"></div>
+
     <section class="container-fluid clients reveal">
         <div class="split-slideshow">
             <div class="slideshow">
@@ -67,14 +69,14 @@
                   <img class="portfolio-img" src="assets/images/gorrilas_2.jpg" />
                 </div>
                 <div class="item">
-                    <div class="carousel-item-background">
-                        <video class="gorilla-content" src="assets/video/2112_TRTD Gorillas_1min40sec_Mastered Track_16.9_wac_02 (1).mp4" controls></video>
-                    </div>
-                  <img class="portfolio-img" src="assets/images/gorillas_3.jpg" />
+                  <img class="portfolio-img" src="assets/images/gorrilas4.jpg" />
+                  <div class="carousel-item-background">
+                    <video class="gorilla-content" src="assets/video/gorrilas_vid.mp4" controls></video>
+                  </div>
                 </div>
                 <div class="item">
-                  <img class="portfolio-img" src="assets/images/gorrilas4.jpg" />
-                </div>
+                    <img class="portfolio-img" src="assets/images/gorrilas_3.jpg" />
+                  </div>
               </div>
             </div>
             <div class="slideshow-text">
@@ -125,7 +127,7 @@
         </div>
     </section>
 
-    <!--
+<!--
     <script>
         $(function() {
     var rotation = 0, 
@@ -143,7 +145,7 @@
     });
 })
     </script>
-    -->
+
 
     <script>
             $(document).ready(function() {
@@ -169,18 +171,18 @@
                 }
                 $(document).on('scroll', checkMedia);
             });
+    </script>
+-->
      
+    <script>
+         $(window).scroll(function() {                  // assign scroll event listener
 
-        $(window).scroll(function() {                  // assign scroll event listener
-
-            var fixmeTop = $('.slideshow').offset().top; // get initial position of the elements
+            var fixmeTop = $('.spacer').offset().top; // get initial position of the elements
             var currentScroll = $(window).scrollTop(); // get current position
 
             if (currentScroll >= fixmeTop) {           // apply position: fixed if you
-                $('.nav-box').css({                      // scroll to that element or below it
-                    "position": "relative",
-                    "z-index": "100",
-                    "background-color": "black",
+                $('.nav-box').addClass('.reveal').css({                      // scroll to that element or below it
+                    "z-index": "-100",
                 });
             } else {                                   // apply position: static
                 $('.nav-box').css({                      // if you scroll above it
