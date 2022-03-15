@@ -37,6 +37,8 @@ body {
 
   .nav-box {
     z-index: 100;
+    position: fixed;
+    background-color: #000000;
   }
 
   #imgHolder {
@@ -57,7 +59,7 @@ body {
 
   .landing {
     height: fit-content;
-    min-height: 90vh;
+    min-height: 100vh;
   }
 
 /* Video */
@@ -80,7 +82,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     color: #42455a;
-    background: #e0ffff;
+    background: black;
 } 
 
   #greenBanner {
@@ -313,13 +315,13 @@ section:nth-child(5){
   max-width: 100%;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   color: #ffffff;
   background: #000000;
 } 
 
 .josh {
-  height: 60vh;
+  height: 50vh;
   width: auto;
   overflow: hidden;
 }
@@ -328,15 +330,32 @@ section:nth-child(5){
   align-items: center;
 }
 
-.owners {
+.owners-alex {
   display: flex;
-  justify-content: center;
   align-items: center;
-  align-content: center;
+  justify-content: flex-start;
 }
 
-.owners-text {
+.owners-josh {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.text-alex {
   color: white;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.text-josh {
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.video-holder {
+  padding-top: 25px;
 }
 
 
