@@ -89,7 +89,7 @@
 
     <section class="container-fluid logo-holder reveal">
         <div class="container-fluid">
-            <video src="assets/video/ClientsLogos.mp4"></video>
+            <video class="client-reveal" src="assets/video/ClientsLogos.mp4" disablePictureInPicture></video>
         </div>
     </section>
 
@@ -126,16 +126,31 @@
         <div class="container-fluid video video-holder">
             <div class="row owners-panel">
                 <div class="col-6 owners-alex">
-                    <video class="alex" src="assets/video/WebAlex_Square(1).mp4" muted disablePictureInPicture></video>
+                    <video class="alex" src="assets/video/WebAlex_Square.mp4" muted disablePictureInPicture></video>
                 </div>
                 <div class="col-6 owners-josh">
-                    <video class="josh" src="assets/video/WebJosh_Square(1).mp4" muted disablePictureInPicture></video>
+                    <video class="josh" src="assets/video/WebJosh_Square.mp4" muted disablePictureInPicture></video>
                 </div>
-                <div class="col-8 owners-pair">
-                    <video class="pair" src="assets/video/WebPair_Square(1).mp4" muted disablePictureInPicture></video>
+                <div class="col-5 owners-pair">
+                    <video class="pair" src="assets/video/WebPair_Square.mp4" muted disablePictureInPicture></video>
                 </div>
-                <div class="col-4 btn-lg">
-                    <button class="SendEmail">Get In Touch</button>
+                <div class="col-6 contact">
+                    <div class="row socials-row">
+                        <div class="col-4">
+                            <video class="socials" src="assets/video/FacebookSocial_IconRotate.mp4" disablePictureInPicture></video>
+                        </div>
+                        <div class="col-4">
+                            <video class="socials" src="assets/video/InstaSocial_IconRotate.mp4" disablePictureInPicture></video>
+                        </div>
+                        <div class="col-4">
+                            <video class="socials" src="assets/video/LinkedInSocial_IconRotate.mp4" disablePictureInPicture></video>
+                        </div>
+                    </div>
+                    <div class="row btn-row">
+                        <div class="col-6 btn-box">
+                            <button class="SendEmail">Get In Touch</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -160,11 +175,12 @@
 })
     </script>
 
+-->
 
     <script>
             $(document).ready(function() {
             // Get media - with autoplay disabled (audio or video)
-                var media = $('video').not("[autoplay='autoplay']");
+                var media = $('.client-reveal').not("[autoplay='autoplay']");
                 var tolerancePixel = 40;
 
                 function checkMedia(){
@@ -186,7 +202,7 @@
                 $(document).on('scroll', checkMedia);
             });
     </script>
--->
+
 
     <script>
          $(window).scroll(function() {                  // assign scroll event listener
@@ -232,7 +248,7 @@
 <script>
   
     // Getting video element using jQuery
-    var video = $("video");
+    var video = $(".gorillaVid,.digmeVid,.socials,.josh,.alex,.pair");
 
     // Check if video is ready to play
     $(video).on('canplay', function () {
