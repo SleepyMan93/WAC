@@ -321,6 +321,128 @@ align-items: center;
 justify-content: center;
 }
 
+/* slideshow2 */
+
+.slideshow2 {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  }
+  
+  .slideshow2 .slider2 {
+  width: 100vw;
+  height: 100vw;
+  z-index: 2;
+  }
+  
+  .slideshow2 .slider2 * {
+  outline: none;
+  }
+  
+  .slideshow2 .slider2 .item2 {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  }
+  
+  .slideshow2 .text2 {
+  display: none;
+  }
+  
+  .slideshow2 .slider2 .item2 img {
+  height: 72rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+  
+  .slideshow2 .slick-dots {
+  position: fixed;
+  z-index: 100;
+  width: 40px;
+  height: auto;
+  bottom: auto;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  left: auto;
+  color: #fff;
+  display: block;
+  }
+  
+  .slideshow2 .slick-dots li {
+  display: block;
+  width: 100%;
+  height: auto;
+  }
+  
+  .slideshow2 .slick-dots li button {
+  position: relative;
+  width: 20px;
+  height: 15px;
+  text-align: center;
+  }
+  
+  .slideshow2 .slick-dots li button::before {
+  content: '';
+  background: #fff;
+  color: #fff;
+  height: 2px;
+  width: 20px;
+  border-radius: 0;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: auto;
+  transform: translateY(-50%);
+  transition: all .3s ease-in-out;
+  opacity: 0.6;
+  }
+  
+  .slideshow2 .slick-dots li.slick-active button::before {
+  width: 40px;
+  opacity: 1;
+  }
+  
+  .slideshow2.slideshow-right2 {
+  left: 0;
+  z-index: 1;
+  width: 50vw;
+  pointer-events: none;
+  }
+  
+  .slideshow2.slideshow-right2 .slider2 {
+  left: 0;
+  position: absolute;
+  }
+  
+  .slideshow-text2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  font-size: 80px;
+  width: 100vw;
+  text-align: center;
+  color: #fff;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 100;
+  pointer-events: none;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  line-height: 0.8;
+  }
+
+
+
 /* logos */
 
 .logo-holder {
@@ -344,7 +466,7 @@ max-width: 70%;
 /* About */
 
 section:nth-child(5){
-min-height: 100vh;
+min-height: 0vh;
 max-width: 100%;
 display: flex;
 justify-content: center;
