@@ -28,6 +28,11 @@ section{
   height: 14vh;
 }
 
+.spacer2 {
+  background-color: #000000;
+  height: 13vh;
+}
+
 /* navbar */
 
 .nav {
@@ -112,7 +117,7 @@ section:nth-child(2){
 
 .icon {
   height: 100%;
-  padding-right: 20rem;
+  padding-right: 0rem;
   display: flex;
   padding-left: 0;
 }
@@ -150,9 +155,17 @@ section h1{
 }
 
 section h2{
-  font-size: 40px;
+  font-size: 2.4vw;
   text-align: center;
-  text-transform: uppercase;
+}
+
+.text-holder {
+  height: 41vh;
+}
+
+.text-holder h2 {
+  color: #000000;
+  font-weight: 900;
 }
 
 section .text-container{
@@ -267,13 +280,6 @@ left: 0;
 z-index: 1;
 width: 50vw;
 pointer-events: none;
-}
-
-.slideshow.slideshow-right:nth-child(3) {
-left: 0;
-z-index: 1;
-width: 50vw;
-pointer-events: none;
 display: none;
 }
 
@@ -300,7 +306,7 @@ letter-spacing: 20px;
 line-height: 0.8;
 }
 
-.gorilla-content {
+.gorillaVid, .digmeVid {
 max-width: 90vw;
 height: 82vh;
 }
@@ -345,12 +351,24 @@ justify-content: center;
 align-items: center;
 color: #ffffff;
 background: #000000;
-} 
+}
+
+.alex {
+  height: 60vh;
+  width: auto;
+  overflow: hidden;
+}
 
 .josh {
-height: 50vh;
-width: auto;
-overflow: hidden;
+  height: 60vh;
+  width: auto;
+  overflow: hidden;
+}
+
+.pair {
+  height: 60vh;
+  width: auto;
+  overflow: hidden;
 }
 
 .owners-panel {
@@ -358,15 +376,22 @@ align-items: center;
 }
 
 .owners-alex {
-display: flex;
-align-items: center;
-justify-content: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.owners-pair {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .owners-josh {
-display: flex;
-align-items: center;
-justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 63px;
 }
 
 .text-alex {
@@ -385,6 +410,15 @@ justify-content: flex-end;
 padding-top: 25px;
 }
 
+.btn-lg {
+  display: flex;
+  justify-content: center;
+  height: 31vh;
+  align-items: center;
+  border: none;
+  padding: 10px;
+  font-size: 2rem;
+}
 
 @media (max-width: 767px) {
 .slideshow-text {
@@ -404,9 +438,9 @@ padding-top: 25px;
 
 .reveal{
   position: relative;
-  transform: translateY(40px);
+  transform: translateY(10px);
   opacity: 1;
-  transition: 1.5s all ease;
+  transition: 1s all ease;
 }
 
 .reveal.active{

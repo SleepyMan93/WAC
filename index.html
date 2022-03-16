@@ -42,19 +42,21 @@
         </div>
         <div class="container-fluid video">
             <div class="ratio ratio-16x9">
-                <video src="assets/video/Homepage_TextMotion_Loop.mp4" muted disablePictureInPicture loop autoplay></video>
+                <video src="assets/video/Homepage_TextMotion_Stay.mp4" muted disablePictureInPicture autoplay></video>
             </div>
         </div>
     </section>
 
     <section class="container-fluid green reveal">
-        <div id="greenBanner" class="row reveal sticky"></div>
+        <div id="greenBanner" class="row sticky active"></div>
         <div class="row hidden-text">
-            <div class="col-5 icon">
+            <div class="col-3 icon">
                 <img class="img-fluid image-cover" id="wacIcon" src="assets/images/wac_circle_icon_green.png" alt="">
             </div>
-            <div class="col-7">
-                <h2>Caption</h2>
+            <div class="col-9 text-holder">
+                <h2>
+                    We know what good content looks like and we aren't afraid to say it.<br/><br/> wac is formed by a team of expert creatives with years of experience in the digital and advertising space! We are with you from concept to delivery We'll find what makes your business, campaign, product or service special and make it shine! 
+                </h2>
             </div>
         </div>
     </section>
@@ -70,12 +72,38 @@
                 </div>
                 <div class="item">
                   <img class="portfolio-img" src="assets/images/gorrilas4.jpg" />
-                  <div class="carousel-item-background">
-                    <video class="gorilla-content" src="assets/video/gorrilas_vid.mp4" controls></video>
-                  </div>
+                  <!--<div class="carousel-item-background">
+                    <video class="gorillaVid" src="assets/video/gorrilas_vid.mp4" controls preload disablePictureInPicture></video>
+                  </div>!-->
                 </div>
                 <div class="item">
                     <img class="portfolio-img" src="assets/images/gorrilas_3.jpg" />
+                  </div>
+              </div>
+            </div>
+            <div class="slideshow-text">
+              <div class="item"></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container-fluid spacer2"></div>
+
+    <section class="container-fluid clients reveal">
+        <div class="split-slideshow">
+            <div class="slideshow">
+              <div class="slider">
+                <div class="item">
+                  <img class="portfolio-img" src="assets/images/digme_1.jpg" />
+                </div>
+                <div class="item">
+                  <img class="portfolio-img" src="assets/images/digme_2.jpg" />
+                  <div class="carousel-item-background">
+                    <video class="digmeVid" src="assets/video/digmeVid.mp4" controls preload disablePictureInPicture></video>
+                  </div>
+                </div>
+                <div class="item">
+                    <img class="portfolio-img" src="assets/images/digme_3.jpg" />
                   </div>
               </div>
             </div>
@@ -111,17 +139,17 @@
     <section class="container-fluid reveal">
         <div class="container-fluid video video-holder">
             <div class="row owners-panel">
-                <div class="col-5 owners-alex">
-                    <video class="josh" src="assets/video/WebAlex_Edit.mp4" muted disablePictureInPicture></video>
+                <div class="col-6 owners-alex">
+                    <video class="alex" src="assets/video/WebAlex_Square(1).mp4" muted disablePictureInPicture></video>
                 </div>
-                <div class="col-7 text-alex">
-                    <h2>Alex</h2>
+                <div class="col-6 owners-josh">
+                    <video class="josh" src="assets/video/WebJosh_Square(1).mp4" muted disablePictureInPicture></video>
                 </div>
-                <div class="col-7 text-josh">
-                    <h2>Josh</h2>
+                <div class="col-8 owners-pair">
+                    <video class="pair" src="assets/video/WebPair_Square(1).mp4" muted disablePictureInPicture></video>
                 </div>
-                <div class="col-5 owners-josh">
-                    <video class="josh" src="assets/video/WebJosh_Edit.mp4" muted disablePictureInPicture></video>
+                <div class="col-4 btn-lg">
+                    <button class="SendEmail">Get In Touch</button>
                 </div>
             </div>
         </div>
@@ -193,8 +221,37 @@
             }
         });
     </script>
+
+<script>
+  
+    // Getting video element using jQuery
+    var video = $("video");
+
+    // Check if video is ready to play
+    $(video).on('canplay', function () {
+        $(video).mouseover(function () {
+            $(this).get(0).play();
+        }).mouseout(function () {
+            $(this).get(0).pause();
+        })
+    });
+</script>
+
+    <script>
+
+        let clip = document.querySelector(".testVid")
+
+        clip.addEventListener("mouseover", function (e) {
+            clip.get(0).play();
+        })
+
+        clip.addEventListener("mouseout", function (e) {
+            clip.get(0).pause();
+        })
+
+    </script>
     <script src="assets/js/index.js"></script>
-    <script src="assets/js/sticky.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/email.js"></script>
 </body>
 </html>
