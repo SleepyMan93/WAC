@@ -19,7 +19,8 @@ $('.slideshow-left').slick({
   verticalSwiping: true,
   arrows: false,
   infinite: true,
-  dots: true,
+  dots: false,
+  autoplay: true,
   speed: 1000,
   cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)'
 }).on('beforeChange', function(event, slick, currentSlide, nextSlide) {

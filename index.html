@@ -20,7 +20,6 @@
 
     <!--Navbar-->
 
-
     <section class="container-fluid landing">
         <div class="container-fluid nav-box">
             <ul class="nav justify-content-end">
@@ -61,8 +60,6 @@
         </div>
     </section>
 
-    <div class="container-fluid spacer"></div>
-
     <section class="container-fluid clients reveal">
         <div class="split-slideshow">
             <div class="slideshow">
@@ -72,9 +69,6 @@
                 </div>
                 <div class="item">
                   <img class="portfolio-img" src="assets/images/gorrilas4.jpg" />
-                  <!--<div class="carousel-item-background">
-                    <video class="gorillaVid" src="assets/video/gorrilas_vid.mp4" controls preload disablePictureInPicture></video>
-                  </div>!-->
                 </div>
                 <div class="item">
                     <img class="portfolio-img" src="assets/images/gorrilas_3.jpg" />
@@ -85,33 +79,22 @@
               <div class="item"></div>
             </div>
         </div>
+        <!--
+        <div class="carousel-item-background">
+            <video class="gorillaVid" src="assets/video/gorrilas_vid.mp4" controls preload disablePictureInPicture></video>
+        </div>
+        -->
     </section>
 
-    <div class="container-fluid spacer2"></div>
-
-    <section class="container-fluid clients reveal">
-        <div class="split-slideshow">
-            <div class="slideshow">
-              <div class="slider">
-                <div class="item">
-                  <img class="portfolio-img" src="assets/images/digme_1.jpg" />
-                </div>
-                <div class="item">
-                  <img class="portfolio-img" src="assets/images/digme_2.jpg" />
-                  <div class="carousel-item-background">
-                    <video class="digmeVid" src="assets/video/digmeVid.mp4" controls preload disablePictureInPicture></video>
-                  </div>
-                </div>
-                <div class="item">
-                    <img class="portfolio-img" src="assets/images/digme_3.jpg" />
-                  </div>
-              </div>
-            </div>
-            <div class="slideshow-text">
-              <div class="item"></div>
-            </div>
+    <section class="container-fluid client-videos reveal">
+        <div class="carousel-item-background">
+            <video class="gorillaVid" src="assets/video/gorrilas_vid.mp4" controls preload disablePictureInPicture></video>
         </div>
     </section>
+
+    <section class=""></section>
+
+    <div class="container-fluid spacer2"></div>
 
     <section class="container-fluid logo-holder reveal">
         <div class="row logo-row m-5">
@@ -201,16 +184,16 @@
             });
     </script>
 -->
-     
+
     <script>
          $(window).scroll(function() {                  // assign scroll event listener
 
-            var fixmeTop = $('.spacer').offset().top; // get initial position of the elements
+            var fixmeTop = $('.split-slideshow').offset().top; // get initial position of the elements
             var currentScroll = $(window).scrollTop(); // get current position
 
             if (currentScroll >= fixmeTop) {           // apply position: fixed if you
-                $('.nav-box').addClass('.reveal').css({                      // scroll to that element or below it
-                    "z-index": "-100",
+                $('.split-slideshow').addClass('sticky active').css({                      // scroll to that element or below it
+                    "z-index": "-1",
                 });
             } else {                                   // apply position: static
                 $('.nav-box').css({                      // if you scroll above it
@@ -221,6 +204,7 @@
             }
         });
     </script>
+
 
 <script>
   
