@@ -116,7 +116,7 @@
 
     <section class="container-fluid client-videos reveal">
         <div class="carousel-item-background">
-            <video class="gorillaVid" src="assets/video/digmeVid.mp4" controls preload disablePictureInPicture></video>
+            <video class="digmeVid" src="assets/video/digmeVid.mp4" controls preload disablePictureInPicture></video>
         </div>
     </section>
 
@@ -207,6 +207,26 @@
             }
         });
     </script>
+
+<script>
+    $(window).scroll(function() {                  // assign scroll event listener
+
+       var fixmeTop = $('.split-slideshow2').offset().top; // get initial position of the elements
+       var currentScroll = $(window).scrollTop(); // get current position
+
+       if (currentScroll >= fixmeTop) {           // apply position: fixed if you
+           $('.split-slideshow2').addClass('sticky active').css({                      // scroll to that element or below it
+               "z-index": "-1",
+           });
+       } else {                                   // apply position: static
+           $('.nav-box').css({                      // if you scroll above it
+               "position": 'fixed',
+               "z-index": "100",
+               "background-color": "black"
+           });
+       }
+   });
+</script>
 
 
 <script>
