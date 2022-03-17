@@ -42,6 +42,10 @@ button {
   width: 13rem;
 }
 
+.nav-link:hover {
+  color: white;
+}
+
 /* navbar */
 
 .nav {
@@ -113,11 +117,11 @@ section:nth-child(2){
 #greenBanner {
   background-color: #00f78a;
   width: inherit;
-  min-height: 217px;
+  min-height: 254px;
   display: flex;
   align-content: center;
   margin-top: 40px;
-  margin-bottom: 150px;
+  margin-bottom: 71px;
 }
 
 .hidden-text {
@@ -137,6 +141,11 @@ section:nth-child(2){
   padding-left: 0;
 }
 
+.text-holder img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .placeholder-text {
   font-size: 3vw;
 }
@@ -152,6 +161,7 @@ section:nth-child(2){
 /* Work Section */
 
 section:nth-child(3){
+  margin-top: 10rem;
   height: 200vh;
 }
 
@@ -167,10 +177,6 @@ section h1{
 section h2{
   font-size: 2.4vw;
   text-align: center;
-}
-
-.text-holder {
-  height: 41vh;
 }
 
 .text-holder h2 {
