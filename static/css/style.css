@@ -56,7 +56,7 @@ button {
   min-width: 100vw;
   list-style: none;
   align-items: flex-end;
-  padding: 2rem 2rem 2rem 2rem;
+  padding: 1rem 1rem 1rem 1rem;
 }
 
 .nav li a {
@@ -80,6 +80,15 @@ button {
 
 .nav-link {
   color: white;
+}
+
+.nav-link.active {
+  color: #00f78a;
+}
+
+.landing {
+  height: fit-content;
+  min-height: 14vh;
 }
 
 .nav-link.active {

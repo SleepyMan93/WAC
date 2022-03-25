@@ -6,7 +6,7 @@
 /* Video Holder */
 
 .client-video {
-    max-height: 80vh;
+    max-height: 79vh;
     max-width: 100%;
 }
 
@@ -15,8 +15,8 @@
     justify-content: center;
     align-items: flex-start;
     align-content: flex-start;
-    min-height: 80vh;
-    margin-bottom: 1rem;
+    max-height: 79vh;
+    margin-bottom: 2rem;
 }
 
 .img-section {
@@ -24,18 +24,18 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding-right: 3rem;
-    padding-left: 3rem;
+    padding-right: 7rem;
+    padding-left: 7rem;
 }
 
 .img-holder {
     display: flex;
-    height: 11vh;
+    height: 84vh;
+    width: 100vw;
     position: absolute;
-    left: 26%;
-    top: 136%;
     justify-content: center;
-    z-index: 3;
+    z-index: 4;
+    align-items: center;
 }
 
 .img-holder-long {
@@ -49,35 +49,55 @@
 .img-holder-wide {
     margin-top: 0rem;
     margin-left: 0rem;
-    border-left: 1rem solid black;
     border-bottom: 1rem solid black;
     height: 43vh;
     display: flex;
     z-index: 3;
 }
 
+.img-wide-top {
+    object-position: bottom;
+}
+
 .img-holder-bottom {
-    margin-top: -24rem;
-    margin-left: 38rem;
-    border-top: 1rem solid black;
-    border-left: 1rem solid black;
-    height: 43.4vh;
-    z-index: 2;
-    width: 52%;
+    margin-top: -23.3rem;
+    margin-left: 40vw;
+    border-top: 1rem solid #00f78a;
+    border-left: 1rem solid #00f78a;
+    height: 50vh;
+    z-index: 3;
+    width: 58%;
     display: flex;
 }
 
 .logo {
-    max-height: 100%;
-    max-width: 100%;
+    max-height: 6vw;
+}
+
+.img-long, .img-wide, .img-wide-top {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .img-long {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    object-position: left;
+
 }
 
+.bottom-holder {
+    display: flex;
+    justify-content: center;
+}
+
+/* Base Client */
+
+.video-holder:nth-child(1) {
+    margin-top: 2rem;
+}
 .bottom-holder {
     display: flex;
     justify-content: center;
