@@ -24,8 +24,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
 }
 
 .img-holder {
@@ -58,12 +58,12 @@
 
 .img-holder-bottom {
     margin-top: -24rem;
-    margin-left: 39.6rem;
+    margin-left: 38rem;
     border-top: 1rem solid black;
     border-left: 1rem solid black;
     height: 43.4vh;
     z-index: 2;
-    width: 52.4%;
+    width: 52%;
     display: flex;
 }
 
