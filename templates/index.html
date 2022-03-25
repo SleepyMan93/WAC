@@ -1,14 +1,22 @@
 {% extends "base.html" %}
 {% block content %}
 
-<section class="container-fluid green reveal">
-    <div id="greenBanner" class="row sticky active"></div>
-    <div class="row hidden-text">
-        <div class="col-3 icon">
-            <img class="img-fluid image-cover" id="wacIcon" src="static/images/wac_circle_icon_green.png" alt="">
-        </div>
-        <div class="col-9 text-holder">
-            <img src="static/images/Wac_Text.png" alt="">
+<head>
+
+    {% block extra_styles %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='slick/slick-theme.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='slick/slick.css') }}"/>
+    {% endblock %}
+
+</head>
+
+<section class="container-fluid landing-video">
+    <div class="container-fluid">
+        <div class="container-fluid video">
+            <div class="ratio ratio-16x9">
+                <video src="static/video/Homepage_TextMotion_Stay.mp4" muted disablePictureInPicture autoplay></video>
+            </div>
         </div>
     </div>
 </section>

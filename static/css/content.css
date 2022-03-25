@@ -1,0 +1,16 @@
+/* Video Holder */
+
+.client-video {
+    width: auto;
+    height: 50vh;
+}
+
+.video-holder {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+}
+
+.img-holder {
+    height: 50vh;
+}
