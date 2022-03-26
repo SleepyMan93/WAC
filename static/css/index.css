@@ -1,11 +1,11 @@
 /* Video */
 .landing-video {
     height: fit-content;
-    min-height: 90vh;
+    min-height: 83vh;
   }
   
   .ratio {
-    max-height: 90vh;
+    max-height: 83vh;;
   }
   
   /* Home Section */

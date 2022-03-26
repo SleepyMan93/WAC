@@ -16,5 +16,11 @@ def content_page():
     return render_template('content.html')
 
 
+@app.route("/about_page")
+def about_page():
+    """Function to render the about page"""
+    return render_template('about.html')
+
+
 if __name__ == '__main__':
     app.run(debug=True)

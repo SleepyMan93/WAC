@@ -9,10 +9,20 @@ body {
   overflow: auto;
   overflow-x: hidden;
   text-transform: lowercase;
+  color: whitesmoke;
 }
 
 section{
   min-height: 100vh;
+}
+
+h1 {
+  font-size: calc(3.375rem + 0.1vw);
+  font-weight: 700;
+}
+
+h5 {
+  font-size: calc(1.175rem + 0.1vw);
 }
 
 .container-fluid {
@@ -97,5 +107,5 @@ button {
 
 .landing {
   height: fit-content;
-  min-height: 17.3vh;
+  min-height: 17vh;
 }
