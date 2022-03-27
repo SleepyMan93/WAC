@@ -1,14 +1,15 @@
 .landing-video {
     height: fit-content;
-    min-height: 90vh;
+    min-height: 83vh;
   }
   
 .ratio {
-    max-height: 90vh;
+    max-height: 83vh;
 }
 
 .about-info {
     min-height: 83vh;
+    padding-bottom: 5vh;
 }
 
 .info-holder {
@@ -33,9 +34,141 @@
 }
 
 .body {
+    display: flex;
     height: 43vh;
+    align-items: flex-end;
 }
 
 .title {
     height: 40vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+.big-title {
+    font-size: calc(6.875rem + 0.1vw);
+}
+
+.center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.partnerships {
+    display: flex;
+    height: 60vh;
+    margin-top: 5vh;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.work-section {  
+    padding-top: 12vh;
+    min-height: 122vh;
+}
+
+.circle-holder {
+    display: flex;
+    height: 58vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    width: 60%;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.circle::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.tap-me {
+    z-index: 2;
+    position: absolute;
+    color: #00f78a;
+}
+
+.tap-title {
+    font-weight: 700;
+    font-size: calc(3.275rem + .3vw);
+}
+
+.partner-vid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-height: 59vh;
+    margin-top: -46vh;
+    z-index: -1;
+}
+
+.partner-vid video {
+    max-width: 100%;
+    max-height: inherit;
+}
+
+.team {
+    margin-top: 5vh;
+}
+
+.team-holder {
+    padding: 0rem 5rem;
+    display: flex;
+    min-height: inherit;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.team-title {
+    font-weight: 700;
+    font-size: calc(4.275rem + .3vw);
+}
+
+.inner-padding {
+    padding-right: 7vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inner-padding .col {
+    flex: 0 0 0%;
+}
+
+.member-name, .member-title {
+    text-transform: capitalize;
+}
+
+.member-name {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.member-title {
+    margin-bottom: 2vh;
+}
+
+.moto {
+    margin-bottom: 3vh;
+}
+
+.headshot-holder, .headshot-holder-josh {
+    height: 40vh;
+}
+
+.headshot-holder-josh {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.bubble-head, .bubble-head-2 {
+    max-width: 100%;
+    height: inherit;
 }
