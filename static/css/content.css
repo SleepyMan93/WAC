@@ -5,6 +5,14 @@
 
 /* Video Holder */
 
+.gorillas {
+    margin-bottom: 20vh;
+}
+
+.base {
+    margin: 23vh 0vh 23vh 0vh;
+}
+
 .client-video {
     max-height: 79vh;
     max-width: 100%;
@@ -12,12 +20,35 @@
 }
 
 .video-holder {
+    background-color: lavenderblush;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    align-content: flex-start;
-    max-height: 79vh;
     margin-bottom: 2rem;
+    padding-left: 3vw;
+}
+
+.base .video-holder {
+    background-color: #f51919;
+    padding-right: 3vw;
+    padding-left: 0vw;
+}
+
+.copy-holder {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+.base .copy-holder {
+    flex-direction: row;
+}
+
+.txt-holder {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 4rem;
 }
 
 .img-section {
@@ -25,8 +56,13 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding-right: 7rem;
+    padding-right: 3rem;
     padding-left: 7rem;
+}
+
+.base .img-section {
+    padding-left: 3rem;
+    padding-right: 7rem;
 }
 
 .img-holder {
@@ -58,10 +94,26 @@
 .img-holder-wide {
     margin-top: 0rem;
     margin-left: 0rem;
-    border-left: 1rem solid black;
-    height: 43vh;
+    height: 55vh;
     display: flex;
-    z-index: 3;
+}
+
+.img-holder-wide:nth-child(1) {
+    margin-top: -1rem;
+}
+
+.img-holder-wide:nth-child(2) {
+    margin-top: -7vw;
+    padding-left: 1vw;
+}
+
+.base .img-holder-wide:nth-child(1) {
+    margin-top: -7vw;
+    padding-left: 1vw;
+}
+
+.base .img-holder-wide:nth-child(2) {
+    margin-top: -1rem;
 }
 
 .img-wide-top {
@@ -83,8 +135,21 @@
     max-height: 6vw;
 }
 
+.logo-holder {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-holder img {
+    max-width: inherit;
+    width: 35%;
+}
+
 .img-long, .img-wide, .img-wide-top {
-    height: 100%;
+    height: inherit;
     width: 100%;
     object-fit: cover;
 }
@@ -133,5 +198,6 @@
 
 .rotate-box-2 img {
     max-height: 47vh;
+    max-width: 100%;
 }
 
