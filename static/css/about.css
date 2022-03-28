@@ -1,6 +1,7 @@
 .landing-video {
     height: fit-content;
-    min-height: 83vh;
+    max-height: 83vh;
+    min-height: 0vh;
   }
   
 .ratio {
@@ -40,7 +41,6 @@
 }
 
 .title {
-    height: 40vh;
     display: flex;
     align-items: flex-end;
 }
@@ -69,6 +69,15 @@
     min-height: 122vh;
 }
 
+.circle-header {
+    display: flex;
+    justify-content: center;
+}
+
+.circle-title {
+    font-weight: bold;
+}
+
 .circle-holder {
     display: flex;
     height: 58vh;
@@ -82,10 +91,33 @@
     border-radius: 50%;
 }
 
-.circle::after {
+.circle::after, .circle-hidden::after {
     content: "";
     display: block;
+}
+
+.circle-hidden::after {
     padding-bottom: 100%;
+}
+
+.circle::after {
+    padding-bottom: 100%;
+}
+
+.circle-hidden {
+    position: absolute;
+    width: 0%;
+    background-color: white;
+    border-radius: 50%;
+    transition: 1s ease-in-out;
+}
+
+.circle-reveal {
+    z-index: 3;
+    background-color: rgb(0 0 0);
+    width: 25%;
+    animation: two 2s infinite;
+    animation-direction: alternate;;
 }
 
 .tap-me {
@@ -97,6 +129,18 @@
 .tap-title {
     font-weight: 700;
     font-size: calc(3.275rem + .3vw);
+}
+
+.reveal-text {
+    text-align: center;
+    z-index: 3;
+    display: none;
+    position: absolute;
+    max-width: 18vw;
+}
+
+.hidden-text {
+    color: white;
 }
 
 .partner-vid {
@@ -171,4 +215,42 @@
 .bubble-head, .bubble-head-2 {
     max-width: 100%;
     height: inherit;
+}
+
+.see-work {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.see-work img {
+    max-width: 100%;
+}
+
+.work-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.work-title {
+    font-size: calc(2.975rem + 0.1vw);
+    font-weight: 700;
+}
+
+.work-button::after {
+    content: "";
+    display: block;
+    padding: 50%;  
+}
+
+.nav-link {
+    color: #00f78a;
+}
+
+.nav-link:hover {
+    color: #00f78a;
 }
