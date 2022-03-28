@@ -8,6 +8,7 @@
 .client-video {
     max-height: 79vh;
     max-width: 100%;
+    z-index: 2;
 }
 
 .video-holder {
@@ -46,10 +47,18 @@
     justify-content: center;
 }
 
+.img-holder-vid {
+    height: 85vh;
+    display: flex;
+    z-index: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .img-holder-wide {
     margin-top: 0rem;
     margin-left: 0rem;
-    border-bottom: 1rem solid black;
+    border-left: 1rem solid black;
     height: 43vh;
     display: flex;
     z-index: 3;
@@ -60,10 +69,10 @@
 }
 
 .img-holder-bottom {
-    margin-top: -23.3rem;
+    margin-top: -25.3rem;
     margin-left: 40vw;
-    border-top: 1rem solid #00f78a;
-    border-left: 1rem solid #00f78a;
+    border-top: 1rem solid #000000;
+    border-left: 1rem solid #000000;
     height: 50vh;
     z-index: 3;
     width: 58%;
@@ -78,6 +87,10 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+.stephen {
+    object-position: bottom;
 }
 
 .img-long {
@@ -102,3 +115,23 @@
     display: flex;
     justify-content: center;
 }
+
+.collage {
+    margin-top: 10vh;
+}
+
+.rotate-box, .rotate-box-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.rotate-box img {
+    max-height: 47vh;
+}
+
+
+.rotate-box-2 img {
+    max-height: 47vh;
+}
+
