@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 
+{% block extrajs %}
+<script src="/static/js/jquery.flip.min.js"></script>
+{% endblock %}
+
 {% block extra_styles %}
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/content.css') }}">
 {% endblock %}
@@ -36,23 +40,30 @@
 </section>
 
 <section class="container-fluid suns">
-    <div class="container-fluid">
-            <div class="col-12 video-holder">
-                <video src="/static/video/suns_content_vid.mp4" class="client-video" controls="" muted="" disablepictureinpicture="" autoplay="" loop=""></video>
+    <div class="container-fluid copy-holder">
+        <div class="col-md-5">
+            <div class="col logo-holder">
+                <img src="/static/images/suns.png" alt="Gorillas Logo">
             </div>
+            <div class="col txt-holder">
+                <h4>
+                    wac in collaboration with gorillas. The freshest delivery service in North London. <br /><br />
+                    from digital content to fully fledged video campaigns, we've done it all. from digital content to fully fledged video campaigns, we've done it all.
+                    from digital content to fully fledged video campaigns, we've done it all.
+                </h4>
+            </div>
+        </div>
+        <div class="col-md-7 video-holder">
+            <video src="/static/video/suns_content_vid.mp4" class="client-video" controls="" muted="" disablepictureinpicture="" autoplay="" loop=""></video>
+        </div>
     </div>
     
     <div class="container-fluid img-section">
-        <div class="col-6 img-holder-long">
-            <img src="/static/images/suns_content_long.jpeg" alt="Gorillas Street Image" class="img-long">
+        <div class="col-6 img-holder-wide">
+            <img src="/static/images/suns_content_long.jpeg" alt="Gorillas Product Image" class="img-wide">
         </div>
         <div class="col-6 img-holder-wide">
-            <img src="/static/images/suns_2.jpg" alt="Gorillas Street Image" class="img-wide-top">
-        </div>
-        <div class="col-12 bottom-holder">
-            <div class="col-6 img-holder-bottom">
-                <img src="/static/images/suns_3.jpg" alt="Gorillas Street Image" class="img-wide">
-            </div>
+            <img src="/static/images/suns_3.jpg" alt="Gorillas Street Image" class="img-wide-top">
         </div>
     </div>
 </section>
@@ -78,18 +89,21 @@
     
     <div class="container-fluid img-section">
         <div class="col-6 img-holder-wide">
-            <img src="/static/images/base_content_long.JPG" alt="Gorillas Product Image" class="img-wide">
+            <img src="/static/images/stephen_base.png" alt="Gorillas Product Image" class="img-wide">
         </div>
         <div class="col-6 img-holder-wide">
-            <img src="/static/images/stephen_base.png" alt="Gorillas Street Image" class="img-wide-top">
+            <img src="/static/images/base_content_long.JPG" alt="Gorillas Street Image" class="img-wide-top">
         </div>
     </div>
 </section>
 
 <section class="container-fluid collage">
-    <div class="container-fluid rotate-box">
-        <div class="col-sm-4">
+    <div class="container-fluid rotate-box flip">
+        <div class="col-sm-4 front">
             <img src="/static/images/jubeL-box.jpg" alt="">
+        </div>
+        <div class="col-sm-4 back">
+            <h3>Some text here</h3>
         </div>
         <div class="col-sm-4">
             <img src="/static/images/digme_1.jpg" alt="">
@@ -110,5 +124,13 @@
         </div>
     </div>
 </section>
+
+<script>
+    $(function(){
+        $(".flip").flip({
+            trigger: 'hover'
+        });
+    });
+</script>
 
 {% endblock %}

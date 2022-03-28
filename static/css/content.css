@@ -13,6 +13,14 @@
     margin: 23vh 0vh 23vh 0vh;
 }
 
+.background {
+    background-color: lavenderblush;
+    height: 110vh;
+    position: absolute;
+    z-index: -1;
+    margin-top: 9vh;
+}
+
 .client-video {
     max-height: 79vh;
     max-width: 100%;
@@ -26,10 +34,11 @@
     padding-left: 3vw;
 }
 
-.base .video-holder {
-    background-color: #f51919;
+.suns .video-holder {
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-left: 0;
     padding-right: 3vw;
-    padding-left: 0vw;
 }
 
 .copy-holder {
@@ -38,8 +47,16 @@
     flex-wrap: wrap;
 }
 
-.base .copy-holder {
+.suns .copy-holder {
     flex-direction: row;
+}
+
+.suns .txt-holder {
+    margin-top: 0;
+}
+
+.suns h4 {
+    color: rgb(255, 255, 255);
 }
 
 .txt-holder {
@@ -60,9 +77,9 @@
     padding-left: 7rem;
 }
 
-.base .img-section {
-    padding-left: 3rem;
+.suns .img-section {
     padding-right: 7rem;
+    padding-left: 3rem;
 }
 
 .img-holder {
@@ -98,7 +115,7 @@
     display: flex;
 }
 
-.img-holder-wide:nth-child(1) {
+.gorillas .img-holder-wide:nth-child(1), .base .img-holder-wide:nth-child(1) {
     margin-top: -1rem;
 }
 
@@ -107,13 +124,15 @@
     padding-left: 1vw;
 }
 
-.base .img-holder-wide:nth-child(1) {
-    margin-top: -7vw;
+.suns .img-holder-wide:nth-child(2) {
+    margin-top: -1rem;
     padding-left: 1vw;
 }
 
-.base .img-holder-wide:nth-child(2) {
-    margin-top: -1rem;
+.suns .img-holder-wide:nth-child(1) {
+    margin-top: -7rem;
+    margin-left: 0rem;
+    display: flex;
 }
 
 .img-wide-top {
@@ -162,7 +181,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-    object-position: left;
+    object-position: top;
 
 }
 
@@ -191,13 +210,14 @@
     flex-wrap: wrap;
 }
 
-.rotate-box img {
-    max-height: 47vh;
-}
-
-
-.rotate-box-2 img {
-    max-height: 47vh;
+.rotate-box img, .rotate-box-2 img {
+    min-height: 50vh;
     max-width: 100%;
+    object-fit: cover;
 }
 
+.flip .back {
+    background: #2184cd;
+    color: #fff;
+    text-align: center;
+}
