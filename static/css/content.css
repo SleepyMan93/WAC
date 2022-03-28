@@ -210,10 +210,17 @@
     flex-wrap: wrap;
 }
 
-.rotate-box img, .rotate-box-2 img {
+.rotate-box img, .rotate-box-2 img, .flip img {
     min-height: 50vh;
     max-width: 100%;
     object-fit: cover;
+}
+
+.flip {
+    min-height: 50vh;
+    width: 33.33333%;
+    padding: 0;
+    margin: 0;
 }
 
 .flip .back {
