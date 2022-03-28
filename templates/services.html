@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+
+{% block extra_styles %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/services.css') }}">
+{% endblock %}
+
+{% block content %} 
+
+<section class="container-fluid landing-video">
+    <div class="container-fluid">
+        <div class="container-fluid video">
+            <div class="ratio ratio-16x9">
+                <video src="/static/video/service_logo.mp4" preload="true" muted disablePictureInPicture autoplay loop></video>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container-fluid service-info">
+    <div class="container-fluid">
+        <div class="col-12 title-holder">
+            <h1>what we can offer</h1>
+        </div>
+    </div>
+    <div class="container-fluid services">
+        <div class="col-6 body">
+            <h5>In a nutshell wac is here to amplify and bring your vision to life through
+                the medium of digital content. Our capabailities span across providing
+                assets for social, performance, OOH and BTL imagery. <br /><br />
+                
+                we know what good content looks like and we aren't afraid to say it.
+                wac is formed by a team of expert creatives with years of experience
+                in the digital and advertising space. <br /><br />
+
+                we are with you from concept to delivery and always have your primary
+                ideas at its core. We'll fidn what makes your business, campaign, production
+                or service special and make it shine! <br /><br />
+
+                wac has worked with global brands from the likes of Adidas, Jamie Oliver,
+                Gorillas & Digme Fitness.
+            </h5>
+        </div>
+        <div class="col-6 logo-holder">
+            <img src="/static/images/service_graphic.png" alt="Service Graphic">
+        </div>
+    </div>
+</section>
+
+<section class="container-fluid testimonial">
+    <div class="container-fluid testimonial-holder">
+        <div class="col-6 testimonial-carousel">
+            <div class="testimonial-view">
+                <div id="testimonialCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                            <div class="testimonial-block">
+                                <div class="row">
+                                    <div class="col img-holder">
+                                        <div class="testimonial-block_user">
+                                            <div class="testimonial-block-image">
+                                                <img src="/static/images/gorillas_logo_white.png" alt="User">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col txt-holder">
+                                        <div class="testimonial-block_content">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequuntur repellendus nemo suscipit explicabo veniam similique quaerat vitae!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <div class="testimonial-block">
+                                <div class="row">
+                                    <div class="col img-holder">
+                                        <div class="testimonial-block_user">
+                                            <div class="testimonial-block-image">
+                                                <img src="/static/images/base.png" alt="User">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col txt-holder">
+                                        <div class="testimonial-block_content">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequuntur repellendus nemo suscipit explicabo veniam similique quaerat vitae!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--
+                    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    -->
+                </div>
+            </div>
+        </div>
+        <img src="/static/images/testimonial-graphic.png" alt="Testimonial Holder">
+    </div>
+</section>
+
+<section class="container-fluid work-slide">
+    <div class="container-fluid">
+        <div class="col-12 title-holder">
+            <h1>view our projects</h1>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

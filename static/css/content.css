@@ -224,7 +224,11 @@
 }
 
 .flip .back {
-    background: #2184cd;
+    display: flex;
+    background: #000000;
     color: #fff;
     text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }

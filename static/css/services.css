@@ -1,0 +1,89 @@
+.landing-video {
+    height: fit-content;
+    max-height: 83vh;
+    min-height: 0vh;
+  }
+  
+.ratio {
+    max-height: 83vh;
+}
+
+.service-info, .testimonial, .work-slide {
+    margin-top: 15vh;
+}
+
+.testimonial {
+    display: flex;
+}
+
+.title-holder {
+    display: flex;
+    justify-content: center;
+}
+
+.services {
+    display: flex;
+    margin-top: 9vh;
+}
+
+.logo-holder {
+    display: flex;
+    max-height: 59vh;
+    justify-content: center;
+}
+
+.logo-holder img {
+    max-width: 100%;
+    max-height: inherit;
+}
+
+.body {
+    display: flex;
+    padding-left: 4vw;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.body h5 {
+    max-width: 75%;
+}
+
+.testimonial-holder {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.testimonial-holder img {
+    max-width: 100%;
+    max-height: 79vh;
+}
+
+.testimonial-carousel {
+    position: absolute;
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-block .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.txt-holder {
+    padding: 0rem 3rem;
+    margin-top: 4vh;
+}
+
+.txt-holder p {
+    text-align: center;
+}
+
+.img-holder {
+    max-width: 13vw;
+    max-height: 6vh;
+}
