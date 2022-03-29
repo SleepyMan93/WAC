@@ -12,6 +12,12 @@
     margin-top: 15vh;
 }
 
+.work-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .testimonial {
     display: flex;
 }
@@ -19,6 +25,7 @@
 .title-holder {
     display: flex;
     justify-content: center;
+    margin-bottom: 8vh;
 }
 
 .services {
@@ -29,24 +36,39 @@
 .logo-holder {
     display: flex;
     max-height: 59vh;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .logo-holder img {
     max-width: 100%;
-    max-height: inherit;
+    max-height: inherit; 
+    padding-left: 2rem;
 }
 
 .body {
     display: flex;
-    padding-left: 4vw;
+    padding-left: 11vw;
     text-align: center;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+
+.body-2 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .body h5 {
     max-width: 75%;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
 }
 
 .testimonial-holder {
@@ -86,4 +108,49 @@
 .img-holder {
     max-width: 13vw;
     max-height: 6vh;
+}
+
+.img-gallery {
+    display: flex;
+    padding: 2rem;
+}
+
+.img-gallery .col-4 {
+    display: flex;
+    justify-content: center;
+}
+
+.img-gallery img {
+    max-height: 65vh;
+    min-width: 33.3333333%;
+
+}
+
+.bottom-text {
+    display: flex;
+}
+
+.title h1 {
+    text-align: center;
+}
+
+.info-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-box {
+    padding-right: 11vw;
+    padding-top: 15vh;
+    padding-left: 6vw;
+    height: 57vh;
+}
+
+.img-box {
+    padding-left: 6vw;
+}
+
+.img-box img {
+    max-height: 56vh;
 }

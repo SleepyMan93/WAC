@@ -25,6 +25,10 @@ h5 {
   font-size: calc(1.175rem + 0.1vw);
 }
 
+video {
+  cursor: pointer;
+}
+
 .container-fluid {
   padding-right: var(--bs-gutter-x, 0rem);
   padding-left: var(--bs-gutter-x, 0rem);
@@ -47,9 +51,37 @@ h5 {
 button {
   border: none;
   text-transform: lowercase;
-  padding: 11px;
-  text-align: center;
-  width: 13rem;
+  color: white;
+  padding-left: 3vw;
+  padding-bottom: 0.5vh;
+  text-align: start;
+  min-width: 20rem;
+  height: 6rem;
+  font-size: 3rem;
+  font-weight: 900;
+  border-radius: 37px;
+  background-size: 115% 102%;
+
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.SendEmail:hover {
+  background-position: 100% 120%;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.SendEmail:focus {
+  outline: none;
+}
+
+.SendEmail {
+  background-image: linear-gradient(115deg, #00ff8e, #008d4e, #013e25, #000, #000);
 }
 
 .nav-link:hover {

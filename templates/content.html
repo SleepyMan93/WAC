@@ -2,6 +2,7 @@
 
 {% block extrajs %}
 <script src="/static/js/jquery.flip.min.js"></script>
+<script src="/static/js/lazyload.min.js"></script>
 {% endblock %}
 
 {% block extra_styles %}
@@ -24,7 +25,7 @@
                 </h4>
             </div>
         </div>
-        <div class="col-md-7 video-holder">
+        <div class="col-md-7 video-holder left">
             <video src="/static/video/gorilla_2_vid.mp4" class="client-video" controls muted disablepictureinpicture autoplay loop></video>
         </div>
     </div>
@@ -53,16 +54,16 @@
                 </h4>
             </div>
         </div>
-        <div class="col-md-7 video-holder">
+        <div class="col-md-7 video-holder right">
             <video src="/static/video/suns_content_vid.mp4" class="client-video" controls="" muted="" disablepictureinpicture="" autoplay="" loop=""></video>
         </div>
     </div>
     
     <div class="container-fluid img-section">
-        <div class="col-6 img-holder-wide">
+        <div class="col-6 img-holder-wide left" id="left-slide">
             <img src="/static/images/suns_content_long.jpeg" alt="Gorillas Product Image" class="img-wide">
         </div>
-        <div class="col-6 img-holder-wide">
+        <div class="col-6 img-holder-wide right" id="right-slide">
             <img src="/static/images/suns_3.jpg" alt="Gorillas Street Image" class="img-wide-top">
         </div>
     </div>
@@ -82,7 +83,7 @@
                 </h4>
             </div>
         </div>
-        <div class="col-md-7 video-holder">
+        <div class="col-md-7 video-holder left">
             <video src="/static/video/base_content_vid.mp4" class="client-video" controls muted disablepictureinpicture autoplay loop></video>
         </div>
     </div>
