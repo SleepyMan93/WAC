@@ -65,7 +65,7 @@
 }
 
 .work-section {  
-    padding-top: 12vh;
+    padding-top: 10vh;
     min-height: 122vh;
 }
 
@@ -82,13 +82,16 @@
     display: flex;
     height: 58vh;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .circle {
     width: 60%;
     background-color: white;
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .circle::after, .circle-hidden::after {
@@ -143,9 +146,13 @@
     color: white;
 }
 
+.expander {
+    margin-top: 40vh;
+}
+
 .partner-vid {
     max-height: 59vh;
-    margin-top: -46vh;
+    margin-top: -23vh;
     z-index: -1;
 }
 
@@ -251,4 +258,5 @@
 .nav-link:hover {
     color: #00f78a;
 }
+
 
