@@ -1,6 +1,3 @@
-import os
-
-
 from flask import Flask, render_template
 
 app = Flask(__name__)
@@ -29,9 +26,3 @@ def about_page():
 def services_page():
     """Function to render the services page"""
     return render_template('services.html')
-
-
-if __name__ == "__main__":
-    app.run(host=os.environ.get("IP"),
-            port=int(os.environ.get("PORT")),
-            debug=False)
