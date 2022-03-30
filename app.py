@@ -22,5 +22,11 @@ def about_page():
     return render_template('about.html')
 
 
+@app.route("/services_page")
+def services_page():
+    """Function to render the services page"""
+    return render_template('services.html')
+
+
 if __name__ == '__main__':
     app.run(debug=True)
