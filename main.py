@@ -4,7 +4,6 @@ app = Flask(__name__, template_folder="templates/")
 
 
 @app.route("/")
-@app.route("/home")
 def home():
     """Renders home page with base template"""
     return render_template('index.html')
