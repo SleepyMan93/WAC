@@ -22,10 +22,8 @@
             <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/our_story.jpg" alt="Our Journey" class="info-photo">
         </div>
         <div class="col-md-6 info-box">
-                <div class="col title">
-                    <h1>Our Story</h1>
-                </div>
                 <div class="col body">
+                    <h1 class="info-title">Our Story</h1>
                     <h5>In a nutshell wac is here to amplify and bring your vision to life through
                         the medium of digital content. Our capabailities span across providing
                         assets for social, performance, OOH and BTL imagery. <br /><br />
@@ -65,16 +63,13 @@
     </div>
 
     <div class="container-fluid partnerships">
-        <div class="col-sm-6 circle-header">
-            <h4 class="circle-title">embedded</h4>
-        </div>
-        <div class="col-sm-6 circle-header">
-            <h4 class="circle-title">extended</h4>
-        </div>
         <div class="col-sm-6 circle-holder">
+            <div class="col circle-header">
+                <h4 class="circle-title">embedded</h4>
+            </div>
             <div class="circle">
                 <div class="tap-me">
-                    <h4 class="tap-title">tap me</h4>
+                    <h3 class="tap-title">tap me</h4>
                 </div>
             </div>
             <div id="grow" class="circle-hidden">
@@ -94,15 +89,18 @@
             </div>
         </div>
         <div class="col-sm-6 circle-holder">
+            <div class="col circle-header">
+                <h4 class="circle-title">extended</h4>
+            </div>
             <div class="circle">
                 <div class="tap-me">
-                    <h4 class="tap-title">tap me</h4>
+                    <h3 class="tap-title">tap me</h4>
                 </div>
             </div>
         </div>
-        <div class="col-12 partner-vid">
-            <video src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/partner_motion.mp4" preload="true" muted disablePictureInPicture autoplay></video>
-        </div>
+    </div>
+    <div class="col-12 partner-vid">
+        <video src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/partner_motion.mp4" preload="true" muted disablePictureInPicture autoplay></video>
     </div>
 </section>
 
@@ -182,6 +180,16 @@
         </div>
     </div>
 </section>
+
+<script type="text/javascript">
+    $('body').flowtype({
+        minimum   : 500,
+        maximum   : 1400,
+        minFont   : 14,
+        maxFont   : 70,
+        fontRatio : 70
+    });
+</script>
 
 <script>
     $('.tap-me').on('click', function(e){

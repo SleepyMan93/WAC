@@ -10,20 +10,22 @@ body {
   overflow-x: hidden;
   text-transform: lowercase;
   color: whitesmoke;
+  font-size: 18px;
 }
 
 section{
   min-height: 83vh;
 }
 
-h1 {
-  font-size: calc(3.375rem + 0.1vw);
-  font-weight: 700;
+h1,h2,h3,h4,h5,h6,p {
+  line-height: 1.1;
 }
 
-h5 {
-  font-size: calc(1.175rem + 0.1vw);
-}
+h1 { font-size: 4em; font-weight: 700; }
+h2 { font-size: 4em; }
+h3 { font-size: 3em; }
+h4 { font-size: 2em; }
+h5 { font-size: 1em; }
 
 .container-fluid {
   padding-right: var(--bs-gutter-x, 0rem);
