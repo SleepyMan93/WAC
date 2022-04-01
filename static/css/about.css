@@ -196,10 +196,6 @@
     max-height: inherit;
 }
 
-.team {
-    margin-top: 5vh;
-}
-
 .team-holder {
     padding: 0rem 5rem;
     display: flex;
@@ -241,19 +237,55 @@
     margin-bottom: 3vh;
 }
 
+.team {
+    margin-top: 10rem;
+}
+
+.team-holder .col-sm-12 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 0rem 6rem;
+}
+
 .headshot-holder, .headshot-holder-josh {
-    height: 40vh;
+    height: 24rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headshot-holder {
+    justify-content: flex-end;
 }
 
 .headshot-holder-josh {
-    display: flex;
-    flex-direction: row;
     justify-content: flex-end;
+    margin-top: 15rem;
+}
+
+.headshot-holder-josh .owner-title {
+    margin-bottom: 2.5rem;
 }
 
 .bubble-head, .bubble-head-2 {
     max-width: 100%;
-    height: inherit;
+    height: 35rem;
+}
+
+.bubble-head {
+    height: 27rem;
+}
+
+.owner-title {
+    text-align: center;
+    position: absolute;
+}
+
+.owner-title span {
+    font-weight: bold;
+    font-size: 1em;
 }
 
 .see-work {
