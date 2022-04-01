@@ -1,3 +1,7 @@
+.space {
+    padding: 3.5rem 0rem;
+}
+
 .landing-video {
     height: fit-content;
     max-height: 83vh;
@@ -10,7 +14,6 @@
 
 .about-info {
     min-height: 83vh;
-    padding-bottom: 5vh;
 }
 
 .info-holder {
@@ -74,7 +77,6 @@
 }
 
 .work-section {  
-    padding-top: 10vh;
     min-height: 122vh;
 }
 
@@ -91,7 +93,7 @@
 
 .circle-holder {
     display: flex;
-    height: 70vh;
+    height: 33rem;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -104,6 +106,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.rot-reveal {
+    -webkit-transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+}
+
+.rot-reveal::after {
+    -webkit-transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
 }
 
 .circle::after, .circle-hidden::after {
@@ -130,7 +142,8 @@
 .circle-reveal {
     z-index: 3;
     background-color: rgb(0 0 0);
-    width: 25%;
+    width: 28%;
+    margin-top: 3rem;
     animation: two 2s infinite;
     animation-direction: alternate;;
 }
@@ -141,11 +154,17 @@
     color: #00f78a;
 }
 
-.tap-title {
+.tap-me-2 {
+    z-index: 2;
+    position: absolute;
+    color: #00f78a;
+}
+
+.tap-title, .tap-title-2 {
     font-weight: 700;
 }
 
-.reveal-text {
+.reveal-text, .reveal-text-2 {
     text-align: center;
     z-index: 3;
     display: none;
@@ -153,18 +172,23 @@
     max-width: 18vw;
 }
 
-.hidden-text {
-    color: white;
+.hidden-text, .hidden-text-2 {
+    margin-top: 3rem;
 }
 
-.expander {
-    margin-top: 40vh;
+.hidden-text-2 {
+    color: black;
+}
+
+.hidden-text {
+    color: white;
 }
 
 .partner-vid {
     max-height: 59vh;
     margin-top: -23vh;
     z-index: -1;
+    position: absolute;
 }
 
 .partner-vid video {
@@ -272,3 +296,10 @@
     color: #00f78a;
 }
 
+/* Media Queries */
+
+.rot {
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
