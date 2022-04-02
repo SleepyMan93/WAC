@@ -18,28 +18,29 @@
 
 <section class="container-fluid service-info">
     <div class="container-fluid services">
-        <div class="col-6 body">
-            <div class="col title-holder">
-                <h1>what we can offer</h1>
-            </div>
-            <h5>In a nutshell wac is here to amplify and bring your vision to life through
-                the medium of digital content. Our capabailities span across providing
-                assets for social, performance, OOH and BTL imagery. <br /><br />
-                
-                we know what good content looks like and we aren't afraid to say it.
-                wac is formed by a team of expert creatives with years of experience
-                in the digital and advertising space. <br /><br />
-
-                we are with you from concept to delivery and always have your primary
-                ideas at its core. We'll fidn what makes your business, campaign, production
-                or service special and make it shine! <br /><br />
-
-                wac has worked with global brands from the likes of Adidas, Jamie Oliver,
-                Gorillas & Digme Fitness.
-            </h5>
-        </div>
-        <div class="col-6 logo-holder">
+        <div class="col-md-6 logo-holder">
             <img src="/static/images/service_graphic.png" alt="Service Graphic">
+        </div>
+
+        <div class="col-md-6 body">
+            <div class="col title-holder">
+                <h1>what we can offer</h1> <br>
+                <h5>In a nutshell wac is here to amplify and bring your vision to life through
+                    the medium of digital content. Our capabailities span across providing
+                    assets for social, performance, OOH and BTL imagery. <br /><br />
+                    
+                    we know what good content looks like and we aren't afraid to say it.
+                    wac is formed by a team of expert creatives with years of experience
+                    in the digital and advertising space. <br /><br />
+    
+                    we are with you from concept to delivery and always have your primary
+                    ideas at its core. We'll fidn what makes your business, campaign, production
+                    or service special and make it shine! <br /><br />
+    
+                    wac has worked with global brands from the likes of Adidas, Jamie Oliver,
+                    Gorillas & Digme Fitness.
+                </h5>
+            </div>
         </div>
     </div>
 </section>
@@ -110,24 +111,32 @@
 </section>
 
 <section class="container-fluid work-slide">
-    <div class="container-fluid">
-        <div class="col-12 title-holder">
-            <h1>view our projects</h1>
+    <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-    </div>
-    <div class="container-fluid">
-        <div class="col-12 img-gallery">
-            <div class="col-4 p-2">
-                <img src="/static/images/8greens-slick.jpg" alt="">
-            </div>
-            <div class="col-4 p-2">
-                <img src="/static/images/jamie-slick.jpg" alt="">
-            </div>
-            <div class="col-4 p-2">
-                <img src="/static/images/gorillas-slick.jpg" alt="">
-            </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/jamie-slick.jpg" class="" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/suns-slick.jpg" class="" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/gorillas-slick.jpg" class="" alt="...">
+          </div>
         </div>
-    </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 </section>
 
 <section class="container-fluid bottom-text">
@@ -153,6 +162,13 @@
             </div>
         </div>
 </section>
+
+<script text="text/javascript">
+    $(document).ready(function(){
+        $('#carousel-one').carousel();
+        $('#carousel-two').carousel();
+    })
+</script>
 
 
 {% endblock %}

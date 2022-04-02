@@ -24,19 +24,24 @@
 
 .title-holder {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin-bottom: 8vh;
 }
 
 .services {
     display: flex;
-    margin-top: 9vh;
+    margin-top: 3rem;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 7rem;
 }
 
 .logo-holder {
     display: flex;
-    max-height: 59vh;
-    justify-content: flex-start;
+    max-height: 48vh;
+    justify-content: center;
 }
 
 .logo-holder img {
@@ -47,7 +52,7 @@
 
 .body {
     display: flex;
-    padding-left: 11vw;
+    height: 33rem;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -63,7 +68,13 @@
 }
 
 .body h5 {
-    max-width: 75%;
+    max-width: 100%;
+    text-align: start;
+}
+
+.body h1 {
+    text-align: start;
+    font-size: 3em;
 }
 
 .testimonial {
