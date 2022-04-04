@@ -1,3 +1,7 @@
+section {
+    max-height: auto;
+}
+
 .landing-video {
     height: fit-content;
     max-height: 83vh;
@@ -67,10 +71,9 @@
 
 .body-2 {
     display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+    justify-content: flex-end;
+    padding: 0rem 1rem;
 }
 
 .body h5 {
@@ -143,8 +146,12 @@
 
 }
 
-.bottom-text {
-    display: flex;
+.about-info {
+    min-height: 83vh;
+}
+
+.space {
+    padding: 3.5rem 0rem;
 }
 
 .title h1 {
@@ -153,37 +160,60 @@
 
 .info-holder {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
     justify-content: center;
-    align-items: center;
+    padding: 0rem 6rem;
+}
+
+.info-title {
+    width: 100%;
 }
 
 .info-box {
-    padding-right: 11vw;
-    padding-top: 15vh;
-    padding-left: 6vw;
-    height: 57vh;
+    padding: 0rem 0.5rem;
 }
 
 .img-box {
-    padding-left: 6vw;
+    display: flex;
+    justify-content: flex-end;
+    height: 40rem;
 }
 
-.img-box img {
-    max-height: 56vh;
+.info-photo {
+    max-width: 100%;
+    max-height: 80rem;
+    object-fit: cover;
+}
+
+.projects {
+    margin-bottom: 3rem;
 }
 
 .carousel-control-next {
-    right: -110px;
+    right: -1%;
+    justify-content: flex-end;
 }
 
 .carousel-control-prev {
-    left: -110px;
+    left: -1%;
+    justify-content: flex-start;
+}
+
+#recipeCarousel .carousel-item {
+    transition: transform .6s cubic-bezier(0, 0, 0.33, 1.09);
 }
 
 .card {
     border: 0;
     background-color: transparent;
     height: 25rem;
+}
+
+.card-img, .card-img-bottom, .card-img-top {
+    width: 100%;
+    padding: 0.5rem;
 }
 
 .card-img img {
@@ -208,8 +238,52 @@
 }
 
 /* medium and up screens */
+@media (max-width: 768px) {
+    #recipeCarousel .carousel-inner .carousel-item-end.active,
+    #recipeCarousel .carousel-inner .carousel-item-next {
+      transform: translateX(100%);
+    }
+    
+    #recipeCarousel .carousel-inner .carousel-item-start.active, 
+    #recipeCarousel .carousel-inner .carousel-item-prev {
+      transform: translateX(-100%);
+    }
+
+    .carousel-control-next {
+        right: -2%;
+        justify-content: flex-end;
+    }
+
+    .carousel-control-prev {
+        left: -2%;
+        justify-content: flex-start;
+    }
+}
+
+#recipeCarousel .carousel-inner .carousel-item-end,
+#recipeCarousel .carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+}
+
 @media (min-width: 768px) {
     
+    #recipeCarousel .carousel-inner .carousel-item-end.active,
+    #recipeCarousel .carousel-inner .carousel-item-next {
+      transform: translateX(33.33333333%);
+    }
+    
+    #recipeCarousel .carousel-inner .carousel-item-start.active, 
+    #recipeCarousel .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.33333333%);
+    }
+}
+
+#recipeCarousel .carousel-inner .carousel-item-end,
+#recipeCarousel .carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+}
+
+@media (min-width: 992px) {       
     #recipeCarousel .carousel-inner .carousel-item-end.active,
     #recipeCarousel .carousel-inner .carousel-item-next {
       transform: translateX(25%);
