@@ -70,14 +70,10 @@
 
 .partnerships {
     display: flex;
-    height: 60vh;
+    height: 32rem;
     margin-top: 5vh;
     flex-wrap: wrap;
     flex-direction: row;
-}
-
-.work-section {  
-    min-height: 122vh;
 }
 
 .circle-header {
@@ -169,11 +165,11 @@
     z-index: 3;
     display: none;
     position: absolute;
-    max-width: 18vw;
+    max-width: 13rem;
 }
 
 .hidden-text, .hidden-text-2 {
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 
 .hidden-text-2 {
@@ -197,7 +193,6 @@
 }
 
 .team-holder {
-    padding: 0rem 5rem;
     display: flex;
     min-height: inherit;
     flex-wrap: wrap;
@@ -237,16 +232,11 @@
     margin-bottom: 3vh;
 }
 
-.team {
-    margin-top: 10rem;
-}
-
 .team-holder .col-sm-12 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
-    padding: 0rem 6rem;
 }
 
 .headshot-holder, .headshot-holder-josh {
@@ -320,11 +310,16 @@
     padding: 50%;  
 }
 
-.nav-link {
-    color: #00f78a;
+.expander {
+    padding-top: 19rem;
 }
 
-.nav-link:hover {
+.click-link {
+    color: #00f78a;
+    text-decoration: none;
+}
+
+.click-link:hover {
     color: #00f78a;
 }
 
@@ -334,4 +329,100 @@
     -ms-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
+}
+
+@media (min-width: 300px) and (max-width: 576px) {
+    .circle-holder {
+        height: 22rem;
+    }
+
+    .partner-vid {
+        display: none;
+    }
+
+    .work-section {
+        height: 70rem;
+    }
+
+    .circl-title {
+        font-size: 1.5rem;
+    }
+
+    .tap-title, .tap-title-2 {
+        font-size: 2rem;
+    }
+
+    .circle-reveal {
+        width: 56%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .partner-vid {
+        margin-top: -100%;
+    }
+
+    .partnerships {
+        margin-top: 6rem;
+    }
+
+    .circle-holder {
+        height: 33rem;
+    }
+
+    .work-section {
+        height: 90rem;
+    }
+
+    .headshot-holder-josh {
+        justify-content: flex-end;
+        margin-top: 7rem;
+    }
+}
+
+@media (max-width: 445px) {
+    .bubble-head {
+        height: 23rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .team {
+        margin-top: 4rem;
+    }
+
+    .headshot-holder, .headshot-holder-josh {
+        height: 22rem;
+    }
+
+    .headshot-holder-josh {
+        margin-top: 10rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .partner-vid {
+        margin-top: -13vh;
+    }
+
+    .team-holder {
+        padding: 0rem 5rem;
+    }
+
+    .headshot-holder-josh {
+        margin-top: 7rem;
+    }    
+
+    .bubble-head {
+        height: 28rem;
+    }
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+    .partner-vid {
+        margin-top: -16vh;
+    }
 }
