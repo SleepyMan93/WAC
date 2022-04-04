@@ -46,7 +46,7 @@ h5 { font-size: 1em; }
   height: 10vh;
 }
 
-button {
+.btn-box button {
   border: none;
   text-transform: lowercase;
   color: white;
@@ -122,7 +122,7 @@ button {
   color: white;
 }
 
-.nav-link.active {
+.nav-link:active {
   color: #00f78a;
 }
 

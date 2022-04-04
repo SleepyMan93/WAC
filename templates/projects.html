@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block extra_styles %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/projects.css') }}">
+{% endblock %}
+
+{% block content %} 
+
+<section class="container-fluid">
+    <div class="container-fluid">
+        <h2>Hidden backfaces</h2>
+        <div class="carousel" data-gap="20" data-bfc>
+            <figure>
+            <img src="https://source.unsplash.com/bjhrzvzZeq4/800x533" alt="">
+                <img src="https://source.unsplash.com/EbuaKnSm8Zw/800x533" alt="">
+                <img src="https://source.unsplash.com/kG38b7CFzTY/800x533" alt="">
+                <img src="https://source.unsplash.com/nvzvOPQW0gc/800x533" alt="">
+                <img src="https://source.unsplash.com/mCg0ZgD7BgU/800x533" alt="">
+                <img src="https://source.unsplash.com/VkwRmha1_tI/800x533" alt="">
+                <img src="https://source.unsplash.com/1FWICvPQdkY/800x533" alt="">
+                <img src="https://source.unsplash.com/7mUXaBBrhoA/800x533" alt="">
+            </figure>
+            <nav>
+                <button id="prevButton" class="nav-2 prev">Prev</button>
+                <button id="nextButton" class="nav-2 next">Next</button>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<script src="{{ url_for('static', filename='js/projects.js') }}"></script>
+
+{% endblock %}

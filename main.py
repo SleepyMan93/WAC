@@ -25,3 +25,10 @@ def about_page():
 def services_page():
     """Function to render the services page"""
     return render_template('services.html')
+
+
+@app.route("/projects_page")
+def projects_page():
+    """Function to render hidden projects page"""
+    return render_template('projects.html')
+
