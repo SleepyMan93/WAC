@@ -55,9 +55,9 @@ h5 { font-size: 1em; }
   text-align: start;
   min-width: 20rem;
   height: 6rem;
-  font-size: 3rem;
+  font-size: 2em;
   font-weight: 900;
-  border-radius: 37px;
+  border-radius: 23px;
   background-size: 115% 102%;
 
   -moz-transition: all .4s ease-in-out;
@@ -138,4 +138,44 @@ h5 { font-size: 1em; }
 .landing {
   height: fit-content;
   min-height: 17vh;
+}
+
+.video-holder {
+  min-height: 49vh;
+  display: flex;
+}
+
+.contact-holder {
+  display: flex;
+  align-items: center;
+  padding: 0rem 8vw;
+  flex-wrap: wrap;
+}
+
+.btn-box {
+  display: flex;
+  height: 7vh;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  border: none;
+  flex-direction: row;
+  padding-right: 15vw;
+
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+
+.socials {
+  max-height: 20vh;
+  max-width: 21vw;
 }

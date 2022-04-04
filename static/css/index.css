@@ -413,48 +413,6 @@ section:nth-child(8) {
   min-height: 30vh;
 }
 
-.video-holder {
-  min-height: 49vh;
-  display: flex;
-}
-
-.contact-holder {
-  display: flex;
-  align-items: center;
-  padding: 0rem 8vw;
-  flex-wrap: wrap;
-}
-
-.contact {
-  display: flex;
-  align-items: center;
-  border: none;
-  flex-direction: row;
-  padding-right: 15vw;
-
-}
-
-.socials {
-  max-height: 20vh;
-  max-width: 21vw;
-}
-
-.social-icons {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  cursor: pointer;
-}
-
-.btn-box {
-  display: flex;
-  height: 7vh;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-
-
 @media (max-width: 767px) {
 .slideshow-text {
     font-size: 40px;
