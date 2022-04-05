@@ -116,8 +116,8 @@
     </div>
 </section>
 
-<section class="container-fluid expander space">
-    <div class="container-fluid see-work">
+<section id="moriarty" class="container-fluid expander space">
+    <div class="container-fluid see-work shrink">
         <div class="col-3 work-button">
             <div class="tap-me">
                 <h1 class="work-title">
@@ -125,7 +125,7 @@
                 </h1>
             </div>
         </div>
-        <img src="/static/images/our-work.JPG" alt="See Work">
+        <img class="image-show image-shrink" src="/static/images/our-work.JPG" alt="See Work">
     </div>
 </section>
 
@@ -231,6 +231,22 @@
             $('.reveal-text-2').fadeIn(2000);
         });
     });
+</script>
+
+<script type="text/javascript">
+
+
+var observer = new IntersectionObserver(function(entries) { console.log(entries);
+	if(entries[0]['isIntersecting'] === true) {
+        if(entries[0]['intersectionRatio'] > 0.5)
+            document.querySelector(".see-work").classList.remove('shrink');
+			document.querySelector(".image-show").classList.remove('image-shrink');   
+    }
+}, { threshold: [0.5] });
+
+observer.observe(document.querySelector("#moriarty"));
+
+
 </script>
 
 
