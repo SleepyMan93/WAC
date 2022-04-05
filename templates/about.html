@@ -24,21 +24,24 @@
         <div class="col-md-6 info-box">
                 <div class="col body">
                     <h1 class="info-title">Our Story</h1>
-                    <h5>In a nutshell wac is here to amplify and bring your vision to life through
-                        the medium of digital content. Our capabailities span across providing
-                        assets for social, performance, OOH and BTL imagery. <br /><br />
-                        
-                        we know what good content looks like and we aren't afraid to say it.
-                        wac is formed by a team of expert creatives with years of experience
-                        in the digital and advertising space. <br /><br />
+                    <span>
+                        <h5>
+                            In a nutshell <span class="bold">wac</span> is here to amplify and bring your vision to life through
+                            the medium of <span class="highlight">digital content</span>. Our capabailities span across providing
+                            assets for social, performance, OOH and BTL imagery. <br /><br />
+                            
+                            we know what good content looks like and we aren't afraid to say it.
+                            <span class="bold">wac</span> is formed by a team of expert creatives with years of experience
+                            in the digital and advertising space. <br /><br />
 
-                        we are with you from concept to delivery and always have your primary
-                        ideas at its core. We'll fidn what makes your business, campaign, production
-                        or service special and make it shine! <br /><br />
+                            we are with you from concept to <span class="highlight">delivery</span> and always have your primary
+                            ideas at its core. We'll find what makes your business, campaign, production
+                            or service special and make it <span>shine!</span> <br /><br />
 
-                        wac has worked with global brands from the likes of Adidas, Jamie Oliver,
-                        Gorillas & Digme Fitness.
-                    </h5>
+                            <span class="bold">wac</span> has worked with global brands from the likes of Adidas, Jamie Oliver,
+                            Gorillas & Digme Fitness.
+                        </h5>
+                    </span>
                 </div>
             </div>
         </div>
@@ -67,13 +70,12 @@
             <div class="col circle-header">
                 <h4 class="circle-title">embedded</h4>
             </div>
-            <div class="circle">
+            <div id="circleFiller" class="circle">
                 <div class="tap-me">
                     <h3 class="tap-title">tap me</h4>
                 </div>
             </div>
             <div id="grow" class="circle-hidden">
-
             </div>
             <div class="reveal-text">
                 <h5 class="hidden-text">
@@ -93,6 +95,7 @@
                 <h4 class="circle-title">extended</h4>
             </div>
             <div class="circle rot-reveal">
+                <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/icon-logo-72dpi.png" alt="">
                 <div class="tap-me-2">
                     <h3 class="tap-title-2">tap me</h4>
                 </div>
@@ -230,6 +233,18 @@
             $(".rot-reveal").toggleClass("rot");
             $('.reveal-text-2').fadeIn(2000);
         });
+    });
+</script>
+
+<script>
+    // Getting video element using jQuery
+    var video = $(".bubble-head", ".bubble-head-2");
+
+    // Check if video is ready to play
+    $(video).on('canplaythrough', function () {
+        $(video).mouseover(function () {
+            $(this).get(0).play();
+        })
     });
 </script>
 

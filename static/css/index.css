@@ -235,14 +235,14 @@ line-height: 0.8;
 
 .gorillaVid, .digmeVid {
 max-width: 90vw;
-height: 80vh;
+height: 60vh;
 }
 
 .carousel-item-background {
 z-index: 100;
 position: absolute;
 width: 100vw;
-height: 100vh;
+height: 90vh;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -432,8 +432,8 @@ section:nth-child(8) {
 .reveal{
   position: relative;
   transform: translateY(40px);
-  opacity: 0.1;
-  transition: 1.5s all ease;
+  opacity: 0.9;
+  transition: 1s all ease;
 }
 
 .reveal.active{

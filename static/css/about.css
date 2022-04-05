@@ -25,6 +25,18 @@
     padding: 0rem 6rem;
 }
 
+.bold {
+    color: #00f78a;
+    font-style: oblique;
+    font-weight: 900;
+}
+
+.highlight {
+    color: white;
+    font-style: oblique;
+    font-weight: 900;
+}
+
 .info-photo {
     max-width: 100%;
     max-height: 80rem;
@@ -75,14 +87,15 @@
 .partnerships {
     display: flex;
     height: 32rem;
-    margin-top: 5vh;
+    margin-top: 4rem;
     flex-wrap: wrap;
     flex-direction: row;
 }
 
 .circle-header {
     width: 100%;
-    max-height: 3rem;
+    max-height: 5rem;
+    padding-bottom: 3rem;
     display: flex;
     justify-content: center;
 }
@@ -100,12 +113,20 @@
 }
 
 .circle {
-    width: 60%;
-    background-color: white;
+    width: 67%;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.circle img {
+    width: 100%;
+    transform: rotate(-136deg);
+}
+
+#circleFiller {
+    background-color: white;
 }
 
 .rot-reveal {
@@ -142,8 +163,8 @@
 .circle-reveal {
     z-index: 3;
     background-color: rgb(0 0 0);
-    width: 28%;
-    margin-top: 3rem;
+    width: 31%;
+    margin-top: 5rem;
     animation: two 2s infinite;
     animation-direction: alternate;;
 }
@@ -169,11 +190,8 @@
     z-index: 3;
     display: none;
     position: absolute;
-    max-width: 13rem;
-}
-
-.hidden-text, .hidden-text-2 {
-    margin-top: 4rem;
+    max-width: 28%;
+    margin-top: 6rem;
 }
 
 .hidden-text-2 {
@@ -340,9 +358,9 @@
 /* Media Queries */
 
 .rot {
-    -ms-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
+    -ms-transform: rotate(136deg);
+    -webkit-transform: rotate(136deg);
+    transform: rotate(136deg);
 }
 
 @media (min-width: 300px) and (max-width: 576px) {
@@ -430,13 +448,24 @@
     .bubble-head {
         height: 28rem;
     }
+
+    .circle-reveal {
+        margin-top: 5rem;
+    }
 }
 
 @media (min-width: 1200px) {
+    .circle-reveal {
+        margin-top: 4.8rem;
+    }
 }
 
 @media (min-width: 1400px) {
     .partner-vid {
         margin-top: -16vh;
+    }
+
+    .circle-reveal {
+        margin-top: 3.4rem;
     }
 }
