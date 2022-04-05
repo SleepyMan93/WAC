@@ -6,19 +6,20 @@
 
 {% block content %} 
 
-<section class="container-fluid">
+<h1>Projects Reel</h1>
+
+<section class="container-fluid image3D">
     <div class="container-fluid">
-        <h2>Projects Reel</h2>
         <div class="carousel" data-gap="20" data-bfc>
             <figure>
-            <img src="https://source.unsplash.com/bjhrzvzZeq4/800x533" alt="">
-                <img src="https://source.unsplash.com/EbuaKnSm8Zw/800x533" alt="">
-                <img src="https://source.unsplash.com/kG38b7CFzTY/800x533" alt="">
-                <img src="https://source.unsplash.com/nvzvOPQW0gc/800x533" alt="">
-                <img src="https://source.unsplash.com/mCg0ZgD7BgU/800x533" alt="">
-                <img src="https://source.unsplash.com/VkwRmha1_tI/800x533" alt="">
-                <img src="https://source.unsplash.com/1FWICvPQdkY/800x533" alt="">
-                <img src="https://source.unsplash.com/7mUXaBBrhoA/800x533" alt="">
+            <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/WAC_OldSpike-02.jpg" alt="Spike Reel">
+                <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/gorillas_content_1.jpg" alt="Gorillas Reel">
+                <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/RGC.jpeg" alt="RGC Reel">
+                <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/jamie-reel.jpg" alt="Jamie Oliver Reel">
+                <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/digme_2.jpg" alt="Digme Reel">
+                <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/bxr_reel.jpg" alt="BXR Reel">
+                <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/8greens_box.jpg" alt="8Greens Reel">
+                <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/suns-slick.jpg" alt="Suns Reel">
             </figure>
             <nav>
                 <button id="prevButton" class="nav-2 prev">Prev</button>
@@ -28,6 +29,42 @@
     </div>
 </section>
 
+<section class="container-fluid">
+    <div class="app-videos col-12">
+        <div class="video-container">
+            <video src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/pasta_vid_mobile.mp4#t=0.5" class="video-player"></video>
+        </div>
+
+        <div class="video-container">
+            <video src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/Gorillas+Emanuel+9x16+V9.mp4#t=1.1" class="video-player"></video>
+        </div>
+    </div>
+</section>
+
 <script src="{{ url_for('static', filename='js/projects.js') }}"></script>
+
+<script type="text/javascript">
+    $('body').flowtype({
+        minimum   : 500,
+        maximum   : 1400,
+        minFont   : 14,
+        maxFont   : 70,
+        fontRatio : 70
+    });
+</script>
+
+<script type="text/javascript">
+    // Getting video element using jQuery
+    const video = document.querySelectorAll('video');
+
+    // Check if video is ready to play
+    $(video).on('canplay', function () {
+        $(video).mouseover(function () {
+            $(this).get(0).play();
+        }).mouseout(function () {
+            $(this).get(0).pause();
+        })
+    });
+</script>
 
 {% endblock %}
