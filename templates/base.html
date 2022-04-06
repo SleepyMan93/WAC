@@ -36,26 +36,7 @@
     {% block content %}
     {% endblock %}
 
-    <footer>
-            <div class="container-fluid video video-holder">
-                <div class="col-12 contact-holder">
-                    <div class="col-lg-5 btn-box">
-                        <button class="SendEmail">contact</button>
-                    </div>
-                    <div class="col-lg-7 contact">
-                            <div class="col social-icons">
-                                <video class="socials" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/FacebookSocial_Icon(Updated).mp4" disablePictureInPicture></video>
-                            </div>
-                            <div class="col social-icons">
-                                <video class="socials" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/InstaSocial_Icon(Updated).mp4" disablePictureInPicture></video>
-                            </div>
-                            <div class="col social-icons">
-                                <video class="socials" src="https://s3.console.aws.amazon.com/s3/object/wac-version?region=eu-west-2&prefix=static/video/LinkedInSocial_Icon%28Updated%29.mp4" disablePictureInPicture></video>
-                            </div>
-                    </div>
-                </div>
-            </div>
-    </footer>
+    
     {% block scripts %}
     <script src="{{ url_for('static', filename='js/email.js') }}"></script>
     {% endblock %}

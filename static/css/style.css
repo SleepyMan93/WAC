@@ -110,6 +110,10 @@ h5 { font-size: 1em; }
   color: #00f78a;
 }
 
+.navbar-light .navbar-nav .nav-link.active:hover {
+  color: #00f78a;
+}
+
 .navbar-light .navbar-nav .nav-link {
   color: white;
 }
@@ -161,6 +165,7 @@ h5 { font-size: 1em; }
 #imgHolder {
   margin-left: 0;
   margin: 6px;
+  padding-left: 1rem;
   margin-right: auto;
   display: flex;
   width: fit-content;

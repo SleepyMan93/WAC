@@ -66,7 +66,7 @@
     </div>
 </section>
 
-<section class="container-fluid client-videos">
+<section id="firstSlider" class="container-fluid client-videos">
     <div class="carousel-item-background">
         <video class="gorillaVid" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/gorrilas_vid.mp4" controls preload="metadata" disablePictureInPicture></video>
     </div>
@@ -105,60 +105,35 @@
     </div>
 </section>
 
+<footer>
+    <div class="container-fluid video video-holder">
+        <div class="col-12 contact-holder">
+            <div class="col-lg-5 btn-box">
+                <button class="SendEmail">contact</button>
+            </div>
+            <div class="col-lg-7 contact">
+                    <div class="col social-icons">
+                        <a href="#">
+                            <video onmouseover="this.play()" class="socials" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/FacebookSocial_Icon(Updated).mp4" disablePictureInPicture></video>
+                        </a>
+                    </div>
+                    <div class="col social-icons">
+                        <a href="#">
+                            <video onmouseover="this.play()" class="socials" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/InstaSocial_Icon(Updated).mp4" disablePictureInPicture></video>
+                        </a> 
+                    </div>
+                    <div class="col social-icons">
+                        <a href="#"></a>
+                            <video onmouseover="this.play()" class="socials" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/LinkedInSocial_Icon(Updated).mp4" disablePictureInPicture></video>
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
 <script src="{{ url_for('static', filename='js/index.js') }}"></script>
 <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-
-<script type="text/javascript">
-        $(document).ready(function() {
-        // Get media - with autoplay disabled (audio or video)
-            var media = $('.client-reveal').not("[autoplay='autoplay']");
-            var tolerancePixel = 20;
-
-            function checkMedia(){
-                // Get current browser top and bottom
-                var scrollTop = $(window).scrollTop() + tolerancePixel;
-                var scrollBottom = $(window).scrollTop() + $(window).height() - tolerancePixel;
-
-                media.each(function(index, el) {
-                    var yTopMedia = $(this).offset().top;
-                    var yBottomMedia = $(this).height() + yTopMedia;
-
-                    if(scrollTop < yBottomMedia && scrollBottom > yTopMedia){ 
-                        $(this).get(0).play();
-                    } else {
-                        $(this).get(0).pause();
-                    }
-                });
-            }
-            $(document).on('scroll', checkMedia);
-        });
-</script>
-
-<script type="text/javascript">
-    // Getting video element using jQuery
-    var video = $(".gorillaVid,.digmeVid");
-
-    // Check if video is ready to play
-    $(video).on('canplay', function () {
-        $(video).mouseover(function () {
-            $(this).get(0).play();
-        }).mouseout(function () {
-            $(this).get(0).pause();
-        })
-    });
-</script>
-
-<script>
-    // Getting video element using jQuery
-    var video = $(".socials");
-
-    // Check if video is ready to play
-    $(video).on('canplaythrough', function () {
-        $(video).mouseover(function () {
-            $(this).get(0).play();
-        })
-    });
-</script>
 
 
 {% endblock %}
