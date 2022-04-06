@@ -36,27 +36,26 @@
     <!--Navbar-->
 
     <section class="container-fluid landing">
-        <div class="container-fluid nav-box">
-            <ul class="nav justify-content-end">
+        <nav class="navbar fixed-top  navbar-expand-lg navbar-light">
+            <div class="container-fluid nav-box">
                 <div id="imgHolder" class="container">
                     <a class="navbar-brand justify-content-start" href="#">
                         <img src="static/images/nav_logo.png" alt="">
                     </a>
                 </div>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="{{ url_for('home') }}">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="{{ url_for('content_page') }}">Work</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="{{ url_for('about_page') }}">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ url_for('services_page') }}">Services</a>
-                </li>
-            </ul>
-        </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="{{ url_for('home') }}">Home</a>
+                        <a class="nav-link" href="{{ url_for('content_page') }}">Work</a>
+                        <a class="nav-link" href="{{ url_for('about_page') }}">About</a>
+                        <a class="nav-link" href="{{ url_for('services_page') }}">Services</a>
+                    </div>
+                </div>
+            </div>
+          </nav>
     </section>
 
     {% block content %}
