@@ -103,7 +103,7 @@ h5 { font-size: 1em; }
   position: relative;
   display: block;
   align-items: center;
-  padding-bottom: .5rem;
+  padding-top: 0rem;
 }
 
 .navbar-light .navbar-nav .nav-link.active {

@@ -6,11 +6,34 @@
 
 {% block content %} 
 
+<section class="container-fluid landing">
+    <nav class="navbar fixed-top  navbar-expand-lg navbar-light">
+        <div class="container-fluid nav-box">
+            <div id="imgHolder" class="container">
+                <a class="navbar-brand justify-content-start" href="#">
+                    <img src="static/images/nav_logo.png" alt="">
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+                    <a class="nav-link" href="{{ url_for('content_page') }}">Work</a>
+                    <a class="nav-link" href="{{ url_for('about_page') }}">About</a>
+                    <a class="nav-link active" aria-current="page" href="{{ url_for('services_page') }}">Services</a>
+                </div>
+            </div>
+        </div>
+      </nav>
+</section>
+
 <section class="container-fluid landing-video">
     <div class="container-fluid">
         <div class="container-fluid video">
             <div class="ratio ratio-16x9">
-                <video src="/static/video/service_logo.mp4" preload="true" muted disablePictureInPicture autoplay loop></video>
+                <video src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/WAC+logo+animation+V2+(1).mov" preload="true" muted disablePictureInPicture autoplay></video>
             </div>
         </div>
     </div>

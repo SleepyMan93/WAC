@@ -33,31 +33,6 @@
 </head>
 <body>
 
-    <!--Navbar-->
-
-    <section class="container-fluid landing">
-        <nav class="navbar fixed-top  navbar-expand-lg navbar-light">
-            <div class="container-fluid nav-box">
-                <div id="imgHolder" class="container">
-                    <a class="navbar-brand justify-content-start" href="#">
-                        <img src="static/images/nav_logo.png" alt="">
-                    </a>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="{{ url_for('home') }}">Home</a>
-                        <a class="nav-link" href="{{ url_for('content_page') }}">Work</a>
-                        <a class="nav-link" href="{{ url_for('about_page') }}">About</a>
-                        <a class="nav-link" href="{{ url_for('services_page') }}">Services</a>
-                    </div>
-                </div>
-            </div>
-          </nav>
-    </section>
-
     {% block content %}
     {% endblock %}
 
@@ -69,13 +44,13 @@
                     </div>
                     <div class="col-lg-7 contact">
                             <div class="col social-icons">
-                                <video class="socials" src="static/video/FacebookSocial_IconRotate.mp4" disablePictureInPicture></video>
+                                <video class="socials" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/FacebookSocial_Icon(Updated).mp4" disablePictureInPicture></video>
                             </div>
                             <div class="col social-icons">
-                                <video class="socials" src="static/video/InstaSocial_IconRotate.mp4" disablePictureInPicture></video>
+                                <video class="socials" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/InstaSocial_Icon(Updated).mp4" disablePictureInPicture></video>
                             </div>
                             <div class="col social-icons">
-                                <video class="socials" src="static/video/LinkedInSocial_IconRotate.mp4" disablePictureInPicture></video>
+                                <video class="socials" src="https://s3.console.aws.amazon.com/s3/object/wac-version?region=eu-west-2&prefix=static/video/LinkedInSocial_Icon%28Updated%29.mp4" disablePictureInPicture></video>
                             </div>
                     </div>
                 </div>

@@ -12,6 +12,29 @@
 
 {% block content %}
 
+<section class="container-fluid landing">
+    <nav class="navbar fixed-top  navbar-expand-lg navbar-light">
+        <div class="container-fluid nav-box">
+            <div id="imgHolder" class="container">
+                <a class="navbar-brand justify-content-start" href="#">
+                    <img src="static/images/nav_logo.png" alt="">
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="{{ url_for('home') }}">Home</a>
+                    <a class="nav-link" href="{{ url_for('content_page') }}">Work</a>
+                    <a class="nav-link" href="{{ url_for('about_page') }}">About</a>
+                    <a class="nav-link" href="{{ url_for('services_page') }}">Services</a>
+                </div>
+            </div>
+        </div>
+      </nav>
+</section>
+
 <section class="container-fluid landing-video">
     <div class="container-fluid">
         <div class="container-fluid video">
@@ -22,8 +45,8 @@
     </div>
 </section>
 
-<section class="container-fluid clients reveal">
-    <div class="split-slideshow">
+<section class="container-fluid clients">
+    <div class="split-slideshow sticky active">
         <div class="slideshow">
           <div class="slider">
             <div class="item">
@@ -43,20 +66,20 @@
     </div>
 </section>
 
-<section class="container-fluid client-videos reveal">
+<section class="container-fluid client-videos">
     <div class="carousel-item-background">
         <video class="gorillaVid" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/gorrilas_vid.mp4" controls preload="metadata" disablePictureInPicture></video>
     </div>
 </section>
 
-<section class="container-fluid logo-holder reveal">
+<section class="container-fluid logo-holder">
     <div class="container-fluid">
         <video class="client-reveal" src="static/video/ClientsLogos.mp4" disablePictureInPicture preload="metadata"></video>
     </div>
 </section>
 
-<section class="container-fluid clients reveal">
-    <div class="split-slideshow2">
+<section class="container-fluid clients">
+    <div class="split-slideshow2 sticky active">
         <div class="slideshow2">
           <div class="slider2">
             <div class="item2">
@@ -76,13 +99,11 @@
     </div>
 </section>
 
-<section class="container-fluid client-videos reveal">
+<section class="container-fluid client-videos">
     <div class="carousel-item-background">
         <video class="digmeVid" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/digmeVid.mp4" controls preload="metadata" disablePictureInPicture></video>
     </div>
 </section>
-
-<div class="container-fluid spacer2"></div>
 
 <script src="{{ url_for('static', filename='js/index.js') }}"></script>
 <script src="{{ url_for('static', filename='js/script.js') }}"></script>
@@ -111,47 +132,6 @@
             }
             $(document).on('scroll', checkMedia);
         });
-</script>
-
-
-<script type="text/javascript">
-     $(window).scroll(function() {                  // assign scroll event listener
-
-        var fixmeTop = $('.split-slideshow').offset().top; // get initial position of the elements
-        var currentScroll = $(window).scrollTop(); // get current position
-
-        if (currentScroll >= fixmeTop) {           // apply position: fixed if you
-            $('.split-slideshow').addClass('sticky active').css({                      // scroll to that element or below it
-                "z-index": "-1",
-            });
-        } else {                                   // apply position: static
-            $('.nav-box').css({                      // if you scroll above it
-                "position": 'fixed',
-                "z-index": "100",
-                "background-color": "black"
-            });
-        }
-    });
-</script>
-
-<script type="text/javascript">
-    $(window).scroll(function() {                  // assign scroll event listener
-
-    var fixmeTop = $('.split-slideshow2').offset().top; // get initial position of the elements
-    var currentScroll = $(window).scrollTop(); // get current position
-
-    if (currentScroll >= fixmeTop) {           // apply position: fixed if you
-        $('.split-slideshow2').addClass('sticky active').css({                      // scroll to that element or below it
-            "z-index": "-1",
-        });
-    } else {                                   // apply position: static
-        $('.nav-box').css({                      // if you scroll above it
-            "position": 'fixed',
-            "z-index": "100",
-            "background-color": "black"
-        });
-    }
-});
 </script>
 
 <script type="text/javascript">
