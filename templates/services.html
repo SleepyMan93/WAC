@@ -227,6 +227,8 @@
     </div>
 </section>
 
+<script src="{{ url_for('static', filename='js/carousel.js') }}"></script>
+
 <script type="text/javascript">
     $('body').flowtype({
         minimum   : 500,
@@ -235,9 +237,7 @@
         maxFont   : 70,
         fontRatio : 70
     });
-</script>
 
-<script text="text/javascript">
     $(document).ready(function(){
         $('#testimonialCarousel').carousel();
         $('#recipeCarousel').carousel();

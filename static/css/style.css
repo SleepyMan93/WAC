@@ -132,15 +132,6 @@ h5 { font-size: 1em; }
   min-height: 7.5rem;
 }
 
-.nav-link.active {
-  color: #00f78a;
-}
-
-.landing {
-  height: fit-content;
-  min-height: 17vh;
-}
-
 .video-holder {
   min-height: 49vh;
   display: flex;
@@ -179,4 +170,39 @@ h5 { font-size: 1em; }
 .socials {
   max-height: 17vh;
   max-width: 21vw;
+}
+
+/* media queries */
+@media (min-width: 1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+      max-width: 1200px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+      max-width: 1300px;
+  }
+
+  .img-holder-wide:nth-child(2) {
+      height: 24.5rem;
+  }
+
+  .suns .img-holder-wide:nth-child(1) {
+      height: 24.5rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+      max-width: 1400px;
+  }
+
+  .img-holder-wide:nth-child(2) {
+      height: 27.5rem;
+  }
+
+  .suns .img-holder-wide:nth-child(1) {
+      height: 27.5rem;
+  }
 }

@@ -2,8 +2,6 @@
 
 {% block extrajs %}
 <script src="{{ url_for('static', filename='js/jquery.flip.min.js') }}"></script>
-<script src="{{ url_for('static', filename='js/jquery.transit.js') }}"></script>
-<script src="/static/js/lazyload.min.js"></script>
 {% endblock %}
 
 {% block extra_styles %}
@@ -12,7 +10,7 @@
 
 {% block content %}
 
-<section class="container-fluid gorillas">
+<section class="container gorillas" id="gorillasSection">
     <div class="container-fluid copy-holder">
         <div class="col-md-5">
             <div class="col logo-holder">
@@ -20,77 +18,79 @@
             </div>
             <div class="col txt-holder">
                 <h5>
-                    wac in collaboration with gorillas. The freshest delivery service in North London.
+                    We are proud to say wac has worked with Gorillas since their UK launch.
+                    Since our relationship started we have worked together to produce countless pieces of video and photography content. 
+                    Supporting their social channels with new area launch films, in depth interviews with riders, partnership spotlights with some of their most valued brands and OOH campaigns seen across London by millions.                     
                 </h5>
             </div>
         </div>
-        <div id="one" class="col-md-7 video-holder-2">
+        <div class="col-md-7 video-holder-2 animate-me left">
             <video src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/gorilla_2_vid.mp4#t=0.5" class="client-video" preload="metadata" controls muted disablepictureinpicture></video>
         </div>
     </div>
     
     <div class="container-fluid img-section">
-        <div id="three" class="col-12 col-md-5 img-holder-wide loading">
+        <div class="col-12 col-md-5 img-holder-wide animate-me down">
             <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/gorilla_long.jpg" alt="Gorillas Delivery" class="img-wide">
         </div>
-        <div id="two" class="col-12 col-md-7 img-holder-wide sqaure loading">
+        <div class="col-12 col-md-7 img-holder-wide animate-me right">
             <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/gorillas_content_2.jpg" alt="Gorillas RTD" class="img-wide-top">
         </div>
     </div>
 </section>
 
-<section class="container-fluid suns">
-    <div class="container-fluid copy-holder">
+<section id="sunsSection" class="container suns">
+    <div id="sunsCopy" class="container-fluid copy-holder">
         <div class="col-md-5">
             <div class="col logo-holder">
-                <img class="lazyload" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/suns.png" alt="Gorillas Logo">
+                <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/suns.png" alt="Gorillas Logo">
             </div>
             <div class="col txt-holder">
                 <h5>
-                    wac in collaboration with gorillas. The freshest delivery service in North London.
+                    As Base's main content partner, we help showcase not only their cloud solution services they provide, but how beneficial they are from a consumer perspective. 
+                    Working closely with the marketing team from concept to delivery producing engaging video and motion graphic content. 
                 </h5>
             </div>
         </div>
-        <div class="col-md-7 video-holder-2 right">
+        <div class="col-md-7 video-holder-2 animate-me right">
             <video src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/suns_content_vid.mp4" class="client-video" controls="" muted="" disablepictureinpicture=""></video>
         </div>
     </div>
     
     <div class="container-fluid img-section">
-        <div class="col-12 col-md-7 img-holder-wide left sqaure" id="left-slide">
-            <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/suns_content_long.jpeg" alt="Suns Drone" class="img-wide">
+        <div class="col-12 col-md-7 img-holder-wide animate-me left">
+            <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/suns_3.jpg" alt="Suns Garden" class="img-wide">
         </div>
-        <div class="col-12 col-md-5 img-holder-wide right" id="right-slide">
-            <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/suns_3.jpg" alt="Suns Garden" class="img-wide-top">
+        <div class="col-12 col-md-5 img-holder-wide animate-me down">
+            <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/suns_content_long.jpeg" alt="Suns Drone" class="img-wide-top">
         </div>
     </div>
 </section>
 
-<section class="container-fluid base">
+<section id="base" class="container gorillas">
     <div class="container-fluid copy-holder">
         <div class="col-md-5">
             <div class="col logo-holder">
-                <img class="lazyload" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/base.png" alt="Gorillas Logo">
+                <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/base.png" alt="Base Logo">
             </div>
             <div class="col txt-holder">
                 <h5>
-                    wac in collaboration with gorillas. The freshest delivery service in North London. <br /><br />
-                    from digital content to fully fledged video campaigns, we've done it all. from digital content to fully fledged video campaigns, we've done it all.
-                    from digital content to fully fledged video campaigns, we've done it all.
+                    We have produced an array of digital content for Suns Lifestyle, they understand the need for premium products and services. 
+                    Working with them on various video and photography briefs we are able to capture stunning lifestyle footage to showcase to their clients. 
                 </h5>
             </div>
         </div>
-        <div class="col-md-7 video-holder-2 left">
-            <video src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/base_content_vid.mp4" class="client-video" controls muted disablepictureinpicture></video>
+        <div class="col-md-7 video-holder-2 animate-me left">
+            <video src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/base_content_vid.mp4" class="client-video" preload="metadata" controls muted disablepictureinpicture></video>
         </div>
     </div>
     
     <div class="container-fluid img-section">
-        <div class="col-12 col-md-5 img-holder-wide">
-            <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/base_content_long.JPG" alt="Base Interview" class="img-wide">
+        <div class="col-12 col-md-5 img-holder-wide animate-me down">
+            <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/base_content_long.JPG" alt="Gorillas Delivery" class="img-wide stephen">
         </div>
-        <div class="col-12 col-md-7 img-holder-wide sqaure">
-            <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/stephen_base.png" alt="Base Onset" class="img-wide-top">
+        <div class="col-12 col-md-7 img-holder-wide animate-me right">
+            <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/stephen_base.png" alt="Base Interview" class="img-wide-top">
         </div>
     </div>
 </section>
@@ -99,7 +99,7 @@
     <div class="container-fluid rotate-box">
         <div class="container flip">
             <div class="col-sm-4 front">
-                <img class="lazyload" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/jubeL-box.jpg" alt="">
+                <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/jubeL-box.jpg" alt="">
             </div>
             <div class="col-sm-4 back">
                 <h3>Some text here</h3>
@@ -158,30 +158,6 @@
         maxFont   : 70,
         fontRatio : 70
     });
-</script>
-
-<script type="text/javascript">
-        $.when(
-            $("#one").animate({right: 500}, 1000).css({"-webkit-transform":"translate(0%)"}, 3000).promise()
-        ).done(function() {
-            $("#two").animate({left: 500}, 1000).css({"-webkit-transform":"translate(0)"}, 3000).promise()
-            .done(function() {
-                $("#three").css({"height":"25.1rem"}, 1000).promise()
-            });
-        });
-</script>
-
-<script>
-    $("img.lazyload").lazyload();
-
-    /*
-    $('.img-holder-wide').each(function(index, element) {
-    
-        setTimeout(function(){
-            element.classList.remove('loading');
-        }, index * 1000);
-    });
-    */
 
     $(function(){
         $(".flip").flip({
@@ -190,4 +166,23 @@
     });
 </script>
 
+<script type="text/javascript">
+   
+    const images = document.querySelectorAll('.animate-me');
+
+    observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.intersectionRatio > 0) {
+            entry.target.classList.add('fancy');
+            } else {
+            entry.target.classList.remove('fancy');
+            }
+        });
+    }, { threshold: [0] });
+
+    images.forEach(image => {
+    observer.observe(image);
+    });
+    
+</script>
 {% endblock %}
