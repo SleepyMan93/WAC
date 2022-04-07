@@ -2,6 +2,7 @@
 .landing-video {
   height: fit-content;
   min-height: 83vh;
+  margin-bottom: 5rem;
 }
 
 .ratio {
@@ -16,6 +17,23 @@ section:nth-child(1){
 
 /* Info Section */
 
+.info-container {
+  display: flex;
+}
+
+.info {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.info-text {
+  margin-left: 42px;
+  margin-right: 46px;
+  font-size: 2.5rem;
+  width: 90%;
+}
+
 .reveal-holder {
   height: 48rem;
   display: flex;
@@ -23,7 +41,7 @@ section:nth-child(1){
 }
 
 .icon-holder {
-  transform: translateX(-50%);
+  transform: translateX(-20rem);
   height: 40rem;
 }
 
@@ -201,8 +219,8 @@ max-width: 90vw;
 height: 60vh;
 }
 
-#firstSlider {
-  height: 79vh;
+#firstSlider .carousel-item-background {
+  height: 77vh;
 }
 
 .carousel-item-background {
@@ -417,17 +435,22 @@ transform-origin:50% 50%;
 
 .spin.fancy {
   transform: rotate(90deg);
-  transition: 1s ease-out;
+  transition-delay: 200ms;
+  transition-duration: 1700ms;
+}
+
+.reveal.fancy {
+  animation: anim1 1.5s cubic-bezier(0, -0.21, 1, 1);
 }
 
 
-@keyframes anim2 {
+/* keyframes */
+
+@keyframes anim1 {
   0% {
     opacity: 0;
-    transform: translateX(20rem);
   }
   100% {
     opacity: 1;
-    transform: scale(1);
   }
 }

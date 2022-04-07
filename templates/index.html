@@ -46,9 +46,17 @@
 </section>
 
 <section class="container-fluid circle-turn">
-    <div class="container-fluid">
-        <div class="col-6 icon-holder">
+    <div class="container-fluid info-container">
+        <div class="col-3 icon-holder">
             <img class="half-icon animate-me spin" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/icon-logo-72dpi.png" alt="WAC Half Icon">
+        </div>
+
+        <div class="col-9 info">
+            <h1 class="info-text animate-me reveal">
+                We know what good content looks like and we aren't afraid to say it <br><br>
+                WAC is formed by a team of expert creatives with years of experience 
+                in the digital and advertising space!
+            </h1>
         </div>
     </div>
 </section>
@@ -82,7 +90,7 @@
 
 <section class="container-fluid logo-holder">
     <div class="container-fluid">
-        <video class="client-reveal" src="static/video/ClientsLogos.mp4" disablePictureInPicture preload="metadata"></video>
+        <video onmouseover="this.play()" class="client-reveal" src="static/video/ClientsLogos.mp4" disablePictureInPicture preload="metadata"></video>
     </div>
 </section>
 
@@ -142,6 +150,16 @@
 
 <script src="{{ url_for('static', filename='js/index.js') }}"></script>
 <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+<script type="text/javascript">
+    $('body').flowtype({
+        minimum   : 500,
+        maximum   : 1400,
+        minFont   : 14,
+        maxFont   : 70,
+        fontRatio : 70
+    });
+</script>
 
 
 {% endblock %}
