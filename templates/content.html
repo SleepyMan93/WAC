@@ -1,9 +1,5 @@
 {% extends "base.html" %}
 
-{% block extrajs %}
-<script src="{{ url_for('static', filename='js/jquery.flip.min.js') }}"></script>
-{% endblock %}
-
 {% block extra_styles %}
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/content.css') }}">
 {% endblock %}
@@ -173,6 +169,10 @@
     </div>
 </section>
 
+
+<script src="{{ url_for('static', filename='js/content.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.flip.min.js') }}"></script>
+
 <script type="text/javascript">
     $('body').flowtype({
         minimum   : 500,
@@ -187,25 +187,5 @@
             trigger: 'hover'
         });
     });
-</script>
-
-<script type="text/javascript">
-   
-    const images = document.querySelectorAll('.animate-me');
-
-    observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.intersectionRatio > 0) {
-            entry.target.classList.add('fancy');
-            } else {
-            entry.target.classList.remove('fancy');
-            }
-        });
-    }, { threshold: [0] });
-
-    images.forEach(image => {
-    observer.observe(image);
-    });
-    
 </script>
 {% endblock %}

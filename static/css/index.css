@@ -16,63 +16,25 @@ section:nth-child(1){
 
 /* Info Section */
 
-section:nth-child(2){
-  min-height: 9rem;
-  max-width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  color: #42455a;
-  background: black;
-} 
-
-#greenBanner {
-  background-color: #00f78a;
-  width: inherit;
-  min-height: 254px;
-  display: flex;
-  align-content: center;
-  margin-top: 40px;
-  margin-bottom: 71px;
-}
-
-.hidden-text {
+.reveal-holder {
+  height: 48rem;
   display: flex;
   align-items: center;
-  position: absolute;
-  min-width: 100%;
-  color: #e0ffff;
-  height: 100vh;
-  margin: 0;
 }
 
-.icon {
-  height: 100%;
-  padding-right: 0rem;
-  display: flex;
-  padding-left: 0;
+.icon-holder {
+  transform: translateX(-50%);
+  height: 40rem;
 }
 
-.text-holder img {
-  max-width: 100%;
-  max-height: 100%;
+.half-icon {
+  height: inherit;
 }
 
-.placeholder-text {
-  font-size: 3vw;
-}
-
-.image-cover {
-  /* height: 50vh; */
-  width: 40vw;
-  object-fit: cover;
-  /* padding-right: 277px; */
-  object-position: right top;
-}
 
 /* Work Section */
 
-section:nth-child(3){
+section:nth-child(4){
   margin-top: 3rem;
   margin-bottom: 5rem;
   height: 150vh;
@@ -404,7 +366,7 @@ max-width: 70%;
 
 /* About */
 
-section:nth-child(5){
+section:nth-child(6){
 min-height: 30vh;
 max-width: 100%;
 display: flex;
@@ -414,7 +376,7 @@ color: #ffffff;
 background: #000000;
 }
 
-section:nth-child(8) {
+section:nth-child(9) {
   min-height: 30vh;
 }
 
@@ -451,4 +413,21 @@ top: 200px;
 /* Used for gear rotation */
 transition: transform 700ms;
 transform-origin:50% 50%;
+}
+
+.spin.fancy {
+  transform: rotate(90deg);
+  transition: 1s ease-out;
+}
+
+
+@keyframes anim2 {
+  0% {
+    opacity: 0;
+    transform: translateX(20rem);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
