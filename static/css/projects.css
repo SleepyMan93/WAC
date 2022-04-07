@@ -57,7 +57,7 @@ h1 {
     flex: 0 0 auto;
     margin: 0 5px;
     cursor: pointer;
-    color: #333;
+    color: #fff;
     background: none;
     border: 1px solid;
     letter-spacing: 1px;
@@ -98,11 +98,17 @@ h1 {
    .video-holder {
     min-height: 22vh;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
 }
 
 @media (max-width: 768px) {
   .image3D {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .app {
     display: none;
   }
 }

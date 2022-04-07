@@ -66,7 +66,7 @@ section:nth-child(1){
 section:nth-child(4){
   margin-top: 11rem;
   margin-bottom: 7rem;
-  height: 150vh;
+  height: 100vh;
 }
 
 section .container{
@@ -249,10 +249,14 @@ section .text-container .text-box h3{
 }
 
 .client-videos {
-  margin-bottom: 8rem;
+  margin-bottom: 2rem;
 }
 
 /* slideshow2 */
+
+section:nth-child(7) {
+  margin-top: 0rem;
+}
 
 .slideshow2 {
   position: absolute;
