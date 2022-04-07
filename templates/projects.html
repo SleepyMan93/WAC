@@ -32,11 +32,11 @@
 <section class="container-fluid">
     <div class="app-videos col-12">
         <div class="video-container">
-            <video src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/pasta_vid_mobile.mp4#t=0.5" class="video-player"></video>
+            <video onmouseover="this.play()" onmouseleave="this.pause()" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/pasta_vid_mobile.mp4#t=0.5" class="video-player"></video>
         </div>
 
         <div class="video-container">
-            <video src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/Gorillas+Emanuel+9x16+V9.mp4#t=1.1" class="video-player"></video>
+            <video onmouseover="this.play()" onmouseleave="this.pause()" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/Gorillas+Emanuel+9x16+V9.mp4#t=1.1" class="video-player"></video>
         </div>
     </div>
 </section>
@@ -50,20 +50,6 @@
         minFont   : 14,
         maxFont   : 70,
         fontRatio : 70
-    });
-</script>
-
-<script type="text/javascript">
-    // Getting video element using jQuery
-    const video = document.querySelectorAll('video');
-
-    // Check if video is ready to play
-    $(video).on('canplay', function () {
-        $(video).mouseover(function () {
-            $(this).get(0).play();
-        }).mouseout(function () {
-            $(this).get(0).pause();
-        })
     });
 </script>
 

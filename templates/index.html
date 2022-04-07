@@ -84,13 +84,13 @@
 
 <section id="firstSlider" class="container-fluid client-videos">
     <div class="carousel-item-background">
-        <video class="gorillaVid" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/gorrilas_vid.mp4" controls preload="metadata" disablePictureInPicture></video>
+        <video onmouseover="this.play()" onmouseleave="this.pause()" class="gorillaVid" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/gorrilas_vid.mp4" controls preload="metadata" disablePictureInPicture></video>
     </div>
 </section>
 
-<section class="container-fluid logo-holder">
+<section id="logos" class="container-fluid logo-holder">
     <div class="container-fluid">
-        <video onmouseover="this.play()" class="client-reveal" src="static/video/ClientsLogos.mp4" disablePictureInPicture preload="metadata"></video>
+        <video onmouseenter="this.play()" class="client-reveal" src="static/video/ClientsLogos.mp4" disablePictureInPicture></video>
     </div>
 </section>
 
@@ -117,7 +117,7 @@
 
 <section class="container-fluid client-videos">
     <div class="carousel-item-background">
-        <video class="digmeVid" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/digmeVid.mp4" controls preload="metadata" disablePictureInPicture></video>
+        <video onmouseover="this.play()" onmouseleave="this.pause()" class="digmeVid" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/digmeVid.mp4" controls preload="metadata" disablePictureInPicture></video>
     </div>
 </section>
 
@@ -160,6 +160,5 @@
         fontRatio : 70
     });
 </script>
-
 
 {% endblock %}
