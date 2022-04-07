@@ -165,6 +165,22 @@ body {
     object-fit: cover;
 }
 
+.rotate-box .back img, .rotate-box-2 .back img {
+    height: 15rem;
+    min-height: 15vh;
+    cursor: pointer;
+}
+
+#smaller {
+    height: 5rem;
+    min-height: 2rem;
+}
+
+.back a {
+    text-decoration: none;
+    color: white;
+}
+
 .flip {
     min-height: 50vh;
     width: 33.33333%;
@@ -250,12 +266,12 @@ body {
 
 @media (min-width: 1200px) {
     .txt-holder {
-        margin-top: 2rem;
-        padding: 0rem 0rem 0rem 2rem;
+        margin-top: 4rem;
+        padding: 0rem 1rem 0rem 2rem;
     }
 
     .suns .txt-holder {
-        padding: 0rem 2rem 0rem 0rem;
+        padding: 0rem 2rem 0rem 1rem;
     }
 
     .copy-holder .col-md-5 {
