@@ -39,7 +39,7 @@
     </div>
 </section>
 
-<section class="container-fluid about-info space">
+<section class="container-fluid about-info">
     <div class="container-fluid info-holder">
         <div class="col-md-6 img-box">
             <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/our_story.jpg" alt="Our Journey" class="info-photo">
@@ -71,7 +71,7 @@
     </div>
 </section>
 
-<section class="container-fluid work-section space">
+<section class="container-fluid work-section">
     <div class="container-fluid info-holder-2">
         <div class="col-12 m5">
             <div class="col-12 center">
@@ -142,7 +142,7 @@
     </div>
 </section>
 
-<section id="moriarty" class="container-fluid expander space">
+<section id="moriarty" class="container-fluid expander">
     <div class="container-fluid see-work shrink">
         <div class="col-3 work-button">
             <div class="tap-me">
@@ -212,7 +212,7 @@
         -->
         <div class="col-sm-12">
             <div class="col-12 col-md-6 headshot-holder">
-                <video src="/static/video/alex_new_shot.mp4" class="bubble-head" preload="true" muted disablepictureinpicture></video>
+                <video onmouseover="this.play()"  src="/static/video/alex_new_shot.mp4" class="bubble-head" preload="true" muted disablepictureinpicture></video>
                 <div class="col owner-title">
                     <h5>
                         <span>Alex</span> <br>
@@ -222,7 +222,7 @@
             </div>
 
             <div class="col-12 col-md-6 headshot-holder-josh" id="josh">
-                <video src="/static/video/josh_new_shot.mp4" class="bubble-head-2" preload="true" muted disablepictureinpicture ></video>
+                <video onmouseover="this.play()"  src="/static/video/josh_new_shot.mp4" class="bubble-head-2" preload="true" muted disablepictureinpicture ></video>
                 <div class="col owner-title">
                     <h5>
                         <span>Josh</span> <br>
@@ -233,6 +233,33 @@
         </div>
     </div>
 </section>
+
+<footer>
+    <div class="container-fluid video video-holder">
+        <div class="col-12 contact-holder">
+            <div class="col-lg-5 btn-box">
+                <button class="SendEmail">contact</button>
+            </div>
+            <div class="col-lg-7 contact">
+                    <div class="col social-icons">
+                        <a href="#">
+                            <video onmouseover="this.play()" class="socials" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/FacebookSocial_Icon(Updated).mp4" disablePictureInPicture></video>
+                        </a>
+                    </div>
+                    <div class="col social-icons">
+                        <a href="#">
+                            <video onmouseover="this.play()" class="socials" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/InstaSocial_Icon(Updated).mp4" disablePictureInPicture></video>
+                        </a> 
+                    </div>
+                    <div class="col social-icons">
+                        <a href="#"></a>
+                            <video onmouseover="this.play()" class="socials" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/LinkedInSocial_Icon(Updated).mp4" disablePictureInPicture></video>
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
 <script type="text/javascript">
     $('body').flowtype({

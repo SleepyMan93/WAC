@@ -34,6 +34,15 @@ section:nth-child(1){
   width: 90%;
 }
 
+.funk {
+  font-weight: 500;
+  font-family: cursive;
+}
+
+.green {
+  color: #00f78a;;
+}
+
 .reveal-holder {
   height: 48rem;
   display: flex;
@@ -453,4 +462,25 @@ transform-origin:50% 50%;
   100% {
     opacity: 1;
   }
+}
+
+/* Media Queries */
+
+@media (min-width: 1450px) {
+  .icon-holder {
+    transform: translateX(-23rem);
+    height: 46rem;
+  }
+
+  .info-text {
+    margin-left: 153px;
+    margin-right: 49px;
+    font-size: 3.5rem;
+    width: 70%;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    font-size: 2rem;
+  }
+
 }
