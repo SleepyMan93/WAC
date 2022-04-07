@@ -95,6 +95,12 @@ h1 {
      height: 100%;
    }
 
+   .video-holder {
+    min-height: 22vh;
+    display: flex;
+    align-items: flex-start;
+}
+
 @media (max-width: 768px) {
   .image3D {
     display: none;

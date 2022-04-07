@@ -199,15 +199,15 @@ body {
 }
 
 .left.fancy {
-    animation: anim1 .7s ease-out;
+    animation: anim1 1s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 .right.fancy {
-    animation: anim2 .7s ease-out;
+    animation: anim2 1s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 .down.fancy {
-    animation: anim3 .7s ease-out;
+    animation: anim3 1.5s cubic-bezier(0.4, 0, 1, 1);
 }
 
 /* keyframes */
@@ -266,7 +266,7 @@ body {
 
 @media (min-width: 1200px) {
     .txt-holder {
-        margin-top: 4rem;
+        margin-top: 3rem;
         padding: 0rem 1rem 0rem 2rem;
     }
 
@@ -277,6 +277,12 @@ body {
     .copy-holder .col-md-5 {
         margin-top: 2rem;
     }
+}
+
+@media (min-width: 1500px) {
+   .txt-holder {
+        margin-top: 4rem;
+   } 
 }
 
 
