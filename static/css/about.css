@@ -1,5 +1,5 @@
 .space {
-    padding: 3.5rem 0rem;
+    padding: 6.5rem 0rem;
 }
 
 .landing-video {
@@ -360,6 +360,7 @@
 .click-link {
     color: #00f78a;
     text-decoration: none;
+    font-size: smaller;
 }
 
 .click-link:hover {
@@ -471,6 +472,10 @@
 
     .work-section {
         min-height: 105vh;
+    }
+
+    #moriarty {
+        margin-top: 12rem;
     }
 }
 

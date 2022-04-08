@@ -96,7 +96,7 @@ section {
 .testimonial {
     display: flex;
     flex-direction: column;
-    height: 58rem;
+    height: 55rem;
 }
 
 .testimonial-holder {
@@ -113,7 +113,8 @@ section {
 
 .testimonial-carousel {
     position: absolute;
-    width: 30%;
+    width: 26%;
+    margin-top: 3rem;
     display: flex;
     align-items: center;
 }
@@ -125,16 +126,18 @@ section {
 }
 
 .txt-holder {
-    margin-top: 4vh;
+    margin-top: 2rem;
 }
 
 .txt-holder p {
     text-align: center;
+    font-weight: 300;
+    font-size: large;
 }
 
 .img-holder {
-    max-width: 13vw;
-    max-height: 6vh;
+    max-width: 13rem;
+    max-height: 3.5rem;
 }
 
 .img-gallery {
@@ -199,7 +202,7 @@ section {
 }
 
 #testimonialCarousel .carousel-item{ 
-    transition: transform 2.5s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+    transition: transform 0.1s cubic-bezier(0.45, 0.05, 0.55, 0.95);
 }
 
 .greeny {
