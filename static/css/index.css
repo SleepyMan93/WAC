@@ -1,7 +1,7 @@
 /* Video */
 .landing-video {
+  min-height: 0vh;
   height: fit-content;
-  min-height: 83vh;
   margin-bottom: 5rem;
 }
 
@@ -46,7 +46,6 @@ section:nth-child(1){
 }
 
 .reveal-holder {
-  height: 48rem;
   display: flex;
   align-items: center;
 }
@@ -249,7 +248,7 @@ section .text-container .text-box h3{
 }
 
 .client-videos {
-  margin-bottom: 2rem;
+  margin-bottom: 7.5rem;
 }
 
 /* slideshow2 */
