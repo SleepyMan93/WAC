@@ -49,18 +49,16 @@
             <div class="col title-holder">
                 <h1>what we can offer</h1> <br>
                 <h5>
-                    <span class="greeny">wac</span> understands that brands are constantly evolving online and having a visual
-                    presence is more important than ever. Everything we produce is at the forefront of
-                    digital media. We listen and gain understanding of your brand proposition and
+                    <span class="green-bold">wac</span> understands that brands are constantly evolving online and having a visual
+                    presence is more important than ever <span class="green-bold">-</span> everything we produce is at the forefront of
+                    digital media <span class="green-bold">-</span> We listen and gain understanding of your brand proposition and
                     produce an effective message delivery. <br /><br />
                     
-                    wac can become an <span class="bold">extension</span> of your business, a one stop shop for all your
-                    content and digital assets. <br /><br />
-    
-                    We effectively tell your brand story through creative conceptualisation, pre 
+                    <span class="green-bold">wac</span> can become an <span class="bold">extension</span> of your business, a one stop shop for all your
+                    content and digital assets <span class="green-bold">-</span> We effectively tell your brand story through creative conceptualisation, pre 
                     production & content creation.<br /><br />
     
-                    <span class="greeny">wac</span> has worked on projects that span across, short & long form, on demand and 
+                    <span class="green-bold">wac</span> has worked on projects that span across, short & long form, on demand and 
                     promotional content.
                 </h5>
             </div>
@@ -161,9 +159,11 @@
     </div>
 </section>
 
-<section class="container-fluid work-slide">
+<section class="container-fluid work-slide space">
     <div class="container text-center my-3">
-        <h1 class="projects">View Our Projects</h1>
+        <a href="{{ url_for('about_page') }}" class="green-hover">
+            <h1 class="projects">View Our Projects</h1>
+        </a>
         <div class="row mx-auto my-auto justify-content-center">
             <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner" role="listbox">
@@ -191,7 +191,7 @@
                         <div class="col-lg-3 col-md-4 col-sm-12">
                             <div class="card">
                                 <div class="card-img">
-                                    <a href="{{ url_for('projects_page') }}"><img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/bxr-slick.jpg" class="img-fluid"></a>
+                                    <a href="{{ url_for('projects_page') }}"><img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/golfer.jpg" class="img-fluid"></a>
                                 </div>
                                 <!--<div class="card-img-overlay">Slide 3</div>-->
                             </div>
@@ -210,8 +210,8 @@
                     <div class="carousel-item second">
                         <div class="col-lg-3 col-md-4 col-sm-12">
                             <div class="card">
-                                <div class="card-img">
-                                    <a href="{{ url_for('projects_page') }}"><img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/gorillas-slick.jpg" class="img-fluid"></a>
+                                <div id="gorillaRider" class="card-img">
+                                    <a href="{{ url_for('projects_page') }}"><img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/rider-emmanuel.png" class="img-fluid"></a>
                                 </div>
                                 <!--<div class="card-img-overlay">Slide 5</div>-->
                             </div>
@@ -239,18 +239,18 @@
     </div>
 </section>
 
-<section class="container-fluid about-info space">
+<section class="container-fluid about-info">
     <div class="container-fluid info-holder">
         <div class="col-md-6 img-box">
             <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/our_story.jpg" alt="Our Journey" class="info-photo">
         </div>
         <div class="col-md-6 info-box">
                 <div class="col body-2">
-                    <h5>
+                    <h3>
                         wac boasts a team of expert creatives with years of experience in the industry 
                         <span class="greeny">-</span>
-                        we work as a collective, insuring every project is produced to it's greatest potential
-                    </h5><br><br>
+                        we work as a collective!
+                    </h3>
                     <a href="{{ url_for('about_page') }}">
                         <h1 class="info-title">learn more</h1>
                     </a>

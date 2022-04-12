@@ -70,7 +70,12 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 0rem 1rem 0rem 7rem;
+    padding: 0rem 4rem 0rem 4rem;
+}
+
+.body-2 h3 {
+    font-size: 1.5em;
+    font-weight: 700;
 }
 
 .body-2 a {
@@ -242,6 +247,10 @@ section {
 .card-img img {
     height: 25rem;
     object-fit: cover;
+}
+
+#gorillaRider img {
+    height: 33rem;
 }
 
 /* Media Queries */

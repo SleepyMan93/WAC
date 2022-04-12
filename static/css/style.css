@@ -36,6 +36,10 @@ h5 { font-size: 1em; }
   color: #000000;
 }
 
+.space {
+  padding: 6.5rem 0rem;
+}
+
 .spacer {
   background-color: #000000;
   height: 14vh;
@@ -98,6 +102,20 @@ h5 { font-size: 1em; }
 
 .uppercase {
   text-transform: capitalize;
+}
+
+.green-hover {
+  color: white;
+  text-decoration: none;
+}
+
+.green-hover:hover {
+  color: #00f78a;
+  text-decoration: none;
+}
+
+.green-hover:active {
+  color: #00f78a;
 }
 /* navbar */
 

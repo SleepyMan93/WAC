@@ -1,11 +1,7 @@
-.space {
-    padding: 6.5rem 0rem;
-}
-
 .landing-video {
     height: fit-content;
     max-height: 83vh;
-    min-height: 0vh;
+    min-height: 87vh;
   }
   
 .ratio {
@@ -22,7 +18,7 @@
     flex-wrap: wrap;
     align-items: flex-end;
     justify-content: center;
-    padding: 0rem 6rem;
+    padding: 0rem 8rem;
 }
 
 .info-holder-2 .lala {
@@ -75,10 +71,6 @@
     padding-right: 1rem;
 }
 
-.work-section {
-    min-height: 130vh;
-}
-
 .title {
     display: flex;
     align-items: flex-end;
@@ -97,8 +89,6 @@
 
 .partnerships {
     display: flex;
-    height: 32rem;
-    margin-top: 4rem;
     flex-wrap: wrap;
     flex-direction: row;
 }
@@ -118,7 +108,7 @@
 .circle-holder {
     display: flex;
     height: 33rem;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
 }
@@ -215,9 +205,7 @@
 
 .partner-vid {
     max-height: 59vh;
-    margin-top: -23vh;
     z-index: -1;
-    position: absolute;
 }
 
 .partner-vid video {
@@ -338,7 +326,7 @@
 }
 
 .work-title {
-    font-size: calc(2.975rem + 0.1vw);
+    font-size: calc(1.975rem + 0.1vw);
     font-weight: 700;
 }
 
@@ -368,8 +356,7 @@
 }
 
 .video-holder {
-    min-height: 16vh;
-    padding-bottom: 4rem;
+    min-height: 15vh;
     display: flex;
 }
 /* Media Queries */
@@ -389,10 +376,6 @@
         display: none;
     }
 
-    .work-section {
-        height: 70rem;
-    }
-
     .circl-title {
         font-size: 1.5rem;
     }
@@ -407,20 +390,12 @@
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
-    .partner-vid {
-        margin-top: -100%;
-    }
-
     .partnerships {
         margin-top: 6rem;
     }
 
     .circle-holder {
         height: 33rem;
-    }
-
-    .work-section {
-        height: 90rem;
     }
 
     .headshot-holder-josh {
@@ -450,10 +425,6 @@
 }
 
 @media (min-width: 768px) {
-    .partner-vid {
-        margin-top: -13vh;
-    }
-
     .team-holder {
         padding: 0rem 5rem;
     }
@@ -469,14 +440,6 @@
     .circle-reveal {
         margin-top: 5rem;
     }
-
-    .work-section {
-        min-height: 105vh;
-    }
-
-    #moriarty {
-        margin-top: 12rem;
-    }
 }
 
 @media (min-width: 1200px) {
@@ -485,24 +448,12 @@
     }
 
     .work-section {
-        min-height: 120vh;
-    }
-
-    .work-section {
-        min-height: 113vh;
+        min-height: 110vh;
     }
 }
 
 @media (min-width: 1400px) {
-    .partner-vid {
-        margin-top: -11vh;
-    }
-
     .circle-reveal {
         margin-top: 5rem;
-    }
-
-    .work-section {
-        min-height: 120vh;
     }
 }
