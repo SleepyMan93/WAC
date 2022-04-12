@@ -77,8 +77,8 @@ body {
 }
 
 .img-holder-wide:nth-child(2) {
-    margin-top: -7vw;
-    height: 25.5rem;
+    margin-top: -4rem;
+    height: 24rem;
 }
 
 .img-long, .img-wide, .img-wide-top {
@@ -96,11 +96,23 @@ body {
 .gorillas .img-holder-wide:nth-child(1) {
     margin-top: -1rem;
     margin-right: -1rem;
-    z-index: 2;
+    z-index: 1;
+}
+
+.gorillas .img-holder-wide img:nth-child(1) {
+    object-position: top;
+}
+
+#base .img-holder-wide img:nth-child(1) {
+    object-position: left;
+}
+
+#base .img-holder-wide img:nth-child(2) {
+    object-position: center;
 }
 
 .gorillas .img-holder-wide:nth-child(2) {
-    z-index: 1;
+    z-index: 2;
 }
 
 /* Suns Sections */
@@ -125,12 +137,14 @@ body {
 .suns .img-holder-wide:nth-child(2) {
     margin-top: -1rem;
     margin-left: -1rem;
-    z-index: 2;
+    height: 25.1rem;
+    z-index: 1;
 }
 
 .suns .img-holder-wide:nth-child(1) {
-    margin-top: -7vw;
-    height: 25.5rem;
+    margin-top: -4rem;
+    height: 24rem;
+    z-index: 2;
 }
 
 .suns .right img {
@@ -161,37 +175,11 @@ body {
     object-fit: cover;
 }
 
-.rotate-box .back img, .rotate-box-2 .back img {
-    height: 15rem;
-    min-height: 15vh;
-    cursor: pointer;
-}
-
-#smaller {
-    height: 5rem;
-    min-height: 2rem;
-}
-
-.back a {
-    text-decoration: none;
-    color: white;
-}
-
 .flip {
-    min-height: 50vh;
+    max-height: 50vh;
     width: 33.33333%;
     padding: 0;
     margin: 0;
-}
-
-.flip .back {
-    display: flex;
-    background: #000000;
-    color: #fff;
-    text-align: center;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 }
 
 .left.fancy {
