@@ -9,7 +9,7 @@ section {
   }
   
 .ratio {
-    max-height: 87vh;
+    max-height: 75vh;
 }
 
 .about-info {
@@ -270,7 +270,7 @@ section {
 }
 
 .headshot-holder, .headshot-holder-josh {
-    height: 24rem;
+    height: 27rem;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -291,7 +291,7 @@ section {
 
 .bubble-head, .bubble-head-2 {
     max-width: 100%;
-    height: 35rem;
+    height: 34rem;
 }
 
 .bubble-head {
@@ -401,7 +401,8 @@ section {
 
 @media (min-width: 576px) and (max-width: 768px) {
     .partnerships {
-        margin-top: 6rem;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
     }
 
     .circle-holder {
@@ -432,6 +433,10 @@ section {
     .team {
         padding-bottom: 1rem;
     }
+
+    .work-section {
+        padding: 6.5rem 0rem;
+    }
 }
 
 @media (min-width: 768px) {
@@ -452,7 +457,7 @@ section {
     }
 
     .info-holder {
-        padding: 0rem 8rem;
+        padding: 0rem 2rem;
     }
 }
 
@@ -467,6 +472,10 @@ section {
 
     .team {
         padding-bottom: 4.5rem;
+    }
+
+    .info-holder {
+        padding: 0rem 8rem;
     }
 }
 
