@@ -169,6 +169,11 @@ h5 { font-size: 1em; }
   transition: box-shadow .15s ease-in-out;
 }
 
+.navbar-toggler-icon {
+  width: 1em;
+  height: 1em;
+}
+
 .nav li a {
   font-size: 1.5vw;
   padding-bottom: 0px;
@@ -228,7 +233,7 @@ h5 { font-size: 1em; }
 }
 
 .video-holder {
-  min-height: 49vh;
+  margin-top: 7rem;
   display: flex;
 }
 
@@ -237,12 +242,13 @@ h5 { font-size: 1em; }
   align-items: center;
   padding: 0rem 8vw;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .btn-box {
   display: flex;
   height: 7vh;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 }
 
@@ -251,13 +257,13 @@ h5 { font-size: 1em; }
   align-items: center;
   border: none;
   flex-direction: row;
-  padding-right: 7rem;
-
+  margin-top: 1rem;
+  justify-content: center;
 }
 
 .social-icons {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   cursor: pointer;
 }
@@ -277,6 +283,11 @@ h5 { font-size: 1em; }
 @media (min-width: 768px) {
   .container, .container-md, .container-sm {
     max-width: 1020px;
+  }
+
+  .socials {
+    max-height: 5rem;
+    max-width: 5rem;
   }
 }
 
@@ -299,6 +310,19 @@ h5 { font-size: 1em; }
   .navbar-expand-lg .navbar-nav {
     margin-right: 1rem;
   }
+
+  .btn-box {
+    justify-content: flex-end;
+  }
+
+  .contact {
+    padding-right: 4rem;
+  }
+
+  .video-holder {
+    display: flex;
+    min-height: 45vh;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -318,6 +342,10 @@ h5 { font-size: 1em; }
 
   .suns .img-holder-wide:nth-child(1) {
       height: 24.5rem;
+  }
+
+  .video-holder {
+    min-height: 58vh;
   }
 }
 

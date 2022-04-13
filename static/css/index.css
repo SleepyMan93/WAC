@@ -2,11 +2,10 @@
 .landing-video {
   min-height: 0vh;
   height: fit-content;
-  margin-bottom: 5rem;
 }
 
 .ratio {
-  max-height: 83vh;;
+  max-height: 87vh;
 }
 
 /* Home Section */
@@ -17,8 +16,14 @@ section:nth-child(1){
 
 /* Info Section */
 
+.circle-turn {
+  min-height: 10vh;
+}
+
 .info-container {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .info {
@@ -31,8 +36,8 @@ section:nth-child(1){
   margin-left: 42px;
   margin-right: 46px;
   font-weight: 500;
-  font-size: 2.5rem;
   width: 90%;
+  font-size: 1.3em
 }
 
 .funk {
@@ -51,8 +56,8 @@ section:nth-child(1){
 }
 
 .icon-holder {
-  transform: translateX(-22rem);
-  height: 40rem;
+  transform: translateX(-10rem);
+  height: 16rem;
 }
 
 .half-icon {
@@ -63,9 +68,7 @@ section:nth-child(1){
 /* Work Section */
 
 section:nth-child(4){
-  margin-top: 11rem;
-  margin-bottom: 7rem;
-  height: 100vh;
+  margin-bottom: 8rem;
 }
 
 section .container{
@@ -104,10 +107,6 @@ section .text-container .text-box h3{
   margin-bottom: 10px;
 }
 
-.clients {
-  margin-top: 6rem;
-}
-
 /* slideshow */
 
 .slideshow {
@@ -143,7 +142,7 @@ section .text-container .text-box h3{
 }
 
 .slideshow .slider .item img {
-  height: 100vh;
+  height: 43rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -230,11 +229,10 @@ section .text-container .text-box h3{
 
 .gorillaVid, .digmeVid {
   max-width: 90vw;
-  height: 60vh;
 }
 
 #firstSlider .carousel-item-background {
-  height: 77vh;
+  height: 42rem;;
 }
 
 .carousel-item-background {
@@ -245,10 +243,6 @@ section .text-container .text-box h3{
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.client-videos {
-  margin-bottom: 7.5rem;
 }
 
 /* slideshow2 */
@@ -290,7 +284,7 @@ section:nth-child(7) {
   }
   
   .slideshow2 .slider2 .item2 img {
-  height: 100vh;
+  height: 43rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -403,7 +397,7 @@ max-width: 70%;
 /* About */
 
 section:nth-child(6){
-min-height: 30vh;
+min-height: 16vh;
 max-width: 100%;
 display: flex;
 justify-content: center;
@@ -414,22 +408,6 @@ background: #000000;
 
 section:nth-child(9) {
   min-height: 30vh;
-}
-
-@media (max-width: 767px) {
-.slideshow-text {
-    font-size: 40px;
-}
-}
-
-@media (max-width: 900px){
-  section h1{
-    font-size: 2rem;
-    text-align: center;
-  }
-  section .text-container{
-    flex-direction: column;
-  }
 }
 
 .sticky {
@@ -475,10 +453,63 @@ transform-origin:50% 50%;
 
 /* Media Queries */
 
-@media (min-width: 1450px) {
+@media (min-width: 768) {
+  .icon-holder {
+    transform: translateX(-14rem);
+    height: 25rem;
+}
+
+  .info-text {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 992px) {
+  section:nth-child(4) {
+    height: 100vh;
+}
+
+.icon-holder {
+  transform: translateX(-16rem);
+  height: 29rem;
+}
+}
+
+@media (min-width: 1060px) {
+  .gorillaVid, .digmeVid {
+    max-width: 90vw;
+    height: 60vh;
+}
+}
+
+@media (min-width: 1200px) {
+  .icon-holder {
+    transform: translateX(-20rem);
+    height: 36rem;
+}
+
+.slideshow .slider .item img {
+  height: 48rem;
+}
+
+.slideshow2 .slider2 .item2 img {
+  height: 47rem;
+}
+
+section:nth-child(4) {
+  margin-bottom: 10rem;
+  margin-top: 10rem;
+}
+}
+
+@media (min-width: 1400px) {
   .icon-holder {
     transform: translateX(-23rem);
     height: 46rem;
+  }
+
+  section:nth-child(4) {
+    margin-top: 14rem;
   }
 
   .info-text {
@@ -487,4 +518,32 @@ transform-origin:50% 50%;
     font-size: 2.5em;
     width: 78%;
   }
+
+  #firstSlider .carousel-item-background {
+    height: 33rem;
+  }
+
+  .slideshow .slider .item img {
+    height: 56rem;
+  }
+
+  .slideshow2 .slider2 .item2 img {
+    height: 55rem;
+  }
 }
+
+@media (max-width: 767px) {
+  .slideshow-text {
+      font-size: 40px;
+  }
+  }
+  
+  @media (max-width: 900px){
+    section h1{
+      font-size: 2rem;
+      text-align: center;
+    }
+    section .text-container{
+      flex-direction: column;
+    }
+  }
