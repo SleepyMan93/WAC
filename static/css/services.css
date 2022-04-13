@@ -6,8 +6,8 @@ section {
 .landing-video {
     height: fit-content;
     max-height: 83vh;
-    min-height: 0vh;
-  }
+    min-height: 29vh;
+}
   
 .ratio {
     max-height: 83vh;
@@ -32,17 +32,18 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .services {
     display: flex;
     margin-top: 3rem;
+    margin-bottom: 3rem;
     flex-direction: row-reverse;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 0rem 7rem;
+    padding: 0rem 2rem;
 }
 
 .logo-holder {
@@ -52,14 +53,13 @@ section {
 }
 
 .logo-holder img {
-    max-width: 100%;
+    max-width: 80%;
     max-height: inherit; 
-    padding-left: 2rem;
 }
 
 .body {
     display: flex;
-    height: 33rem;
+    height: 24rem;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -70,12 +70,14 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 0rem 4rem 0rem 4rem;
+    align-items: center;
+    padding: 0rem 3rem 0rem 3rem;
 }
 
 .body-2 h3 {
     font-size: 1.5em;
     font-weight: 700;
+    text-align: center;
 }
 
 .body-2 a {
@@ -90,17 +92,18 @@ section {
 
 .body h5 {
     max-width: 100%;
-    text-align: start;
+    text-align: center;
 }
 
 .body h1 {
     text-align: start;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 .testimonial {
     display: flex;
     flex-direction: column;
+    min-height: 25rem;
 }
 
 .testimonial-holder {
@@ -112,7 +115,7 @@ section {
 }
 
 .testimonial-holder img {
-    max-height: 24rem;
+    max-height: 22rem;
 }
 
 .testimonial-carousel {
@@ -165,7 +168,7 @@ section {
 }
 
 .space {
-    padding: 6.5rem 0rem;
+    padding: 4.5rem 0rem;
 }
 
 .title h1 {
@@ -178,7 +181,6 @@ section {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding: 0rem 6rem;
 }
 
 .info-title {
@@ -186,6 +188,7 @@ section {
 }
 
 .info-box {
+    margin-top: 2rem;
     padding: 0rem 0.5rem;
 }
 
@@ -225,12 +228,12 @@ section {
 }
 
 .testimonial-holder .carousel-control-next {
-    right: -6%;
+    right: -8%;
     justify-content: flex-end;
 }
 
 .testimonial-holder .carousel-control-prev {
-    left: -6%;
+    left: -8%;
     justify-content: flex-start;
 }
 
@@ -256,6 +259,10 @@ section {
 
 #gorillaRider img {
     height: 33rem;
+}
+
+.digme-slide {
+    object-position: left;
 }
 
 /* Media Queries */
@@ -314,8 +321,61 @@ section {
       transform: translateX(-33.33333333%);
     }
 
+    .services {
+        padding: 0rem 10rem;
+    }
+
     .testimonial-holder img {
         max-height: 33rem;
+    }
+
+    .logo-holder {
+        justify-content: flex-end;
+    }
+
+    .logo-holder img {
+        padding-left: 2rem;
+        max-width: 100%;
+    }
+
+    .body h1 {
+        text-align: start;
+        font-size: 2em;
+    }
+
+    .body h5 {
+        max-width: 100%;
+        text-align: start;
+    }
+
+    .body {
+        height: 33rem;
+        margin-top: 0rem;
+    }
+
+    .title-holder {
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .testimonial-holder img {
+        max-height: 24rem;
+    }
+
+    .body-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 0rem 4rem 0rem 4rem;
+        align-items: flex-start;
+    }
+
+    .body-2 h3 {
+        text-align: start;
+    }
+
+    .info-box {
+        margin-top: 0rem;
     }
 }
 
@@ -338,11 +398,26 @@ section {
     .testimonial-holder img {
         max-height: 40rem;
     }
+
+    .info-holder {
+        padding: 0rem 6rem;
+    }
+
+    .video-holder {
+        min-height: 18vh;
+        align-items: flex-start;
+    }
 }
 
 #recipeCarousel .carousel-inner .carousel-item-end,
 #recipeCarousel .carousel-inner .carousel-item-start { 
   transform: translateX(0);
+}
+
+@media (min-width: 1200px) {
+    .testimonial {
+        margin-bottom: 3rem;
+    }
 }
 
 @media (min-width: 1500px) {
