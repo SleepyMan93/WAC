@@ -13,14 +13,6 @@ h1 {
     color: rgb(255, 255, 255);
     margin-bottom: 0;
   }
-  
-  .jsx-4283466493 {
-    display: none;
-  }
-
-  .eapps-widget-toolbar {
-    display: none !important;
-  }
 
   .eapp-vimeo-gallery-grid-item .eapp-vimeo-gallery-video-card-container:hover .eapp-vimeo-gallery-video-card-playContainer {
     background-color: rgba(17,17,17,0.7) !important;
@@ -28,6 +20,15 @@ h1 {
 
   .eapp-vimeo-gallery-grid-item .eapp-vimeo-gallery-video-card-playContainer {
     background-color: transparent;
+  }
+
+  .eapp-vimeo-gallery-load-more-component.jsx-4048222137 {
+    background-color: rgb(255 255 255);
+    color: rgb(0 0 0);
+  }
+
+  .eapp-vimeo-gallery-load-more-component {
+    max-width: 250px;
   }
 
 @media (max-width: 768px) {

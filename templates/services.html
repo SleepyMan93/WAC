@@ -73,6 +73,7 @@
         </div>
     </div>
     <div class="container-fluid testimonial-holder">
+        <!--
         <div class="col-6 testimonial-carousel">
             <div class="testimonial-view">
                 <div id="testimonialCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -142,7 +143,6 @@
                             </div>
                         </div>
                     </div>
-                    <!--
                     <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
@@ -151,17 +151,41 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
-                    -->
                 </div>
             </div>
         </div>
         <img src="/static/images/testimonial-graphic.png" alt="Testimonial Holder">
+        -->
+
+        <div id="testimonialCarousel" class="carousel carousel-fade"  data-bs-interval="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/testimonial-graphic-gorillas.png" class="d-block" alt="Gorillas Testimonial">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/testimonial-graphic-base.png" class="d-block" alt="Base Testimonial">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/testimonial-graphic-suns.png" class="d-block" alt="Suns Testimonial">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
     </div>
 </section>
 
 <section class="container-fluid work-slide space">
     <div class="container text-center my-3">
-        <a href="{{ url_for('about_page') }}" class="green-hover">
+        <a href="{{ url_for('projects_page') }}" class="green-hover">
             <h1 class="projects">View Our Projects</h1>
         </a>
         <div class="row mx-auto my-auto justify-content-center">
