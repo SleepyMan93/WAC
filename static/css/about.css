@@ -1,11 +1,15 @@
+section {
+    min-height: 0vh;
+}
+
 .landing-video {
     height: fit-content;
-    max-height: 83vh;
-    min-height: 87vh;
+    max-height: 87vh;
+    padding: 2.5rem 0rem 4.5rem 0rem;
   }
   
 .ratio {
-    max-height: 83vh;
+    max-height: 87vh;
 }
 
 .about-info {
@@ -18,7 +22,6 @@
     flex-wrap: wrap;
     align-items: flex-end;
     justify-content: center;
-    padding: 0rem 8rem;
 }
 
 .info-holder-2 .lala {
@@ -48,6 +51,7 @@
 
 .info-box {
     padding: 0rem 0.5rem;
+    margin-top: 2rem;
 }
 
 .info-title {
@@ -213,6 +217,10 @@
     max-height: inherit;
 }
 
+.team {
+    min-height: 58vh;
+}
+
 .team-holder {
     display: flex;
     min-height: inherit;
@@ -258,6 +266,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
+    align-items: flex-end;
 }
 
 .headshot-holder, .headshot-holder-josh {
@@ -326,7 +335,7 @@
 }
 
 .work-title {
-    font-size: calc(1.975rem + 0.1vw);
+    font-size: calc(1.475rem + 0.1vw);
     font-weight: 700;
 }
 
@@ -356,6 +365,7 @@
 }
 
 .video-holder {
+    margin-top: 0rem;
     min-height: 15vh;
     display: flex;
 }
@@ -369,7 +379,7 @@
 
 @media (min-width: 300px) and (max-width: 576px) {
     .circle-holder {
-        height: 22rem;
+        height: 25rem;
     }
 
     .partner-vid {
@@ -411,16 +421,16 @@
 }
 
 @media (max-width: 576px) {
-    .team {
-        margin-top: 4rem;
-    }
-
     .headshot-holder, .headshot-holder-josh {
-        height: 22rem;
+        height: 23rem;
     }
 
     .headshot-holder-josh {
-        margin-top: 10rem;
+        margin-top: 0rem;
+    }
+
+    .team {
+        padding-bottom: 1rem;
     }
 }
 
@@ -440,6 +450,10 @@
     .circle-reveal {
         margin-top: 5rem;
     }
+
+    .info-holder {
+        padding: 0rem 8rem;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -449,6 +463,10 @@
 
     .work-section {
         min-height: 110vh;
+    }
+
+    .team {
+        padding-bottom: 4.5rem;
     }
 }
 
