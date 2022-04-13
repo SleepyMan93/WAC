@@ -19,8 +19,6 @@ body {
 
 .video-holder-2 video {
     display: flex;
-    box-shadow: 8px 8px 8px 0px #00f78a;
-    -webkit-box-shadow: 8px 8px 8px 0px #00f78a;
     max-width: 100%;
     max-height: 79vh;
 }
@@ -77,8 +75,8 @@ body {
 }
 
 .img-holder-wide:nth-child(2) {
-    margin-top: -4rem;
-    height: 24rem;
+    margin-top: -1rem;
+    height: 13rem;
 }
 
 .img-long, .img-wide, .img-wide-top {
@@ -90,10 +88,11 @@ body {
 /* Gorillas Section */
 
 .gorillas {
-    margin-bottom: 15rem;
+    padding-top: 2.5rem;
 }
 
 .gorillas .img-holder-wide:nth-child(1) {
+    display: none;
     margin-top: -1rem;
     margin-right: -1rem;
     z-index: 1;
@@ -118,14 +117,12 @@ body {
 /* Suns Sections */
 
 .suns {
-    margin-bottom: 15rem;
+    margin-bottom: 8rem;
 }
 
 .suns .video-holder-2 video {
     flex-direction: row;
     justify-content: flex-end;
-    box-shadow: -8px 8px 8px 0px #00f78a;
-    -webkit-box-shadow: -8px 8px 8px 0px #00f78a;
     max-width: 100%;
     max-height: 79vh;
 }
@@ -139,11 +136,12 @@ body {
     margin-left: -1rem;
     height: 25.1rem;
     z-index: 1;
+    display: none;
 }
 
 .suns .img-holder-wide:nth-child(1) {
-    margin-top: -4rem;
-    height: 24rem;
+    margin-top: -1rem;
+    height: 12rem;
     z-index: 2;
 }
 
@@ -245,6 +243,47 @@ body {
 
     .gorillas {
         margin-top: 2rem;
+    }
+
+    .txt-holder {
+        padding: 0rem 4rem;
+    }
+
+    .gorillas {
+        margin-bottom: 15rem;
+    }
+
+    .gorillas .img-holder-wide:nth-child(1) {
+        display: flex;
+    }
+
+    .img-holder-wide:nth-child(2) {
+        margin-top: -4rem;
+        height: 24rem;
+    }
+
+    .video-holder-2 video {
+        box-shadow: 8px 8px 8px 0px #00f78a;
+        -webkit-box-shadow: 8px 8px 8px 0px #00f78a;
+    }
+
+    .suns {
+        margin-bottom: 8rem;
+    }
+
+    .suns .video-holder-2 video {
+        box-shadow: -8px 8px 8px 0px #00f78a;
+        -webkit-box-shadow: -8px 8px 8px 0px #00f78a;
+    }
+
+    .suns .img-holder-wide:nth-child(1) {
+        margin-top: -4rem;
+        height: 24rem;
+        z-index: 2;
+    }
+
+    .suns .img-holder-wide:nth-child(2) {
+        display: flex;
     }
 }
 
