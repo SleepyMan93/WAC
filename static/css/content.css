@@ -38,11 +38,12 @@ body {
 
 .txt-holder {
     margin-top: 5vh;
+    margin-bottom: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 0rem 4rem;
+    padding: 0rem 0rem;
 }
 
 /* Global Logo Styling */
@@ -89,6 +90,7 @@ body {
 
 .gorillas {
     padding-top: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 .gorillas .img-holder-wide:nth-child(1) {
@@ -117,7 +119,7 @@ body {
 /* Suns Sections */
 
 .suns {
-    margin-bottom: 8rem;
+    min-height: 73vh;
 }
 
 .suns .video-holder-2 video {
@@ -159,6 +161,7 @@ body {
 
 .collage {
     margin-top: 10vh;
+    display: none;
 }
 
 .rotate-box, .rotate-box-2 {
@@ -227,6 +230,16 @@ body {
 
 /* Media Queries */
 
+@media (min-width: 490px) and (max-width: 768px) {
+    .img-holder-wide:nth-child(2) {
+        height: 16rem;
+    }
+
+    .suns .img-holder-wide:nth-child(1) {
+        height: 16rem;
+    }
+}
+
 @media (min-width: 768px) {
     .txt-holder {
         margin-top: 1.5rem;
@@ -241,12 +254,20 @@ body {
         margin-top: 1rem;
     }
 
+    .collage {
+        display: initial;
+    }
+
     .gorillas {
         margin-top: 2rem;
     }
 
     .txt-holder {
         padding: 0rem 4rem;
+    }
+
+    .suns {
+        min-height: 83vh;
     }
 
     .gorillas {
