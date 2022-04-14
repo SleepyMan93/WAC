@@ -90,6 +90,12 @@ h5 { font-size: 1em; }
   color: white;
 }
 
+.highlight {
+  color: white;
+  font-style: oblique;
+  font-weight: 900;
+}
+
 .green-bold {
   color: #00f78a;
   font-weight: 900;
