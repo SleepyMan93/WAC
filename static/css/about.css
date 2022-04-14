@@ -446,20 +446,16 @@ section {
     }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+    .hidden-text {
+        font-size: 1.5em;
+    }
+}
+
 @media (min-width: 500px) {
     .headshot-holder-josh {
         margin-top: 7rem;
     }
-
-    .circle-reveal {
-        z-index: 3;
-        background-color: rgb(0 0 0);
-        width: 31%;
-        margin-top: 6rem;
-        animation: two 2s infinite;
-        animation-direction: alternate;
-    }
-    
 }
 
 @media (min-width: 768px) {
