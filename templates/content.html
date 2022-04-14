@@ -11,7 +11,7 @@
         <div class="container-fluid nav-box">
             <div id="imgHolder" class="container">
                 <a class="navbar-brand justify-content-start" href="#">
-                    <img src="static/images/nav_logo.png" alt="">
+                    <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/nav_logo.png" alt="">
                 </a>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,7 +44,7 @@
             </div>
         </div>
         <div class="col-md-7 video-holder-2 animate-me left">
-            <video src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/gorilla_2_vid.mp4#t=0.5" class="client-video" preload="metadata" controls muted disablepictureinpicture></video>
+            <video src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/gorilla_2_vid.mp4#t=0.5" class="client-video" preload="metadata" controls muted playsinline disablepictureinpicture></video>
         </div>
     </div>
     
@@ -72,7 +72,7 @@
             </div>
         </div>
         <div class="col-md-7 video-holder-2 animate-me right">
-            <video src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/suns_content_vid.mp4" class="client-video" controls="" muted="" disablepictureinpicture=""></video>
+            <video src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/suns_content_vid.mp4" class="client-video" controls="" muted="" playsinline disablepictureinpicture=""></video>
         </div>
     </div>
     
@@ -100,7 +100,7 @@
             </div>
         </div>
         <div class="col-md-7 video-holder-2 animate-me left">
-            <video src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/base_content_vid.mp4" class="client-video" controls muted disablepictureinpicture></video>
+            <video src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/base_content_vid.mp4" class="client-video" controls muted playsinline disablepictureinpicture></video>
         </div>
     </div>
     
@@ -129,7 +129,7 @@
                 <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/digme_1.jpg" alt="Digme Collage Image">
             </div>
             <div class="col-6 col-sm-4 back">
-                <img src="" alt="Digme Trainer">
+                <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/digme-box-2.jpg" alt="Digme Trainer">
             </div>
         </div>
         <div class="container flip">
@@ -172,7 +172,7 @@
             </div>
             <div class="col-6 col-sm-4 back">
                 <a href="{{ url_for('projects_page') }}">
-                    <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/gorillas_logo_white.png" alt="Gorillas Camera in Trolley">
+                    <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/gorillas_box.jpg" alt="Gorillas Camera in Trolley">
                 </a>
             </div>
         </div>
@@ -182,23 +182,25 @@
 <footer>
     <div class="container-fluid video video-holder">
         <div class="col-12 contact-holder">
-            <div class="col-lg-5 btn-box">
-                <button class="SendEmail">contact</button>
-            </div>
-            <div class="col-lg-7 contact">
+            <div class="col-10 col-sm-8 col-md-6 contact">
                     <div class="col social-icons">
-                        <a href="#">
-                            <video onmouseover="this.play()" class="socials" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/FacebookSocial_Icon(Updated).mp4" disablePictureInPicture></video>
+                        <a class="SendEmail" href="#">
+                            <video onmouseover="this.play()" class="socials" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/Mail_Icon(ScaledDown).mp4" muted playsinline disablePictureInPicture></video>
                         </a>
                     </div>
                     <div class="col social-icons">
                         <a href="#">
-                            <video onmouseover="this.play()" class="socials" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/InstaSocial_Icon(Updated).mp4" disablePictureInPicture></video>
+                            <video onmouseover="this.play()" class="socials" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/FacebookSocial_Icon(ScaledDown).mp4" muted playsinline disablePictureInPicture></video>
+                        </a>
+                    </div>
+                    <div class="col social-icons">
+                        <a href="#">
+                            <video onmouseover="this.play()" class="socials" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/InstaSocial_Icon(ScaledDown).mp4" muted playsinline disablePictureInPicture></video>
                         </a> 
                     </div>
                     <div class="col social-icons">
                         <a href="#"></a>
-                            <video onmouseover="this.play()" class="socials" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/LinkedInSocial_Icon(Updated).mp4" disablePictureInPicture></video>
+                            <video onmouseover="this.play()" class="socials" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/LinkedInSocial_Icon(ScaledDown).mp4" muted playsinline disablePictureInPicture></video>
                         </a>
                     </div>
             </div>

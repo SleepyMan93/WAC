@@ -50,6 +50,8 @@ h5 { font-size: 1em; }
   height: 10vh;
 }
 
+/*
+
 .btn-box button {
   display: flex;
   align-items: center;
@@ -86,6 +88,7 @@ h5 { font-size: 1em; }
 .SendEmail {
   background-image: linear-gradient(115deg, #00ff8e, #008d4e, #013e25, #000, #000);
 }
+*/
 
 .nav-link:hover {
   color: white;
@@ -160,7 +163,7 @@ h5 { font-size: 1em; }
 
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
-  margin: 0rem 2rem 2.5rem 0rem;
+  margin: 0rem 1.5rem 1.5rem 0rem;
   font-size: 1.25rem;
   line-height: 1;
   background-color: white;
@@ -199,7 +202,7 @@ h5 { font-size: 1em; }
 }
 
 .navbar-brand img {
-  width: 80%;
+  width: 72%;
 }
 
 #imgHolder {
@@ -233,14 +236,13 @@ h5 { font-size: 1em; }
 }
 
 .video-holder {
-  margin-top: 7rem;
   display: flex;
+  min-height: 8rem;
 }
 
 .contact-holder {
   display: flex;
   align-items: center;
-  padding: 0rem 8vw;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -257,7 +259,6 @@ h5 { font-size: 1em; }
   align-items: center;
   border: none;
   flex-direction: row;
-  margin-top: 1rem;
   justify-content: center;
 }
 
@@ -281,13 +282,25 @@ h5 { font-size: 1em; }
 }
 
 @media (min-width: 768px) {
+  .navbar-brand img {
+    width: 80%;
+  }
+
   .container, .container-md, .container-sm {
     max-width: 1020px;
   }
 
   .socials {
-    max-height: 5rem;
-    max-width: 5rem;
+    max-height: 16rem;
+    max-width: 7rem;
+  }
+
+  .contact-holder {
+    padding: 0rem 8vw;
+  }
+
+  .video-holder {
+    min-height: 15rem;
   }
 }
 
@@ -315,13 +328,9 @@ h5 { font-size: 1em; }
     justify-content: flex-end;
   }
 
-  .contact {
-    padding-right: 4rem;
-  }
-
   .video-holder {
     display: flex;
-    min-height: 45vh;
+    min-height: 32vh;
   }
 }
 
@@ -345,7 +354,7 @@ h5 { font-size: 1em; }
   }
 
   .video-holder {
-    min-height: 58vh;
+    min-height: 35vh;
   }
 }
 

@@ -11,7 +11,7 @@
         <div class="container-fluid nav-box">
             <div id="imgHolder" class="container">
                 <a class="navbar-brand justify-content-start" href="#">
-                    <img src="static/images/nav_logo.png" alt="">
+                    <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/nav_logo.png" alt="">
                 </a>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,7 +33,7 @@
     <div class="container-fluid">
         <div class="container-fluid video">
             <div class="ratio ratio-16x9">
-                <video src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/WAC+logo+animation+V2+(2).mp4 " preload="auto" muted disablePictureInPicture autoplay></video>
+                <video src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/WAC+logo+animation+V2+(2).mp4 " preload="auto" muted playsinline disablePictureInPicture autoplay></video>
             </div>
         </div>
     </div>
@@ -72,7 +72,7 @@
 <section class="container-fluid work-section">
     <div class="container-fluid partnerships">
         <div class="col-12 partner-vid">
-            <video src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/final-partnership-vid.mp4" preload="true" muted disablePictureInPicture autoplay></video>
+            <video src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/final-partnership-vid.mp4" preload="true" muted playsinline disablePictureInPicture autoplay></video>
         </div>
         <div class="col-12 col-sm-12 col-md-6 circle-holder">
             <div class="col circle-header">
@@ -126,14 +126,13 @@
                 </h3>
             </div>
         </div>
-        <img class="image-show image-shrink" src="/static/images/our-work.JPG" alt="See Work">
+        <img class="image-show image-shrink" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/our-work.JPG" alt="See Work">
     </div>
 </section>
 
 <section class="container-fluid team">
     <div class="container-fluid team-holder">
-        <!--
-        <div class="col-sm-6 inner-padding">
+        <div class="col-12 inner-padding">
             <div class="col">
                 <h1 class="team-title">team</h1>
             </div>
@@ -143,67 +142,52 @@
                     we work as a collective, insuring every project is produced to it's greatest potential
                 </h5>
             </div>
-            <div class="col">
-                <span>
-                    <h5 class="member-name">
-                        George Edgar <br />
+            <div class="col-12 members">
+                <div class="col-12 col-lg-6">
+                    <span>
+                        <h5 class="member-name">
+                            Alex McKenzie <br />
+                        </h5>
+                    </span>
+                    <h5 class="member-title">
+                        Non Exec Director
                     </h5>
-                </span>
-                <h5 class="member-title">
-                    Non Exec Director
-                </h5>
-            </div>
-            <div class="col">
-                <span>
-                    <h5 class="member-name">
-                        Jamie Smith <br />
+                </div>
+                <div class="col-12 col-lg-6 top-layer">
+                    <span>
+                        <h5 class="member-name">
+                            Josh Edwards <br />
+                        </h5>
+                    </span>
+                    <h5 class="member-title">
+                        Creative
                     </h5>
-                </span>
-                <h5 class="member-title">
-                    Creative
-                </h5>
-            </div>
-            <div class="col">
-                <span>
-                    <h5 class="member-name">
-                        Freddie Wilkinson <br />
-                    </h5>
-                </span>
-                <h5 class="member-title">
-                    Photographer
-                </h5>
-            </div>
-            <div class="col">
-                <span>
-                    <h5 class="member-name">
-                        Sophie Towndrow <br />
-                    </h5>
-                </span>
-                <h5 class="member-title">
-                    Non Exec Director
-                </h5>
+                </div>
             </div>
         </div>
-        -->
-        <div class="col-sm-12">
-            <div class="col-12 col-md-6 headshot-holder">
-                <video onmouseover="this.play()"  src="/static/video/alex_new_shot.mp4" class="bubble-head" preload="true" muted disablepictureinpicture></video>
+        <div class="col-12 headshots">
+            <div class="col-12 col-lg-6 headshot-holder">
+                <video onmouseover="this.play()"  src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/alex_new_shot.mp4" class="bubble-head" preload="true" muted playsinline disablepictureinpicture></video>
+                <!--
                 <div class="col owner-title">
                     <h5>
                         <span>Alex</span> <br>
                         co-founder
                     </h5>
                 </div>
+                -->
             </div>
 
-            <div class="col-12 col-md-6 headshot-holder-josh" id="josh">
-                <video onmouseover="this.play()"  src="/static/video/josh_new_shot.mp4" class="bubble-head-2" preload="true" muted disablepictureinpicture ></video>
+            <div class="col-12 col-lg-6 headshot-holder-josh" id="josh">
+                <video onmouseover="this.play()"  src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/josh_new_shot.mp4" class="bubble-head-2" preload="true" muted playsinline disablepictureinpicture ></video>
+                <!--
                 <div class="col owner-title">
                     <h5>
                         <span>Josh</span> <br>
                         co-founder
                     </h5>
                 </div>
+                -->
             </div>
         </div>
     </div>
@@ -212,23 +196,25 @@
 <footer>
     <div class="container-fluid video video-holder">
         <div class="col-12 contact-holder">
-            <div class="col-12 col-lg-3 btn-box">
-                <button class="SendEmail">contact</button>
-            </div>
-            <div class="col-12 col-md-8 col-lg-4 contact">
+            <div class="col-10 col-sm-8 col-md-6 contact">
                     <div class="col social-icons">
-                        <a href="#">
-                            <video onmouseover="this.play()" class="socials" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/FacebookSocial_Icon(Updated).mp4" disablePictureInPicture></video>
+                        <a class="SendEmail" href="#">
+                            <video onmouseover="this.play()" class="socials" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/Mail_Icon(ScaledDown).mp4" muted playsinline disablePictureInPicture></video>
                         </a>
                     </div>
                     <div class="col social-icons">
                         <a href="#">
-                            <video onmouseover="this.play()" class="socials" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/InstaSocial_Icon(Updated).mp4" disablePictureInPicture></video>
+                            <video onmouseover="this.play()" class="socials" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/FacebookSocial_Icon(ScaledDown).mp4" muted playsinline disablePictureInPicture></video>
+                        </a>
+                    </div>
+                    <div class="col social-icons">
+                        <a href="#">
+                            <video onmouseover="this.play()" class="socials" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/InstaSocial_Icon(ScaledDown).mp4" muted playsinline disablePictureInPicture></video>
                         </a> 
                     </div>
                     <div class="col social-icons">
                         <a href="#"></a>
-                            <video onmouseover="this.play()" class="socials" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/LinkedInSocial_Icon(Updated).mp4" disablePictureInPicture></video>
+                            <video onmouseover="this.play()" class="socials" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/LinkedInSocial_Icon(ScaledDown).mp4" muted playsinline disablePictureInPicture></video>
                         </a>
                     </div>
             </div>
