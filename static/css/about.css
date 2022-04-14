@@ -106,7 +106,7 @@ section {
 .circle-holder {
     display: flex;
     height: 33rem;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
@@ -162,10 +162,9 @@ section {
 .circle-reveal {
     z-index: 3;
     background-color: rgb(0 0 0);
-    width: 31%;
+    width: 63%;
     margin-top: 5rem;
     animation: two 2s infinite;
-    animation-direction: alternate;;
 }
 
 .tap-me {
@@ -189,7 +188,7 @@ section {
     z-index: 3;
     display: none;
     position: absolute;
-    max-width: 28%;
+    max-width: 48%;
     margin-top: 6rem;
 }
 
@@ -406,7 +405,7 @@ section {
     }
 
     .circle-reveal {
-        width: 56%;
+        width: 60%;
     }
 }
 
@@ -418,6 +417,7 @@ section {
 
     .circle-holder {
         height: 33rem;
+        margin-bottom: 4rem;
     }
 
     .headshot-holder-josh {
@@ -450,6 +450,16 @@ section {
     .headshot-holder-josh {
         margin-top: 7rem;
     }
+
+    .circle-reveal {
+        z-index: 3;
+        background-color: rgb(0 0 0);
+        width: 31%;
+        margin-top: 6rem;
+        animation: two 2s infinite;
+        animation-direction: alternate;
+    }
+    
 }
 
 @media (min-width: 768px) {
@@ -462,11 +472,15 @@ section {
     }
 
     .circle-reveal {
-        margin-top: 5rem;
+        width: 63%;
     }
 
     .info-holder {
         padding: 0rem 2rem;
+    }
+
+    .circle-holder {
+        margin-bottom: 6rem;
     }
 }
 
@@ -490,15 +504,23 @@ section {
     .members {
         flex-direction: row;
     }
+
+    .work-section {
+        min-height: 100vh;
+    }
+
+    .circle-reveal {
+        width: 31%;
+    }
+
+    .reveal-text, .reveal-text-2 {
+        max-width: 26%;
+    }
 }
 
 @media (min-width: 1200px) {
     .circle-reveal {
         margin-top: 4.8rem;
-    }
-
-    .work-section {
-        min-height: 110vh;
     }
 
     .team {
