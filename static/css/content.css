@@ -280,10 +280,10 @@ body {
 
     .img-holder-wide:nth-child(2) {
         margin-top: -4rem;
-        height: 24rem;
+        height: 18rem;
     }
 
-    .video-holder-2 video {
+    .video-holder-2 iframe {
         box-shadow: 8px 8px 8px 0px #00f78a;
         -webkit-box-shadow: 8px 8px 8px 0px #00f78a;
     }
@@ -292,7 +292,7 @@ body {
         margin-bottom: 8rem;
     }
 
-    .suns .video-holder-2 video {
+    .suns .video-holder-2 iframe {
         box-shadow: -8px 8px 8px 0px #00f78a;
         -webkit-box-shadow: -8px 8px 8px 0px #00f78a;
     }
@@ -320,6 +320,17 @@ body {
 
     .copy-holder .col-md-5 {
         margin-top: 2rem;
+    }
+
+    .img-holder-wide:nth-child(2) {
+        margin-top: -4rem;
+        height: 22rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .img-holder-wide:nth-child(2) {
+        height: 24rem;
     }
 }
 
