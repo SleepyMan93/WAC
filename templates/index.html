@@ -1,14 +1,14 @@
 {% extends "base.html" %}
 
-<head>
+    {% block extrajs %} 
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    {% endblock %}
 
     {% block extra_styles %}
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='slick/slick-theme.css') }}"/>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='slick/slick.css') }}"/>
     {% endblock %}
-
-</head>
 
 {% block content %}
 
@@ -79,8 +79,8 @@
 </section>
 
 <section id="firstSlider" class="container-fluid client-videos">
-    <div class="carousel-item-background">
-        <video onmouseover="this.play()" onmouseleave="this.pause()" class="gorillaVid" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/gorrilas_vid.mp4#t=0.5" controls playsinline disablePictureInPicture></video>
+    <div class="col-12 col-md-10 col-lg-8 carousel-item-background">
+        <iframe class="gorillaVid" src="https://player.vimeo.com/video/663361013?h=7fd8c24c99&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="The Right To Dance x Gorillas"></iframe>
     </div>
 </section>
 
@@ -108,8 +108,8 @@
 </section>
 
 <section class="container-fluid client-videos">
-    <div class="carousel-item-background">
-        <video onmouseover="this.play()" onmouseleave="this.pause()" class="digmeVid" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/digmeVid.mp4#t=0.5" controls preload="metadata" disablePictureInPicture></video>
+    <div class="col-12 col-md-10 col-lg-8 carousel-item-background">
+        <iframe src="https://player.vimeo.com/video/468147329?h=46fbaed4af&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" class="digmeVid" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Digme On Demand - Promo"></iframe>
     </div>
 </section>
 
