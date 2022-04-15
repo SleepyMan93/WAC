@@ -13,3 +13,9 @@ observer = new IntersectionObserver((entries) => {
 images.forEach(image => {
 observer.observe(image);
 });
+
+$(function(){
+    $(".flip").flip({
+        trigger: 'hover'
+    });
+});
