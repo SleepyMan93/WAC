@@ -122,7 +122,7 @@ body {
     min-height: 73vh;
 }
 
-.suns .video-holder-2 video {
+.suns .video-holder-2 {
     flex-direction: row;
     justify-content: flex-end;
     max-width: 100%;
@@ -193,6 +193,10 @@ body {
 
 .down.fancy {
     animation: anim3 1.5s cubic-bezier(0.4, 0, 1, 1);
+}
+
+.vimeo-vid {
+    animation: fade 0.5s ease-in;
 }
 
 /* keyframes */
@@ -283,7 +287,7 @@ body {
         height: 18rem;
     }
 
-    .video-holder-2 iframe {
+    .vimeo-border {
         box-shadow: 8px 8px 8px 0px #00f78a;
         -webkit-box-shadow: 8px 8px 8px 0px #00f78a;
     }

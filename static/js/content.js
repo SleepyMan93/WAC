@@ -19,3 +19,7 @@ $(function(){
         trigger: 'click'
     });
 });
+
+function outLine() {
+    $('.vimeo-vid').addClass('vimeo-border');
+}
