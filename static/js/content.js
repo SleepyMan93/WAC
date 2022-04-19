@@ -16,6 +16,6 @@ observer.observe(image);
 
 $(function(){
     $(".flip").flip({
-        trigger: 'hover'
+        trigger: 'click'
     });
 });
