@@ -40,16 +40,6 @@ section:nth-child(1){
   font-size: 1.3em
 }
 
-.funk {
-  font-weight: 500;
-  font-family: cursive;
-}
-
-.green {
-  color: #00f78a;
-  font-size: 1.5em;
-}
-
 .reveal-holder {
   display: flex;
   align-items: center;
