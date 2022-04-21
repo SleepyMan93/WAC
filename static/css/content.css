@@ -17,18 +17,6 @@ body {
 
 /* Global Video Styling */
 
-.video-holder-2 video {
-    display: flex;
-    max-width: 100%;
-    max-height: 79vh;
-}
-
-.client-video {
-    max-height: 79vh;
-    max-width: 100%;
-    z-index: 2;
-}
-
 .video-holder-2 {
     z-index: 3;
     margin-bottom: 2rem;
@@ -93,6 +81,10 @@ body {
     margin-bottom: 2rem;
 }
 
+#drinks {
+    width: 110%;
+}
+
 .gorillas .img-holder-wide:nth-child(1) {
     display: none;
     margin-top: -1rem;
@@ -155,6 +147,10 @@ body {
 
 .stephen {
     object-position: bottom;
+}
+
+#stephen {
+    height: 28rem;
 }
 
 /* Collage Section */

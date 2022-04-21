@@ -14,7 +14,7 @@
     <nav class="navbar fixed-top  navbar-expand-lg navbar-light">
         <div class="container-fluid nav-box">
             <div id="imgHolder" class="container">
-                <a class="navbar-brand justify-content-start" href="#">
+                <a class="navbar-brand justify-content-start" href="{{ url_for('home') }}">
                     <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/nav_logo.png" alt="">
                 </a>
             </div>
@@ -53,11 +53,11 @@
     </div>
     
     <div class="container-fluid img-section">
-        <div class="col-12 col-md-5 img-holder-wide">
-            <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/IMG_1774_(Medium).png" loading="eager" alt="Gorillas Delivery" class="img-wide">
-        </div>
         <div class="col-12 col-md-7 img-holder-wide">
-            <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/Gateway-Westfield-1408x672-generic-2.jpg" loading="eager" alt="Gorillas RTD" class="img-wide-top">
+            <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/Gateway-Westfield-1408x672-generic-2.jpg" loading="eager" alt="Gorillas Delivery" id="drinks" class="img-wide">
+        </div>
+        <div class="col-12 col-md-5 img-holder-wide">
+            <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/gorilla_work_drink.png" loading="eager" alt="Gorillas RTD" class="img-wide-top">
         </div>
     </div>
 </section>
@@ -109,10 +109,10 @@
     </div>
     
     <div class="container-fluid img-section">
-        <div class="col-12 col-md-5 img-holder-wide animate-me down">
-            <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/stephen_base.png" alt="On set with Base" class="img-wide stephen">
+        <div class="col-12 col-md-7 img-holder-wide animate-me down">
+            <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/stephen_base.png" alt="On set with Base" id="stephen" class="img-wide stephen">
         </div>
-        <div class="col-12 col-md-7 img-holder-wide animate-me right">
+        <div class="col-12 col-md-5 img-holder-wide animate-me right">
             <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/base_5.JPG" alt="Stephen Interview" class="img-wide-top">
         </div>
     </div>

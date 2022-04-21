@@ -11,7 +11,7 @@
     <nav class="navbar fixed-top  navbar-expand-lg navbar-light">
         <div class="container-fluid nav-box">
             <div id="imgHolder" class="container">
-                <a class="navbar-brand justify-content-start" href="#">
+                <a class="navbar-brand justify-content-start" href="{{ url_for('home') }}">
                     <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/nav_logo.png" alt="">
                 </a>
             </div>
@@ -88,11 +88,11 @@
             </div>
             <div class="reveal-text">
                 <h5 class="hidden-text">
-                    <span class="upperclass">working</span> alongside you from 
+                    <span class="uppercase">Working</span> alongside you from 
                     start to finish, you bring the 
                     idea and we work our magic
                     through pre production, 
-                    shooting & post production - 
+                    shooting & post production <span class="green-bold">-</span> 
                     we can take full control with 
                     sourcing models, locations &
                     equipment
@@ -111,7 +111,7 @@
             </div>
             <div class="col reveal-text-2">
                 <h5 class="hidden-text-2">
-                    <span class="uppercase">We</span> are an extension to your team bringing in our expertise to execute an existing brief
+                    <span class="uppercase">We</span> are an extension to your team, bringing in our expertise to execute an existing brief
                 </h5>
             </div>
         </div>
@@ -120,14 +120,14 @@
 
 <section id="moriarty" class="container-fluid expander">
     <div class="container-fluid see-work shrink">
-        <div class="col-5 col-sm-4 col-md-3 col-lg-2 work-button">
+        <div class="col-4 col-sm-3 col-lg-2 work-button">
             <div class="tap-me">
                 <h3 class="work-title">
                     <a class="click-link" href="{{ url_for('content_page') }}">see our work</a>
                 </h3>
             </div>
         </div>
-        <img class="image-show image-shrink" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/our-work.JPG" alt="See Work">
+        <img class="image-show image-shrink" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/golf_drone.jpg" alt="See Work">
     </div>
 </section>
 
