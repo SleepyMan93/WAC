@@ -39,7 +39,7 @@ section {
 
 .info-photo {
     max-width: 100%;
-    max-height: 80rem;
+    max-height: 27rem;
     object-fit: cover;
 }
 
@@ -55,7 +55,7 @@ section {
 .img-box {
     display: flex;
     justify-content: flex-end;
-    height: 40rem;
+    height: 27rem;
 }
 
 .body {
@@ -459,6 +459,16 @@ section {
 }
 
 @media (min-width: 768px) {
+    .info-photo {
+        max-height: 80rem;
+    }
+
+    .img-box {
+        display: flex;
+        justify-content: flex-end;
+        height: 40rem;
+    }
+
     .team-holder {
         padding: 0rem 5rem;
     }  
