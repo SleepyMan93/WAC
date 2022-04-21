@@ -18,7 +18,10 @@ section:nth-child(1){
 /* Info Section */
 
 .circle-turn {
-  min-height: 10vh;
+  min-height: 48vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .info-container {
