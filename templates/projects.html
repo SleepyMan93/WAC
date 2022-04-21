@@ -9,28 +9,33 @@
 {% endblock %}
 
 {% block content %}
-        <section class="container-fluid landing">
-            <nav class="navbar fixed-top  navbar-expand-lg navbar-light">
-                <div class="container-fluid nav-box">
-                    <div id="imgHolder" class="container">
-                        <a class="navbar-brand justify-content-start" href="{{ url_for('home') }}">
-                            <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/nav_logo.png" alt="">
+<section class="container-fluid landing">
+    <nav class="navbar fixed-top  navbar-expand-lg navbar-light">
+        <div class="container-fluid nav-box">
+            <div id="imgHolder" class="container">
+                <a class="navbar-brand justify-content-start" href="{{ url_for('home') }}">
+                    <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/nav_logo.png" alt="">
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+                    <a class="nav-link" href="{{ url_for('content_page') }}">Work</a>
+                    <a class="nav-link" href="{{ url_for('about_page') }}">About</a>
+                    <a class="nav-link" href="{{ url_for('services_page') }}">Services</a>
+                    <div id="emailNav" class="col social-icons">
+                        <a class="SendEmail" href="#">
+                            <i class="fa-regular fa-envelope socials-nav"></i>
                         </a>
                     </div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <a class="nav-link active" aria-current="page" href="{{ url_for('home') }}">Home</a>
-                            <a class="nav-link" href="{{ url_for('content_page') }}">Work</a>
-                            <a class="nav-link" href="{{ url_for('about_page') }}">About</a>
-                            <a class="nav-link" href="{{ url_for('services_page') }}">Services</a>
-                        </div>
-                    </div>
                 </div>
-            </nav>
-        </section>
+            </div>
+        </div>
+      </nav>
+</section>
 
         <div class="elfsight-app-df3c49ec-a697-48d7-8a51-bd8fec4838b9"></div>
 
@@ -40,22 +45,22 @@
                     <div class="col-10 col-lg-6 contact">
                             <div class="col social-icons">
                                 <a class="SendEmail" href="#">
-                                    <video onmouseover="this.play()" class="socials" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/Mail_Icon(ScaledDown).mp4#t=2" muted playsinline disablePictureInPicture></video>
+                                    <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/icon-email-logo-250px.png" alt="Email Link" class="socials">
                                 </a>
                             </div>
                             <div class="col social-icons">
                                 <a href="https://www.facebook.com/We-are-collective-1140423542776414" target="_blank" rel="noopener noreferrer">
-                                    <video onmouseover="this.play()" class="socials" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/FacebookSocial_Icon(ScaledDown).mp4#t=2" muted playsinline disablePictureInPicture></video>
+                                    <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/icon-fb-logo-250px.png" alt="Facebook Link" class="socials">
                                 </a>
                             </div>
                             <div class="col social-icons">
                                 <a href="https://www.instagram.com/we.arecollective/" target="_blank" rel="noopener noreferrer">
-                                    <video onmouseover="this.play()" class="socials" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/InstaSocial_Icon(ScaledDown).mp4#t=2" muted playsinline disablePictureInPicture></video>
+                                    <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/icon-logo-250px.png" alt="Insta Link" class="socials">
                                 </a> 
                             </div>
                             <div class="col social-icons">
                                 <a href="https://www.linkedin.com/company/wearecollective/" target="_blank" rel="noopener noreferrer">
-                                    <video onmouseover="this.play()" class="socials" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/LinkedInSocial_Icon(ScaledDown).mp4#t=2" muted playsinline disablePictureInPicture></video>
+                                    <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/icon-li-logo-250px.png" alt="Linkedin Link" class="socials">
                                 </a>
                             </div>
                     </div>

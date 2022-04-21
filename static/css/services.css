@@ -253,7 +253,7 @@ section {
 }
 
 .card-img img {
-    height: 25rem;
+    height: 28rem;
     object-fit: cover;
 }
 
@@ -262,7 +262,7 @@ section {
 }
 
 .digme-slide {
-    object-position: left;
+    object-position: center;
 }
 
 /* Media Queries */

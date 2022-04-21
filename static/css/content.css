@@ -38,7 +38,7 @@ body {
 
 .logo-holder {
     max-width: 100%;
-    height: 1rem;
+    height: 1.5rem;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -77,8 +77,12 @@ body {
 /* Gorillas Section */
 
 .gorillas {
-    padding-top: 2.5rem;
-    margin-bottom: 2rem;
+    padding-top: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+#base {
+    margin-bottom: 1rem;
 }
 
 #drinks {
@@ -90,10 +94,6 @@ body {
     margin-top: -1rem;
     margin-right: -1rem;
     z-index: 1;
-}
-
-.gorillas .img-holder-wide img:nth-child(1) {
-    object-position: top;
 }
 
 #base .img-holder-wide img:nth-child(1) {
@@ -112,6 +112,7 @@ body {
 
 .suns {
     min-height: 73vh;
+    margin-bottom: 4rem;
 }
 
 .suns .video-holder-2 {
@@ -232,11 +233,11 @@ body {
 
 @media (min-width: 490px) and (max-width: 768px) {
     .img-holder-wide:nth-child(2) {
-        height: 16rem;
+        height: 19rem;
     }
 
     .suns .img-holder-wide:nth-child(1) {
-        height: 16rem;
+        height: 19rem;
     }
 }
 
@@ -271,6 +272,10 @@ body {
     }
 
     .gorillas {
+        margin-bottom: 15rem;
+    }
+
+    #base {
         margin-bottom: 15rem;
     }
 

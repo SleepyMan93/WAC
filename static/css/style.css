@@ -232,6 +232,11 @@ h5 { font-size: 1em; }
   align-items: flex-end;
 }
 
+.fa-regular {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
 .landing {
   height: fit-content;
   min-height: 7.5rem;
@@ -271,9 +276,36 @@ h5 { font-size: 1em; }
   cursor: pointer;
 }
 
+.social-icons img:hover {
+  animation: shake 0.5s;
+}
+
+#emailNav {
+  padding-bottom: 8px;
+}
+
+#emailNav a {
+  color: white;
+}
+
 .socials {
   max-height: 4rem;
   max-width: 4rem;
+}
+
+/* Keyframes */
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
 /* media queries */
@@ -293,8 +325,8 @@ h5 { font-size: 1em; }
   }
 
   .socials {
-    max-height: 16rem;
-    max-width: 7rem;
+    max-height: 4rem;
+    max-width: 4rem;
   }
 
   .contact-holder {
@@ -323,7 +355,7 @@ h5 { font-size: 1em; }
   }
 
   .navbar-expand-lg .navbar-nav {
-    margin-right: 1rem;
+    margin-right: 2rem;
   }
 
   .btn-box {
@@ -332,7 +364,7 @@ h5 { font-size: 1em; }
 
   .video-holder {
     display: flex;
-    min-height: 32vh;
+    min-height: 25vh;
   }
 }
 
@@ -356,7 +388,7 @@ h5 { font-size: 1em; }
   }
 
   .video-holder {
-    min-height: 35vh;
+    min-height: 25vh;
   }
 }
 

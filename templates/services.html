@@ -23,6 +23,11 @@
                     <a class="nav-link" href="{{ url_for('content_page') }}">Work</a>
                     <a class="nav-link" href="{{ url_for('about_page') }}">About</a>
                     <a class="nav-link active" aria-current="page" href="{{ url_for('services_page') }}">Services</a>
+                    <div id="emailNav" class="col social-icons">
+                        <a class="SendEmail" href="#">
+                            <i class="fa-regular fa-envelope socials-nav"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -206,28 +211,29 @@
             <div class="col-10 col-lg-6 contact">
                     <div class="col social-icons">
                         <a class="SendEmail" href="#">
-                            <video onmouseover="this.play()" class="socials" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/Mail_Icon(ScaledDown).mp4#t=2" muted playsinline disablePictureInPicture></video>
+                            <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/icon-email-logo-250px.png" alt="Email Link" class="socials">
                         </a>
                     </div>
                     <div class="col social-icons">
                         <a href="https://www.facebook.com/We-are-collective-1140423542776414" target="_blank" rel="noopener noreferrer">
-                            <video onmouseover="this.play()" class="socials" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/FacebookSocial_Icon(ScaledDown).mp4#t=2" muted playsinline disablePictureInPicture></video>
+                            <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/icon-fb-logo-250px.png" alt="Facebook Link" class="socials">
                         </a>
                     </div>
                     <div class="col social-icons">
                         <a href="https://www.instagram.com/we.arecollective/" target="_blank" rel="noopener noreferrer">
-                            <video onmouseover="this.play()" class="socials" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/InstaSocial_Icon(ScaledDown).mp4#t=2" muted playsinline disablePictureInPicture></video>
+                            <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/icon-logo-250px.png" alt="Insta Link" class="socials">
                         </a> 
                     </div>
                     <div class="col social-icons">
                         <a href="https://www.linkedin.com/company/wearecollective/" target="_blank" rel="noopener noreferrer">
-                            <video onmouseover="this.play()" class="socials" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/LinkedInSocial_Icon(ScaledDown).mp4#t=2" muted playsinline disablePictureInPicture></video>
+                            <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/icon-li-logo-250px.png" alt="Linkedin Link" class="socials">
                         </a>
                     </div>
             </div>
         </div>
     </div>
 </footer>
+
 
 <script src="{{ url_for('static', filename='js/carousel.js') }}"></script>
 
