@@ -24,11 +24,6 @@
                     <a class="nav-link" href="{{ url_for('content_page') }}">Work</a>
                     <a class="nav-link active" aria-current="page"  href="{{ url_for('about_page') }}">About</a>
                     <a class="nav-link" href="{{ url_for('services_page') }}">Services</a>
-                    <div id="emailNav" class="col social-icons">
-                        <a class="SendEmail" href="#">
-                            <i class="fa-regular fa-envelope socials-nav"></i>
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -100,7 +95,7 @@
                     shooting & post production <span class="green-bold">-</span> 
                     we can take full control with 
                     sourcing models, locations &
-                    equipment
+                    equipment.
                 </h5>
             </div>
         </div>
@@ -116,7 +111,7 @@
             </div>
             <div class="col reveal-text-2">
                 <h5 class="hidden-text-2">
-                    <span class="uppercase">We</span> are an extension to your team, bringing in our expertise to execute an existing brief
+                    <span class="uppercase">We</span> are an extension to your team, bringing in our expertise to execute an existing brief.
                 </h5>
             </div>
         </div>
@@ -132,7 +127,7 @@
                 </h3>
             </div>
         </div>
-        <img class="image-show image-shrink" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/golf_drone.jpg" alt="See Work">
+        <img class="image-show image-shrink" src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/our-work.JPG" alt="See Work">
     </div>
 </section>
 
@@ -145,11 +140,12 @@
             <div class="col moto">
                 <h5>
                     <span class="green-bold">wac</span> boosts a team of expert creatives with years of experience in the industry
-                    we work as a collective, insuring every project is produced to it's greatest potential
+                    we work as a collective, insuring every project is produced to it's greatest potential.
                 </h5>
             </div>
+            <!--
             <div class="col-12 members">
-                <div class="col-12 col-lg-6">
+                <div class="col-12">
                     <span>
                         <h5 class="member-name">
                             Alex McKenzie <br />
@@ -159,7 +155,7 @@
                         Co-Founder
                     </h5>
                 </div>
-                <div class="col-12 col-lg-6 top-layer">
+                <div class="col-12 top-layer">
                     <span>
                         <h5 class="member-name">
                             Josh Edwards <br />
@@ -170,9 +166,20 @@
                     </h5>
                 </div>
             </div>
+            -->
         </div>
         <div class="col-12 headshots">
             <div class="col-12 col-lg-6 headshot-holder">
+                <div class="col-12 top-layer">
+                    <span>
+                        <h5 class="member-name">
+                            Alex McKenzie <br />
+                        </h5>
+                    </span>
+                    <h5 class="member-title">
+                        Co-Founder
+                    </h5>
+                </div>
                 <video onmouseover="this.play()"  src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/alex_new_shot.mp4#t=0.1" class="bubble-head" preload="true" muted playsinline disablepictureinpicture></video>
                 <!--
                 <div class="col owner-title">
@@ -185,6 +192,16 @@
             </div>
 
             <div class="col-12 col-lg-6 headshot-holder-josh" id="josh">
+                <div class="col-12 top-layer">
+                    <span>
+                        <h5 class="member-name">
+                            Josh Edwards <br />
+                        </h5>
+                    </span>
+                    <h5 class="member-title">
+                        Co-Founder
+                    </h5>
+                </div>
                 <video onmouseover="this.play()"  src="https://wac-version.s3.eu-west-2.amazonaws.com/static/video/josh_new_shot.mp4#t=0.1" class="bubble-head-2" preload="true" muted playsinline disablepictureinpicture ></video>
                 <!--
                 <div class="col owner-title">
@@ -228,36 +245,7 @@
     </div>
 </footer>
 
-<script>
-    $(".tap-me").click(function(){
-        $(".tap-title").fadeOut(1000);
-        $('.circle-hidden').addClass('circle-reveal');
-        $('.reveal-text').fadeIn(2000);
-    });
-
-    $(".tap-me-2").click(function(){
-        $(".tap-title-2").fadeOut("slow", function(){
-            $(".rot-reveal").toggleClass("rot");
-            $('.reveal-text-2').fadeIn(2000);
-        });
-    });
-</script>
-
-<script type="text/javascript">
-
-
-var observer = new IntersectionObserver(function(entries) { console.log(entries);
-	if(entries[0]['isIntersecting'] === true) {
-        if(entries[0]['intersectionRatio'] > 0.5)
-            document.querySelector(".see-work").classList.remove('shrink');
-			document.querySelector(".image-show").classList.remove('image-shrink');   
-    }
-}, { threshold: [0.5] });
-
-observer.observe(document.querySelector("#moriarty"));
-
-
-</script>
+<script src="{{ url_for('static', filename='js/about.js') }}"></script>
 
 
 {% endblock %}

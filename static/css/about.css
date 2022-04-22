@@ -257,7 +257,7 @@ section {
 }
 
 .moto {
-    margin-bottom: 5vh;
+    margin-bottom: 14vh;
 }
 
 .team-holder .col-sm-12 {
@@ -288,7 +288,10 @@ section {
 
 .headshot-holder-josh {
     justify-content: flex-end;
-    margin-top: 3rem;
+    margin-top: 7rem;
+}
+#josh .member-title {
+    margin-bottom: 0vh;
 }
 
 .headshot-holder-josh .owner-title {
@@ -297,6 +300,7 @@ section {
 
 .top-layer {
     z-index: 2;
+    text-align: center;
 }
 
 .bubble-head, .bubble-head-2 {
@@ -550,7 +554,7 @@ section {
     }
 
     .headshot-holder-josh {
-        margin-top: 1.8rem;
+        margin-top: 1.7rem;
     }
 
     #moriarty {
