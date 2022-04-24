@@ -10,7 +10,7 @@ section {
 }
   
 .ratio {
-    max-height: 83vh;
+    max-height: 76vh;
 }
 
 .work-slide {
@@ -165,6 +165,7 @@ section {
 
 .about-info {
     min-height: 83vh;
+    margin-top: 4rem;
 }
 
 .space {
