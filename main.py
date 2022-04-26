@@ -9,26 +9,26 @@ def home():
     return render_template('index.html')
 
 
-@app.route("/content_page")
-def content_page():
+@app.route("/work")
+def work():
     """Function to render content/work page"""
     return render_template('content.html')
 
 
-@app.route("/about_page")
-def about_page():
+@app.route("/about")
+def about():
     """Function to render the about page"""
     return render_template('about.html')
 
 
-@app.route("/services_page")
-def services_page():
+@app.route("/services")
+def services():
     """Function to render the services page"""
     return render_template('services.html')
 
 
-@app.route("/projects_page")
-def projects_page():
+@app.route("/projects")
+def projects():
     """Function to render hidden projects page"""
     return render_template('projects.html')
 
