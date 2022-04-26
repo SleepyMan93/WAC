@@ -25,7 +25,7 @@ body {
 /* Global Text Styling */
 
 .txt-holder {
-    margin-top: 5vh;
+    margin-top: 4vh;
     margin-bottom: 1rem;
     display: flex;
     flex-direction: row;
@@ -78,7 +78,8 @@ body {
 
 .gorillas {
     padding-top: 2.5rem;
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
+    min-height: 61vh;
 }
 
 #base {
@@ -96,10 +97,6 @@ body {
     z-index: 1;
 }
 
-#base .img-holder-wide img:nth-child(1) {
-    object-position: left;
-}
-
 #base .img-holder-wide img:nth-child(2) {
     object-position: center;
 }
@@ -111,7 +108,7 @@ body {
 /* Suns Sections */
 
 .suns {
-    min-height: 73vh;
+    min-height: 49vh;
     margin-bottom: 4rem;
 }
 
@@ -236,7 +233,7 @@ body {
 
 /* Media Queries */
 
-@media (min-width: 490px) and (max-width: 768px) {
+@media (min-width: 490px) and (max-width: 770px) {
     .img-holder-wide:nth-child(2) {
         height: 19rem;
     }
@@ -246,14 +243,50 @@ body {
     }
 }
 
+@media (min-width: 576px) {
+    .img-holder-wide:nth-child(2) {
+        height: 28rem;
+    }
+
+    .suns .img-holder-wide:nth-child(1) {
+        height: 28rem;
+    }
+
+    .gorillas {
+        margin-bottom: 6rem;
+    }
+}
+
 @media (min-width: 768px) {
+    .txt-holder {
+        margin-top: 8vh;
+    }
+}
+
+@media (min-width: 992px) {
     .txt-holder {
         margin-top: 1.5rem;
         padding: 0rem 0rem 0rem 1rem;
     }
 
+    .video-holder-2 {
+        width: 58.33333333%;;
+    }
+
+    .copy-holder .down {
+        width: 41.66666667%;
+    }
+
+    .img-section .one {
+        width: 58.33333333%;
+    }
+
+    .img-section .two {
+        width: 41.66666667%;
+    }
+
     .suns .txt-holder {
-        padding: 0rem 1rem 0rem 0rem;
+        padding: 0rem 1rem;
     }
 
     .copy-holder .col-md-5 {
@@ -269,7 +302,7 @@ body {
     }
 
     .txt-holder {
-        padding: 0rem 4rem;
+        padding: 0rem 1rem;
     }
 
     .suns {
@@ -282,10 +315,6 @@ body {
 
     #base {
         margin-bottom: 15rem;
-    }
-
-    .gorillas .img-holder-wide:nth-child(1) {
-        display: flex;
     }
 
     .img-holder-wide:nth-child(2) {
@@ -311,6 +340,10 @@ body {
         margin-top: -4rem;
         height: 24rem;
         z-index: 2;
+    }
+
+    .gorillas .img-holder-wide:nth-child(1) {
+        display: flex;
     }
 
     .suns .img-holder-wide:nth-child(2) {
