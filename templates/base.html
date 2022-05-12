@@ -19,7 +19,26 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-184851319-8');
+        gtag('config', 'AW-10895718844'); /* Mobile Clicks */
     </script>
+
+    <!-- Event snippet for Mobile Clicks conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+        function gtag_report_conversion(url) {
+        var callback = function () {
+            if (typeof(url) != 'undefined') {
+            window.location = url;
+            }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-10895718844/0GuYCLOUtLwDELzzvcso',
+            'event_callback': callback
+        });
+        return false;
+        }
+    </script>
+
     <script src="{{ url_for('static', filename='js/flowtype.js') }}"></script>
     {% endblock %}
 
