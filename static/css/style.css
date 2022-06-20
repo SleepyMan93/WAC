@@ -293,6 +293,27 @@ h5 { font-size: 1em; }
   max-width: 4rem;
 }
 
+.KjYQf {
+  background-color: rgb(255 255 255);
+}
+
+.lmJHQV {
+  margin: 24px 18px!important;
+}
+
+.dKUmIt a {
+  display: none!important;
+}
+
+.lmJHQV button {
+  border-color: rgb(255, 255, 255)!important;
+  color: rgb(0, 0, 0)!important;
+  font-family: inherit!important;
+  background-color: rgb(255, 255, 255)!important;
+  border-radius: 50px!important;
+  box-shadow: rgb(0 0 0 / 0%) 0px 4px 12px 0px!important;
+}
+
 .modal {
   cursor: default;
 }
@@ -389,6 +410,12 @@ h5 { font-size: 1em; }
   .video-holder {
     display: flex;
     min-height: 25vh;
+  }
+
+  .kkMOgD {
+    width: 30px!important;
+    height: 30px!important;
+    fill: currentcolor!important;
   }
 }
 
