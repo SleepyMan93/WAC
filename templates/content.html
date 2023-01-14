@@ -45,9 +45,7 @@
             </div>
         </div>
         <div class="col-12 video-holder-2">
-            <div style="padding:56.25% 0 0 0;position:relative;">
-                <lite-vimeo videoid="618789048"></lite-vimeo>
-            </div>
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/618789048?h=3691482821&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" loading="eager" onload="outLine()" class="vimeo-vid" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Gorillas - Tulse Hill"></iframe></div>
         </div>
     </div>
     
@@ -214,7 +212,7 @@
 
 
 <script src="{{ url_for('static', filename='js/content.js') }}"></script>
-<script src="http://unpkg.com/lite-vimeo-embed"></script>
+<script src="https://player.vimeo.com/api/player.js" defer></script>
 <script type="text/javascript">
     function outLine() {
     $('.vimeo-vid').addClass('vimeo-border');

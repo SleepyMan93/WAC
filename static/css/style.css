@@ -13,6 +13,10 @@ body {
   font-size: 18px;
 }
 
+a {
+  cursor: pointer;
+}
+
 section{
   min-height: 83vh;
 }
