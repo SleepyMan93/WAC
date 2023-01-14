@@ -13,7 +13,8 @@
     <script src="https://kit.fontawesome.com/6d00f659a7.js" crossorigin="anonymous"></script>
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
@@ -21,36 +22,7 @@
     </script>
     <!-- End Google Tag Manager -->
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L71HDLCYVW"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-L71HDLCYVW');
-        gtag('config', 'UA-184851319-8');
-        gtag('config', 'AW-10895718844'); /* Mobile Clicks */
-    </script>
-
-    <!-- Event snippet for Mobile Clicks conversion page
-    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-    <script>
-        function gtag_report_conversion(url) {
-        var callback = function () {
-            if (typeof(url) != 'undefined') {
-            window.location = url;
-            }
-        };
-        gtag('event', 'conversion', {
-            'send_to': 'AW-10895718844/0GuYCLOUtLwDELzzvcso',
-            'event_callback': callback
-        });
-        return false;
-        }
-    </script>
-
-    <script src="{{ url_for('static', filename='js/flowtype.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/flowtype.js') }}" defer></script>
     {% endblock %}
 
     {% block extrajs %} 

@@ -74,6 +74,22 @@ body {
     object-fit: cover;
 }
 
+.display-tablet {
+    display: none;
+}
+
+.display-xs-screen {
+    display: none;
+}
+
+.display-small-screen {
+    display: none;
+}
+
+.display-large-screen {
+    display: none;
+}
+
 /* Gorillas Section */
 
 .gorillas {
@@ -261,6 +277,14 @@ body {
     .txt-holder {
         margin-top: 8vh;
     }
+
+    .display-tablet {
+        display: block;
+    }
+
+    .display-mobile {
+        display: none;
+    }
 }
 
 @media (min-width: 992px) {
@@ -349,6 +373,14 @@ body {
     .suns .img-holder-wide:nth-child(2) {
         display: flex;
     }
+
+    .display-tablet {
+        display: none;
+    }
+
+    .display-xs-screen {
+        display: block;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -368,6 +400,14 @@ body {
     .img-holder-wide:nth-child(2) {
         margin-top: -4rem;
         height: 22rem;
+    }
+
+    .display-xs-screen {
+        display: none;
+    }
+
+    .display-small-screen {
+        display: block;
     }
 }
 
