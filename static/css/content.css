@@ -401,14 +401,6 @@ body {
         margin-top: -4rem;
         height: 22rem;
     }
-
-    .display-xs-screen {
-        display: none;
-    }
-
-    .display-small-screen {
-        display: block;
-    }
 }
 
 @media (min-width: 1400px) {
