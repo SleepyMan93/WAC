@@ -4,10 +4,6 @@
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/content.css') }}">
 {% endblock %}
 
-{% block extrajs %} 
-<script src="https://player.vimeo.com/api/player.js"></script>
-{% endblock %}
-
 {% block content %}
 
 <section class="container-fluid landing">
@@ -58,7 +54,7 @@
             <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/Gateway-Westfield-1408x672-generic-2.jpg" loading="eager" alt="Gorillas Delivery" id="drinks" class="img-wide">
         </div>
         <div class="col-12 img-holder-wide two">
-            <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/gorilla_work_drink.png" loading="eager" alt="Gorillas RTD" class="img-wide-top">
+            <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/gorilla_work_drink.webp" loading="eager" alt="Gorillas RTD" class="img-wide-top">
         </div>
     </div>
 </section>
@@ -83,10 +79,10 @@
     
     <div class="container-fluid img-section">
         <div class="col-12 img-holder-wide animate-me left one">
-            <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/suns_3.jpg" alt="Suns Garden" class="img-wide">
+            <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/suns_3.jpg" loading="lazy" alt="Suns Garden" class="img-wide">
         </div>
         <div class="col-12 col-md-5 img-holder-wide animate-me down two">
-            <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/suns_content_long.jpeg" alt="Suns Drone" class="img-wide-top">
+            <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/suns_content_long.webp" loading="lazy" alt="Suns Drone" class="img-wide-top">
         </div>
     </div>
 </section>
@@ -111,7 +107,7 @@
     
     <div class="container-fluid img-section">
         <div class="col-12 img-holder-wide animate-me down one">
-            <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/stephen_new.jpg" alt="On set with Base" id="stephen" class="img-wide stephen">
+            <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/stephen_new.jpg" loading="lazy" alt="On set with Base" id="stephen" class="img-wide stephen">
         </div>
         <div class="col-12 img-holder-wide animate-me right two">
             <img src="https://wac-version.s3.eu-west-2.amazonaws.com/static/images/base_5.JPG" alt="Stephen Interview" class="img-wide-top">
@@ -212,6 +208,7 @@
 
 
 <script src="{{ url_for('static', filename='js/content.js') }}"></script>
+<script src="https://player.vimeo.com/api/player.js" defer></script>
 <script type="text/javascript">
     function outLine() {
     $('.vimeo-vid').addClass('vimeo-border');
