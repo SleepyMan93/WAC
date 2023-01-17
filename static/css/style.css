@@ -17,6 +17,10 @@ a {
   cursor: pointer;
 }
 
+.ButtonBase__Overlay-sc-p43e7i-4 {
+  background-color: white!important;
+}
+
 section{
   min-height: 83vh;
 }
